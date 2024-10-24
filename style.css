@@ -37,11 +37,25 @@ body {
     margin-bottom: 40px;
 }
 
+a.page-description {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: #485FC7;
+}
+
 .page-description {
     font-size: 18px;
     line-height: 24px;
     font-family: "Inter", sans-serif;
     color: #CDD0D4;
+}
+
+.page-description-h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
 }
 
 @media (max-width: 600px) {
@@ -82,3 +96,5 @@ body {
 .navigation-links li::marker {
     color: #00ffcc;
 }
+
+/*====================================================================*/
