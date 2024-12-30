@@ -1,2 +1,2 @@
 # web-face
-web-page for therushb.com
+web-page for cssensei.com
