@@ -1,100 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #1E1F22;
-    margin-top: 80px;
-    color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+  background: #1e1f22;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 80px;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
-    max-width: 1000px;
-    padding: 20px;
-    text-align: left;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
 }
 
 .page-title {
-    font-size: 40px;
-    line-height: 46px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #ffffff;
+  font: 700 40px/46px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .updated-date {
-    font-size: 14px;
-    line-height: 20px;
-    font-family: "Manrope", sans-serif;
-    color: #CDD0D4;
-    margin-bottom: 40px;
+  font: 400 14px/20px "Manrope", sans-serif;
+  color: #cdd0d4;
+  margin-bottom: 40px;
 }
 
-a.page-description {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Inter", sans-serif;
-    color: #485FC7;
+.page-description,
+ul.page-description {
+  font: 400 18px/26px "Inter", sans-serif;
+  color: #cdd0d4;
+  margin: 18px 0;
 }
 
-.page-description {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Inter", sans-serif;
-    color: #CDD0D4;
+.page-description a {
+  color: #485fc7;
+  text-decoration: underline;
 }
 
 .page-description-header {
-    font-size: 20px;
-    line-height: 24px;
-    font-family: "Inter", sans-serif;
-    color: #FFFFFF;
+  font: 700 20px/26px "Inter", sans-serif;
+  color: #fff;
+  margin: 42px 0 18px;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+ul.page-description {
+  padding-left: 24px;
 }
 
-/* Navigation Links Styling */
+ul.page-description li {
+  margin-bottom: 6px;
+}
+
 .navigation-links {
-    margin-top: 40px;
-    padding-left: 10px;
-    list-style-type: disc;
-    padding-left: 20px;
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 40px;
 }
 
 .navigation-links li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .navigation-links a {
-    text-decoration: none;
-    color: #00ffcc;
-    /* Light green color for links */
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Manrope", sans-serif;
-    transition: color 0.3s ease;
-    /* Smooth color transition on hover */
+  font: 700 20px/24px "Manrope", sans-serif;
+  color: #00ffcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .navigation-links a:hover {
-    color: #ffffff;
-    /* Slightly darker green on hover */
+  color: #ffffff;
 }
 
-/* Optional: Style bullet points (if you prefer to keep them) */
 .navigation-links li::marker {
-    color: #00ffcc;
+  color: #00ffcc;
 }
 
-/*====================================================================*/
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}

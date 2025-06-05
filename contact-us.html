@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Contact Us</title>
+
+    <link rel="stylesheet" href="style-contact.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Manrope:wght@400&family=Montserrat:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style-contact.css">
-
-</head>
-
-<body>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Manrope:wght@400&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <section class="page-content">
-            <h1 class="page-title">CONTACT US</h1>
-            <p class="updated-date"></p>
-            <form action="https://formspree.io/f/mjkvkvlk" method="POST">
-                <label class="email" for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <section class="page-content">
+        <h1 class="page-title">CONTACT US</h1>
+        <p class="updated-date"></p>
 
-                <label class="message" for="message">Message</label>
-                <textarea id="message" name="message" rows="6"
-                    placeholder="Please describe your issue or suggestion in detail" required></textarea>
+        <form action="https://formspree.io/f/mjkvkvlk" method="POST">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Please describe your issue or suggestion in detail"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
