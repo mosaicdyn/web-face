@@ -34,8 +34,7 @@ body {
   margin-bottom: 40px;
 }
 
-.page-description,
-ul.page-description {
+.page-description {
   font: 400 18px/26px "Inter", sans-serif;
   color: #cdd0d4;
   margin: 18px 0;
@@ -44,20 +43,39 @@ ul.page-description {
 .page-description a {
   color: #485fc7;
   text-decoration: underline;
+  word-break: break-word;
+}
+
+.page-list {
+  font: 400 18px/26px "Inter", sans-serif;
+  color: #cdd0d4;
+
+  list-style: disc;
+  list-style-position: outside;
+
+  padding-left: 24px;
+  margin: 18px 0;
+}
+
+.page-list li {
+  margin: 6px 0;
+  padding-left: 6px;
+}
+
+.page-list li::marker {
+  color: #cdd0d4;
+}
+
+.page-list a {
+  color: #485fc7;
+  text-decoration: underline;
+  word-break: break-word;
 }
 
 .page-description-header {
   font: 700 20px/26px "Inter", sans-serif;
   color: #fff;
   margin: 42px 0 18px;
-}
-
-ul.page-description {
-  padding-left: 24px;
-}
-
-ul.page-description li {
-  margin-bottom: 6px;
 }
 
 .navigation-links {
@@ -88,5 +106,9 @@ ul.page-description li {
 @media (max-width: 600px) {
   .container {
     padding: 10px;
+  }
+
+  .page-list {
+    padding-left: 20px;
   }
 }
