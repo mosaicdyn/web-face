@@ -1,34 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to The RushB</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RushB – CS2 Lineups, Tactics &amp; AI Coach App</title>
+  <meta name="description" content="RushB is a CS2 companion app: grenade lineups for every map, tactics, solo and duo setups, binds and console commands, plus an AI coach. Free on iPhone and Android." />
+  <link rel="canonical" href="https://therushb.com/" />
+  <meta name="theme-color" content="#0e0f13" />
+  <meta name="apple-itunes-app" content="app-id=6738445061" />
 
-  <body>
-    <div class="container">
-      <section class="page-content">
-        <h1 class="page-title">Welcome to The Rush B</h1>
-        <p class="page-description">
-          Explore our services, privacy policies, terms, or get in touch with us
-          using the links below.
-        </p>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RushB" />
+  <meta property="og:url" content="https://therushb.com/" />
+  <meta property="og:title" content="RushB – Your CS2 companion for every round" />
+  <meta property="og:description" content="Grenade lineups, tactics, solo and duo setups, binds and an AI coach for CS2 — in one app." />
+  <meta property="og:image" content="https://therushb.com/assets/img/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-        <!-- <ul class="navigation-links">
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-            </ul> -->
-        <ul class="navigation-links">
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="privacy.html">Privacy Policy AS</a></li>
-          <li><a href="privacygp.html">Privacy Policy GP</a></li>
-          <li><a href="terms.html">Terms of Service AS</a></li>
-          <li><a href="termsgp.html">Terms of Service GP</a></li>
-        </ul>
-      </section>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/hero-bg.webp" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script>document.documentElement.classList.add("js")</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://therushb.com/#org",
+        "name": "RushB",
+        "legalName": "Mosaic Dynamics LTD",
+        "url": "https://therushb.com/",
+        "logo": "https://therushb.com/assets/img/logo.webp",
+        "email": "support@therushb.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://therushb.com/#website",
+        "url": "https://therushb.com/",
+        "name": "RushB",
+        "publisher": { "@id": "https://therushb.com/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "RushB - CS2 Guide",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "GameApplication",
+        "description": "CS2 companion app with grenade lineups, tactics, solo and duo setups, binds, console commands and an AI coach.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "installUrl": ["https://apps.apple.com/app/id6738445061", "https://play.google.com/store/apps/details?id=guide.pro.rush.b"],
+        "publisher": { "@id": "https://therushb.com/#org" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="site-header__logo" href="./" aria-label="RushB home">
+      <img src="assets/img/logo.webp" alt="RushB" width="139" height="60" />
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a class="site-nav__link is-active" href="./" aria-current="page">Home</a>
+      <a class="site-nav__link" href="#contact">Contact</a>
+      <a class="site-nav__link" href="privacy.html">Privacy</a>
+      <a class="site-nav__link" href="terms.html">Terms</a>
+    </nav>
+
+    <a class="btn btn--soft site-header__cta" href="download/">Download App</a>
+
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/img/hero-bg.webp" alt="" width="1440" height="1682" fetchpriority="high" />
+      </div>
+      <div class="dots dots--hero" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">Your <span class="accent">CS2 companion</span> for every round</h1>
+        <p class="hero__lead">Learn better lineups, smarter setups, and winning tactics<br class="br-desktop" /> all in one CS2 app.</p>
+
+        <div class="hero__cta">
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <div class="qr-card">
+            <div class="qr-card__text">
+              <p class="qr-card__title">Scan QR-code to Download</p>
+              <p class="qr-card__desc">Get RushB on your phone and take your CS2 knowledge with you.</p>
+            </div>
+            <img class="qr-card__code" src="assets/img/qr-download.svg" alt="QR code to download RushB" width="84" height="84" />
+          </div>
+
+          <div class="store-buttons">
+            <a class="store-btn" href="https://apps.apple.com/app/id6738445061" data-store="ios" rel="noopener">
+              <img src="assets/img/icon-apple.svg" alt="" width="32" height="32" />
+              <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
+            </a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=guide.pro.rush.b" data-store="android" rel="noopener">
+              <img src="assets/img/icon-google-play.svg" alt="" width="32" height="32" />
+              <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
+            </a>
+          </div>
+
+          <div class="rating" data-claim="rating">
+            <span class="rating__stars" aria-hidden="true">
+              <img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" />
+            </span>
+            <span class="rating__text"><strong>4.9</strong> <span class="rating__count">(512 reviews)</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__phones">
+        <img src="assets/img/hero-phones.webp" alt="RushB app screens: grenade lineups on Mirage, AI coach, binds and tactics" width="1227" height="688" />
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <img class="bg-word bg-word--features" src="assets/img/word-features.webp" alt="" width="922" height="165" aria-hidden="true" />
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title fill-text" id="features-title" data-claim="players">
+            <span class="fill-text__line">We have already been chosen by more than 100,000+ players</span>
+          </h2>
+          <p class="section-lead">Our platform combines data, visuals, and experience from the competitive scene to help you truly understand CS2. Train smarter, master every map, and bring pro-level thinking into your daily matches.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon"><img src="assets/img/feature-nades.webp" alt="" width="570" height="538" loading="lazy" style="--w:285px" /></div>
+            <h3 class="card__title"><span class="accent">2000+</span> Nades</h3>
+            <p class="card__text">A large database of modern grenades on all maps. From the most standard to professional.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><img src="assets/img/feature-tactics.webp" alt="" width="460" height="434" loading="lazy" style="--w:230px" /></div>
+            <h3 class="card__title"><span class="accent">100+</span> Tactics</h3>
+            <p class="card__text">Collected tactics for players of different skill levels. Includes standard and professional.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><img src="assets/img/feature-setups.webp" alt="" width="460" height="434" loading="lazy" style="--w:230px" /></div>
+            <h3 class="card__title"><span class="accent">200+</span> Setups</h3>
+            <p class="card__text">Only playing in 2? No problem, duet sets open up more opportunities to improve your duet game.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><img src="assets/img/feature-ai.webp" alt="" width="460" height="434" loading="lazy" style="--w:230px" /></div>
+            <h3 class="card__title"><span class="accent">AI</span> CS Coach</h3>
+            <p class="card__text">Get access to our AI coach, get more information that's just right for you, and be the first to know about new things!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="trusted" aria-labelledby="trusted-title" data-claim="faceit-players">
+      <img class="graffiti graffiti--tl" src="assets/img/graffiti-1.webp" alt="" width="207" height="422" aria-hidden="true" loading="lazy" />
+      <img class="graffiti graffiti--tr" src="assets/img/graffiti-2.webp" alt="" width="162" height="320" aria-hidden="true" loading="lazy" />
+      <h2 class="section-title trusted__title" id="trusted-title">Trusted by pro FACEIT players who have <span class="accent">4000+&nbsp;ELO</span></h2>
+
+      <div class="marquee" aria-label="Players using RushB">
+        <div class="marquee__row">
+          <ul class="marquee__track">
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">nipl</span><span class="chip__elo">4 312</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">notineki</span><span class="chip__elo">4 212</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">leri511</span><span class="chip__elo">4 126</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">-tasman</span><span class="chip__elo">4 091</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">jottAAA-</span><span class="chip__elo">4 312</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">poiii-</span><span class="chip__elo">4 633</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">adamb1</span><span class="chip__elo">4 057</span></li>
+          </ul>
+        </div>
+        <div class="marquee__row marquee__row--reverse">
+          <ul class="marquee__track">
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">awiioqe</span><span class="chip__elo">4 312</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">kalyambys</span><span class="chip__elo">3 858</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">str0ngl</span><span class="chip__elo">4 163</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">FilipPaluch</span><span class="chip__elo">4 637</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">yasxojysyma</span><span class="chip__elo">4 002</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">-t0mmyyy</span><span class="chip__elo">3 478</span></li>
+            <li class="chip"><img src="assets/img/faceit-level.webp" alt="" width="30" height="36" /><span class="chip__name">nawwk</span><span class="chip__elo">4 312</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="numbers" aria-label="RushB in numbers" data-claim="numbers">
+      <img class="bg-word bg-word--numbers" src="assets/img/word-numbers.webp" alt="" width="950" height="175" aria-hidden="true" loading="lazy" />
+      <div class="container numbers__grid">
+        <div class="stat">
+          <p class="stat__value"><span class="count" data-to="100">+100</span><span class="accent">k</span></p>
+          <p class="stat__text">Over 100,000 players from all over the world have already trusted our platform to improve their game. From beginners to pros, we have helped countless players improve their performance.</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value"><span class="count" data-to="5">+5</span><span class="accent">k</span></p>
+          <p class="stat__text">Our platform offers a vast collection of training resources — from standard grenade lineups to professional esports strategies and advanced mechanics.</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value"><span class="count" data-to="98">+98</span><span class="accent">%</span></p>
+          <p class="stat__text">98% positive feedback on our platform. Players love the simplicity, clarity, and real-world results of our training. We listen, adapt, and continue to improve because your progress is our goal.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEB APP SOON -->
+    <section class="webapp" aria-labelledby="webapp-title">
+      <img class="bg-word bg-word--webapp" src="assets/img/word-webapp.webp" alt="" width="803" height="190" aria-hidden="true" loading="lazy" />
+      <div class="dots dots--webapp" aria-hidden="true"></div>
+      <div class="container webapp__head">
+        <h2 class="section-title" id="webapp-title"><span class="accent">Web app</span> will be available <span class="accent">very soon</span>!</h2>
+        <p class="section-lead">RushB brings pro-level Counter-Strike insights right to your pocket.<br class="br-desktop" /> From grenade lineups to team tactics — everything you need to play smarter, not harder.</p>
+      </div>
+      <div class="webapp__laptop">
+        <div class="webapp__glow" aria-hidden="true"></div>
+        <img src="assets/img/webapp-laptop.webp" alt="Preview of the upcoming RushB web app — coming soon" width="1000" height="485" loading="lazy" />
+      </div>
+      <div class="ribbon" aria-hidden="true">
+        <div class="ribbon__track">
+          <span>Explore, learn, and master every skill — all inside the app</span><img src="assets/img/rooster.webp" alt="" width="52" height="57" />
+          <span>Explore, learn, and master every skill — all inside the app</span><img src="assets/img/rooster.webp" alt="" width="52" height="57" />
+          <span>Explore, learn, and master every skill — all inside the app</span><img src="assets/img/rooster.webp" alt="" width="52" height="57" />
+          <span>Explore, learn, and master every skill — all inside the app</span><img src="assets/img/rooster.webp" alt="" width="52" height="57" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <img class="graffiti graffiti--cl" src="assets/img/graffiti-3.webp" alt="" width="170" height="431" aria-hidden="true" loading="lazy" />
+      <img class="graffiti graffiti--cr" src="assets/img/graffiti-2.webp" alt="" width="162" height="320" aria-hidden="true" loading="lazy" />
+      <img class="bg-word bg-word--contact" src="assets/img/word-contact.webp" alt="" width="895" height="179" aria-hidden="true" loading="lazy" />
+      <div class="dots dots--contact" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="contact-title">Let’s <span class="accent">collaborate</span><br /> or get in touch</h2>
+          <p class="section-lead">Want to become a partner, collaborate, promote RushB, or if you have any questions, suggestions - fill out the form below with a detailed description.</p>
+        </div>
+
+        <div class="form-wrap">
+          <div class="form-glow" aria-hidden="true"></div>
+          <form class="form" id="contact-form" action="https://formspree.io/f/mjkvkvlk" method="POST" novalidate>
+            <div class="form__fields">
+              <label class="field">
+                <span class="field__label">Full Name</span>
+                <input class="field__input" type="text" name="name" placeholder="Enter your Full Name" autocomplete="name" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input class="field__input" type="email" name="email" placeholder="Enter your Email" autocomplete="email" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Your Message</span>
+                <textarea class="field__input field__input--area" name="message" placeholder="Enter Message" rows="4" required></textarea>
+              </label>
+              <input type="hidden" name="_subject" value="New message from therushb.com" />
+              <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </div>
+            <button class="btn btn--primary form__submit" type="submit" disabled>Send Message</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-scene" id="footer-scene">
+      <img class="footer-scene__img footer-scene__img--1" src="assets/img/footer-1.webp" alt="" width="1440" height="1049" loading="lazy" aria-hidden="true" />
+      <img class="footer-scene__img footer-scene__img--2" src="assets/img/footer-2.webp" alt="" width="1440" height="1049" loading="lazy" aria-hidden="true" />
+      <img class="footer-scene__img footer-scene__img--3" src="assets/img/footer-3.webp" alt="RushB graffiti logo on a wall lit by a lamp" width="1440" height="1049" loading="lazy" />
+      <div class="social social--scene" aria-label="RushB on social media">
+        <span class="social__link" title="X (Twitter)"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M14.79 14.35l5.55 7.25h.85l-5.48-7.25h-.92z"/><path d="M18 10.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zm1.91 12.02l-2.42-3.16-2.76 3.16H13.2l3.58-4.1L13 13.48h3.16l2.19 2.89 2.53-2.89h1.53l-3.35 3.83L23 22.52h-3.09z"/></svg></span>
+        <span class="social__link" title="Telegram"><svg viewBox="0 0 36 36" aria-hidden="true"><path fill-rule="evenodd" d="M18 10.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zm3.48 5.1c-.11 1.19-.6 4.06-.85 5.39-.1.56-.31.75-.51.77-.44.04-.77-.29-1.19-.56-.66-.43-1.03-.7-1.67-1.12-.74-.49-.26-.76.16-1.2.11-.11 2.03-1.86 2.07-2.02 0-.02.01-.09-.03-.13-.04-.04-.11-.03-.15-.02-.07.02-1.12.71-3.16 2.09-.3.21-.57.31-.81.3-.27-.01-.78-.15-1.17-.28-.47-.15-.84-.23-.81-.49.02-.13.2-.27.56-.41 2.19-.95 3.64-1.58 4.37-1.88 2.08-.87 2.52-1.02 2.8-1.02.35 0 .44.29.41.59z"/></svg></span>
+        <span class="social__link" title="YouTube"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M25.98 13.96a2.1 2.1 0 00-1.47-1.48C23.21 12.13 18 12.13 18 12.13s-5.21 0-6.51.35a2.1 2.1 0 00-1.47 1.48c-.35 1.31-.35 4.04-.35 4.04s0 2.73.35 4.04c.19.72.76 1.29 1.47 1.48 1.3.35 6.51.35 6.51.35s5.21 0 6.51-.35a2.1 2.1 0 001.47-1.48c.35-1.31.35-4.04.35-4.04s0-2.73-.35-4.04zM16.3 20.48v-4.96l4.35 2.48-4.35 2.48z"/></svg></span>
+        <span class="social__link" title="Instagram"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M21.75 10.5h-7.5a3.75 3.75 0 00-3.75 3.75v7.5a3.75 3.75 0 003.75 3.75h7.5a3.75 3.75 0 003.75-3.75v-7.5a3.75 3.75 0 00-3.75-3.75zM18 21.75a3.75 3.75 0 110-7.5 3.75 3.75 0 010 7.5zm4.01-7.04a.75.75 0 110-1.5.75.75 0 010 1.5z"/><circle cx="18" cy="18" r="2.25"/></svg></span>
+      </div>
     </div>
-  </body>
+
+    <div class="footer-mobile">
+      <p class="footer-mobile__text">Our platform combines data, visuals, and experience from the competitive scene to help you truly understand CS2. Train smarter, master every map, and bring pro-level thinking into your daily matches.</p>
+      <div class="store-buttons store-buttons--footer">
+        <a class="store-btn" href="https://apps.apple.com/app/id6738445061" data-store="ios" rel="noopener">
+          <img src="assets/img/icon-apple.svg" alt="" width="32" height="32" />
+          <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=guide.pro.rush.b" data-store="android" rel="noopener">
+          <img src="assets/img/icon-google-play.svg" alt="" width="32" height="32" />
+          <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <p>© 2026 Mosaic Dynamics LTD. All rights reserved.</p>
+      <nav class="footer-bar__links" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
