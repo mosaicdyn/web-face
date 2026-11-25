@@ -373,14 +373,19 @@ ul { list-style: none; }
 @keyframes lamp-on { 0% { opacity: 0; } 18% { opacity: .85; } 26% { opacity: .15; } 40% { opacity: .9; } 48% { opacity: .5; } 100% { opacity: 1; } }
 
 .social { display: flex; gap: 12px; }
-.social--scene {
-  position: absolute; left: calc(623 / 1440 * 100%); top: calc(786 / 1049 * 100%);
-  width: calc(180 / 1440 * 100%); gap: calc(12 / 1440 * 100cqw);
+.social--scene { /* sits over the icon row of the design (x 616–810, y 780–828 at 1440px) */
+  position: absolute; left: calc(616 / 1440 * 100%); top: calc(780 / 1049 * 100%);
+  width: calc(194 / 1440 * 100%); height: calc(48 / 1049 * 100%);
+  justify-content: center; align-items: center; gap: calc(12 / 1440 * 100cqw);
+  border-radius: calc(14 / 1440 * 100cqw);
+  background: rgba(4, 10, 11, .55);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
   opacity: 0; transition: opacity .6s 1.3s ease;
 }
+.social--scene .social__link { flex: none; width: calc(36 / 1440 * 100cqw); }
 .footer-scene.is-lit .social--scene { opacity: 1; }
 .social__link {
-  display: block; flex: 1; aspect-ratio: 1; border-radius: 27.7%;
+  display: block; flex: none; width: 44px; aspect-ratio: 1; border-radius: 27.7%;
   border: 1px solid rgba(5, 224, 178, .3); background: rgba(7, 18, 18, .55);
   color: var(--accent-2); transition: background .2s ease, color .2s ease, box-shadow .2s ease;
 }
@@ -388,6 +393,7 @@ ul { list-style: none; }
 a.social__link:hover { background: var(--accent-2); color: var(--bg); box-shadow: 0 0 24px rgba(5, 224, 178, .5); }
 
 .footer-mobile { display: none; }
+.social--mobile { justify-content: center; }
 
 .footer-bar {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
@@ -520,6 +526,7 @@ a.social__link:hover { background: var(--accent-2); color: var(--bg); box-shadow
   .footer-scene__img { object-position: 55% 50%; }
   .social--scene { display: none; }
   .footer-mobile { display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 8px 20px 40px; text-align: center; background: #050607; }
+  .social--mobile { gap: 14px; }
   .footer-mobile__text { font-size: 13px; line-height: 1.6; color: rgba(255, 255, 255, .6); max-width: 420px; }
   .footer-bar { flex-direction: column; align-items: center; text-align: center; padding: 20px; font-size: 13px; }
   .footer-bar__links { gap: 20px; }
