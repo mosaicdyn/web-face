@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="assets/img/hero-bg.webp" />
+  <link rel="preload" as="image" href="assets/img/hero-wall.webp" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <script>document.documentElement.classList.add("js")</script>
 
@@ -97,47 +97,56 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__bg" aria-hidden="true">
-        <img src="assets/img/hero-bg.webp" alt="" width="1440" height="1682" fetchpriority="high" />
+        <img src="assets/img/hero-wall.webp" alt="" width="1440" height="1682" fetchpriority="high" />
       </div>
       <div class="dots dots--hero" aria-hidden="true"></div>
 
-      <div class="hero__content">
-        <h1 class="hero__title" id="hero-title">Your <span class="accent">CS2 companion</span> for every round</h1>
-        <p class="hero__lead">Learn better lineups, smarter setups, and winning tactics<br class="br-desktop" /> all in one CS2 app.</p>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">Your <span class="accent">CS2 companion</span> for every round</h1>
+          <p class="hero__lead">Learn better lineups, smarter setups, and winning tactics<br class="br-desktop" /> all in one CS2 app.</p>
 
-        <div class="hero__cta">
-          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="hero__cta">
+            <div class="hero__glow" aria-hidden="true"></div>
 
-          <div class="qr-card">
-            <div class="qr-card__text">
-              <p class="qr-card__title">Scan QR-code to Download</p>
-              <p class="qr-card__desc">Get RushB on your phone and take your CS2 knowledge with you.</p>
+            <div class="download-card">
+              <div class="download-card__top">
+                <img class="download-card__qr" src="assets/img/qr-download.svg" alt="QR code to download RushB" width="128" height="128" />
+                <div class="download-card__text">
+                  <p class="download-card__title">Scan QR-code to Download</p>
+                  <p class="download-card__desc">Get RushB on your phone and take your CS2 knowledge with you.</p>
+                </div>
+              </div>
+              <div class="store-buttons">
+                <a class="store-btn" href="https://apps.apple.com/app/id6738445061" data-store="ios" rel="noopener">
+                  <img src="assets/img/icon-apple.svg" alt="" width="32" height="32" />
+                  <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
+                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=guide.pro.rush.b" data-store="android" rel="noopener">
+                  <img src="assets/img/icon-google-play.svg" alt="" width="32" height="32" />
+                  <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
+                </a>
+              </div>
             </div>
-            <img class="qr-card__code" src="assets/img/qr-download.svg" alt="QR code to download RushB" width="84" height="84" />
-          </div>
 
-          <div class="store-buttons">
-            <a class="store-btn" href="https://apps.apple.com/app/id6738445061" data-store="ios" rel="noopener">
-              <img src="assets/img/icon-apple.svg" alt="" width="32" height="32" />
-              <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
-            </a>
-            <a class="store-btn" href="https://play.google.com/store/apps/details?id=guide.pro.rush.b" data-store="android" rel="noopener">
-              <img src="assets/img/icon-google-play.svg" alt="" width="32" height="32" />
-              <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
-            </a>
-          </div>
-
-          <div class="rating" data-claim="rating">
-            <span class="rating__stars" aria-hidden="true">
-              <img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" />
-            </span>
-            <span class="rating__text"><strong>4.9</strong> <span class="rating__count">(512 reviews)</span></span>
+            <div class="rating" data-claim="rating">
+              <span class="rating__stars" aria-hidden="true">
+                <img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" /><img src="assets/img/icon-star.svg" alt="" width="20" height="20" />
+              </span>
+              <span class="rating__text"><strong>4.9</strong> <span class="rating__count">(512 reviews)</span></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="hero__phones">
-        <img src="assets/img/hero-phones.webp" alt="RushB app screens: grenade lineups on Mirage, AI coach, binds and tactics" width="1227" height="688" />
+        <div class="hero__character" aria-hidden="true">
+          <img src="assets/img/hero-character.webp" alt="" width="380" height="610" />
+        </div>
+
+        <div class="phones phones--hero">
+          <img class="phones__item phones__item--left" src="assets/img/screen-tactics-list.webp" alt="RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds" width="460" height="996" />
+          <img class="phones__item phones__item--right" src="assets/img/screen-ai-coach.webp" alt="RushB app: AI coach chat with example questions" width="460" height="996" />
+          <img class="phones__item phones__item--front" src="assets/img/screen-nades-single.webp" alt="RushB app: single grenade lineups on the Mirage radar" width="460" height="996" />
+        </div>
       </div>
     </section>
 
@@ -156,7 +165,7 @@
           <article class="card reveal">
             <div class="card__icon"><img src="assets/img/feature-nades.webp" alt="" width="570" height="538" loading="lazy" style="--w:285px" /></div>
             <h3 class="card__title"><span class="accent">2000+</span> Nades</h3>
-            <p class="card__text">A large database of modern grenades on all maps. From the most standard to professional.</p>
+            <p class="card__text">A large database of single and combo grenades on all maps. From the most standard to professional.</p>
           </article>
           <article class="card reveal">
             <div class="card__icon"><img src="assets/img/feature-tactics.webp" alt="" width="460" height="434" loading="lazy" style="--w:230px" /></div>

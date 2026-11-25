@@ -69,7 +69,15 @@
           "name": "How many lineups are in RushB?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "More than 2000 smoke, flash, HE and molotov lineups for the competitive maps, plus combos and multi-throw variations from one spot."
+            "text": "More than 2000 smoke, flash, HE and molotov lineups for the competitive maps — single nades, combos and multi-throw variations from one spot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between single and combo nades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single nade is one lineup: one grenade with its position, aim point, throw type, screenshots and video. A combo is a set of grenades that work together for one play — for example two smokes, a flash and an HE for a site take — so you see every nade of the play in one place."
           }
         },
         {
@@ -116,7 +124,7 @@
   </header>
   <main id="main">
     <section class="page-hero" aria-labelledby="page-title">
-      <div class="hero__bg" aria-hidden="true"><img src="../assets/img/hero-bg.webp" alt="" width="1440" height="1682" /></div>
+      <div class="hero__bg" aria-hidden="true"><img src="../assets/img/hero-wall.webp" alt="" width="1440" height="1682" /></div>
       <div class="container page-hero__grid">
         <div>
           <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Nades</span></nav>
@@ -137,8 +145,10 @@
           </div>
           <div class="stat-line"><div><strong>2000<span class="accent">+</span></strong>lineups</div><div><strong>4</strong>grenade types</div><div><strong>T&nbsp;/&nbsp;CT</strong>both sides</div></div>
         </div>
-        <div class="device">
-          <div class="device__frame"><img src="../assets/img/screen-nades.webp" alt="RushB app: Mirage radar with grenade lineups" width="460" height="890" /></div>
+        <div class="phones">
+          <img class="phones__item phones__item--left" src="../assets/img/screen-nades-combo.webp" alt="RushB app: combo grenades on the Mirage radar" width="460" height="996" />
+          <img class="phones__item phones__item--right" src="../assets/img/screen-lineup-single.webp" alt="RushB app: B site smoke lineup with throw type and screenshot breakdown" width="460" height="996" />
+          <img class="phones__item phones__item--front" src="../assets/img/screen-nades-single.webp" alt="RushB app: single grenade lineups on the Mirage radar" width="460" height="996" />
         </div>
       </div>
     </section>
@@ -171,16 +181,42 @@
     <section class="page-section page-section--tight">
       <div class="container">
         <div class="section-head section-head--left">
+          <h2 class="section-title">Single and combo nades</h2>
+          <p class="section-lead">Every map in RushB has two modes. Switch between them at the top of the map screen.</p>
+        </div>
+        <div class="mode-grid">
+          <article class="mode-card reveal">
+            <img class="mode-card__phone" src="../assets/img/screen-nades-single.webp" alt="RushB app: Single mode on the Mirage radar with lineups from one spot" width="460" height="996" loading="lazy" />
+            <div class="mode-card__body">
+              <span class="tile__kicker">Single</span>
+              <h3 class="tile__title">One grenade, one lineup</h3>
+              <p class="tile__text">Tap a grenade on the radar to see its throw: where to stand, where to aim and how to throw it — for example running with a left click. A screenshot breakdown starts from the start position, and a video shows the full throw.</p>
+            </div>
+          </article>
+          <article class="mode-card reveal">
+            <img class="mode-card__phone" src="../assets/img/screen-nades-combo.webp" alt="RushB app: Combo mode on the Mirage radar with grenade and player icons" width="460" height="996" loading="lazy" />
+            <div class="mode-card__body">
+              <span class="tile__kicker">Combo</span>
+              <h3 class="tile__title">A set of grenades that work together</h3>
+              <p class="tile__text">A combo groups the nades for one play — for example two smokes, a flash and an HE for a B site take. Tap any grenade or player on the radar to open the combo and see every nade in it.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="page-section page-section--tight">
+      <div class="container">
+        <div class="section-head section-head--left">
           <h2 class="section-title">How a lineup works in RushB</h2>
         </div>
         <div class="tile-grid tile-grid--4">
           <article class="tile reveal"><span class="tile__num">1</span>
             <h3 class="tile__title">Choose the map</h3>
-            <p class="tile__text">Open a map and switch between single throws and combos for a whole execute.</p>
+            <p class="tile__text">Open a map and pick Single for one throw or Combo for a set of nades.</p>
           </article>
           <article class="tile reveal"><span class="tile__num">2</span>
             <h3 class="tile__title">Filter the nades</h3>
-            <p class="tile__text">Show only smokes, flashes, HE grenades or molotovs and pick T or CT side.</p>
+            <p class="tile__text">Show the grenade type you need, or filter by retakes, insta smokes and one-way smokes.</p>
           </article>
           <article class="tile reveal"><span class="tile__num">3</span>
             <h3 class="tile__title">Tap the landing spot</h3>
@@ -188,7 +224,7 @@
           </article>
           <article class="tile reveal"><span class="tile__num">4</span>
             <h3 class="tile__title">Copy the throw</h3>
-            <p class="tile__text">Follow the position, aim point and throw type, then watch the video guide to check it.</p>
+            <p class="tile__text">Follow the position, aim point and throw type, check the screenshot breakdown and watch the video.</p>
           </article>
         </div>
       </div>
@@ -202,7 +238,7 @@
         </div>
         <ul class="chips"><li>Ancient</li><li>Anubis</li><li>Cache</li><li>Dust II</li><li>Inferno</li><li>Mirage</li><li>Nuke</li></ul>
         <div class="prose">
-          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single throws, combos and several throws from the same spot are all filtered by map and situation.</p>
+          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single nades, combos and several throws from the same spot are all filtered by map and situation.</p>
           <h2>How to practise lineups faster</h2>
           <p>Learn a lineup in a private match before you use it in Premier or on FACEIT. Start an offline game with bots, open the console and paste this practice config:</p>
           <div class="code-block"><button class="code-block__copy" type="button">Copy</button><pre>sv_cheats 1
@@ -232,7 +268,11 @@ bind n sv_rethrow_last_grenade</pre></div>
         </details>
         <details class="faq-item">
           <summary>How many lineups are in RushB?</summary>
-          <div class="faq-item__body"><p>More than 2000 smoke, flash, HE and molotov lineups for the competitive maps, plus combos and multi-throw variations from one spot.</p></div>
+          <div class="faq-item__body"><p>More than 2000 smoke, flash, HE and molotov lineups for the competitive maps — single nades, combos and multi-throw variations from one spot.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What is the difference between single and combo nades?</summary>
+          <div class="faq-item__body"><p>A single nade is one lineup: one grenade with its position, aim point, throw type, screenshots and video. A combo is a set of grenades that work together for one play — for example two smokes, a flash and an HE for a site take — so you see every nade of the play in one place.</p></div>
         </details>
         <details class="faq-item">
           <summary>Do I need a jump-throw bind?</summary>

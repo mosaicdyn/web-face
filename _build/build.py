@@ -114,6 +114,20 @@ def footer(r):
   </footer>'''
 
 
+
+def phones(screens, r):
+    """screens: [(file, alt)] - first is the front phone, then back-left and back-right."""
+    roles = ["front", "left", "right"]
+    items = [(roles[i], f, alt) for i, (f, alt) in enumerate(screens[:3])]
+    items = items[1:] + items[:1]          # back phones first, front last (paint order)
+    imgs = "\n".join(
+        f'          <img class="phones__item phones__item--{role}" src="{r}assets/img/{f}" alt="{e(alt)}" '
+        f'width="460" height="996" />' for role, f, alt in items)
+    mod = " phones--single" if len(screens) == 1 else ""
+    return f'''<div class="phones{mod}">
+{imgs}
+        </div>'''
+
 def hero(p, r):
     crumbs = [f'<a href="{r or "./"}">Home</a>']
     for label, href in p.get("crumbs", []):
@@ -126,13 +140,10 @@ def hero(p, r):
         stats = '<div class="stat-line">' + "".join(
             f'<div><strong>{v}</strong>{e(l)}</div>' for v, l in p["stats"]) + "</div>"
     device = ""
-    if p.get("screen"):
-        src, alt = p["screen"]
-        device = f'''<div class="device">
-          <div class="device__frame"><img src="{r}assets/img/{src}" alt="{e(alt)}" width="460" height="890" /></div>
-        </div>'''
+    if p.get("screens"):
+        device = phones(p["screens"], r)
     return f'''    <section class="page-hero" aria-labelledby="page-title">
-      <div class="hero__bg" aria-hidden="true"><img src="{r}assets/img/hero-bg.webp" alt="" width="1440" height="1682" /></div>
+      <div class="hero__bg" aria-hidden="true"><img src="{r}assets/img/hero-wall.webp" alt="" width="1440" height="1682" /></div>
       <div class="container page-hero__grid">
         <div>
           <nav class="breadcrumbs" aria-label="Breadcrumb">{"".join(crumbs)}</nav>

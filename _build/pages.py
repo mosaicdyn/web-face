@@ -8,7 +8,7 @@ Each page:
   crumb/crumbs breadcrumb label and parent pages
   h1, lead     hero heading (may contain <span class="accent">) and intro
   stats        optional [(value_html, label)]
-  screen       optional (image in assets/img, alt text)
+  screens      optional [(image in assets/img, alt text)] - front phone first, up to 3
   body(r)      HTML sections; r is the relative path to the site root
   faq          [(question, answer_html)] -> also output as FAQPage schema
 """
@@ -47,6 +47,22 @@ def tiles(items, cols=3, numbered=False):
           </{tag}>''')
     return f'        <div class="tile-grid{grid}">\n' + "\n".join(out) + "\n        </div>"
 
+
+
+def mode_cards(r, items):
+    """Cards with an app screenshot next to the text (used for Single vs Combo nades)."""
+    out = []
+    for it in items:
+        src, alt = it["img"]
+        out.append(f'''          <article class="mode-card reveal">
+            <img class="mode-card__phone" src="{r}assets/img/{src}" alt="{alt}" width="460" height="996" loading="lazy" />
+            <div class="mode-card__body">
+              <span class="tile__kicker">{it["kicker"]}</span>
+              <h3 class="tile__title">{it["title"]}</h3>
+              <p class="tile__text">{it["text"]}</p>
+            </div>
+          </article>''')
+    return '        <div class="mode-grid">\n' + "\n".join(out) + "\n        </div>"
 
 def chips(items):
     return '        <ul class="chips">' + "".join(f"<li>{x}</li>" for x in items) + "</ul>"
@@ -100,15 +116,24 @@ def lineups_body(r):
         section(head("Pick a grenade type",
                      "Every lineup in RushB is sorted by map, grenade type and side, so you find the throw you need in a few taps.") +
                 "\n" + grenade_types(r)),
+        section(head("Single and combo nades",
+                     "Every map in RushB has two modes. Switch between them at the top of the map screen.") + "\n" + mode_cards(r, [
+            {"kicker": "Single", "title": "One grenade, one lineup",
+             "img": ("screen-nades-single.webp", "RushB app: Single mode on the Mirage radar with lineups from one spot"),
+             "text": "Tap a grenade on the radar to see its throw: where to stand, where to aim and how to throw it — for example running with a left click. A screenshot breakdown starts from the start position, and a video shows the full throw."},
+            {"kicker": "Combo", "title": "A set of grenades that work together",
+             "img": ("screen-nades-combo.webp", "RushB app: Combo mode on the Mirage radar with grenade and player icons"),
+             "text": "A combo groups the nades for one play — for example two smokes, a flash and an HE for a B site take. Tap any grenade or player on the radar to open the combo and see every nade in it."},
+        ]), " page-section--tight"),
         section(head("How a lineup works in RushB") + "\n" + tiles([
-            {"title": "Choose the map", "text": "Open a map and switch between single throws and combos for a whole execute."},
-            {"title": "Filter the nades", "text": "Show only smokes, flashes, HE grenades or molotovs and pick T or CT side."},
+            {"title": "Choose the map", "text": "Open a map and pick Single for one throw or Combo for a set of nades."},
+            {"title": "Filter the nades", "text": "Show the grenade type you need, or filter by retakes, insta smokes and one-way smokes."},
             {"title": "Tap the landing spot", "text": "The radar shows where each grenade lands. Tap a spot to see every way to get there."},
-            {"title": "Copy the throw", "text": "Follow the position, aim point and throw type, then watch the video guide to check it."},
+            {"title": "Copy the throw", "text": "Follow the position, aim point and throw type, check the screenshot breakdown and watch the video."},
         ], cols=4, numbered=True), " page-section--tight"),
         section(prose(f'''          <h2>Lineups for the competitive map pool</h2>
           <p>Valve’s Active Duty pool is the set of maps used in Premier and at Majors. Since July 2026 it is:</p>
-''') + "\n" + chips(ACTIVE_DUTY) + "\n" + prose(f'''          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single throws, combos and several throws from the same spot are all filtered by map and situation.</p>
+''') + "\n" + chips(ACTIVE_DUTY) + "\n" + prose(f'''          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single nades, combos and several throws from the same spot are all filtered by map and situation.</p>
           <h2>How to practise lineups faster</h2>
           <p>Learn a lineup in a private match before you use it in Premier or on FACEIT. Start an offline game with bots, open the console and paste this practice config:</p>
           {code(PRACTICE_CONFIG)}
@@ -121,7 +146,9 @@ LINEUPS_FAQ = [
     ("What is a lineup in CS2?",
      "<p>A lineup is a fixed position and aim point that lands a grenade on the same spot every time. Learning a few lineups per map lets you smoke, flash or molotov a position without guessing.</p>"),
     ("How many lineups are in RushB?",
-     "<p>More than 2000 smoke, flash, HE and molotov lineups for the competitive maps, plus combos and multi-throw variations from one spot.</p>"),
+     "<p>More than 2000 smoke, flash, HE and molotov lineups for the competitive maps — single nades, combos and multi-throw variations from one spot.</p>"),
+    ("What is the difference between single and combo nades?",
+     "<p>A single nade is one lineup: one grenade with its position, aim point, throw type, screenshots and video. A combo is a set of grenades that work together for one play — for example two smokes, a flash and an HE for a site take — so you see every nade of the play in one place.</p>"),
     ("Do I need a jump-throw bind?",
      "<p>No. Since August 2024 Valve blocks binds that combine several movement or attack actions on its servers, and the jump-throw is reliable without a bind. Jump and release the grenade at the same moment.</p>"),
     ("Is RushB free?",
@@ -161,7 +188,7 @@ def smokes_article(r):
           </ol>
           {JUMP_THROW_NOTE}
           <h2>Smoke lineups in RushB</h2>
-          <p>RushB shows every smoke on the map radar. Filter by side, tap a landing spot and follow the position, aim point and throw type, with a video guide for each lineup. Combos group the smokes of a full execute, so you and your team know who throws what.</p>'''
+          <p>RushB shows every smoke on the map radar. In <strong>Single</strong> mode, tap a smoke and follow the position, aim point and throw type, with a screenshot breakdown and a video for each lineup. Filters show only retake smokes, insta smokes or one-way smokes. In <strong>Combo</strong> mode, the smokes of a full execute are grouped with the flashes and HE grenades that go with them, so you and your team know who throws what.</p>'''
 
 
 def flashes_article(r):
@@ -182,7 +209,7 @@ def flashes_article(r):
             <li>Practise each lineup offline, then use it in matches.</li>
           </ol>
           <h2>Flash lineups in RushB</h2>
-          <p>Flashes in RushB are filtered by map and side and come with the position, aim point and throw type. Combos show which flashes go with which smokes during an execute, so a duo or a full team can use them together.</p>'''
+          <p>Flashes in RushB are filtered by map and side and come with the position, aim point and throw type. Learn a flash on its own in <strong>Single</strong> mode, or open a <strong>Combo</strong> to see which flashes go with which smokes during an execute, so a duo or a full team can use them together.</p>'''
 
 
 def he_article(r):
@@ -202,7 +229,7 @@ def he_article(r):
             <li>Use sound and information first: an HE on an empty spot is a wasted $300.</li>
           </ol>
           <h2>HE lineups in RushB</h2>
-          <p>RushB shows HE lineups on the same radar as the other grenades. Filter by type, tap a landing spot and copy the throw, with a video for each lineup.</p>'''
+          <p>RushB shows HE lineups on the same radar as the other grenades. In <strong>Single</strong> mode, filter by type, tap a landing spot and copy the throw, with a video for each lineup. In <strong>Combo</strong> mode, an HE is part of a full play — for example an HE on a common defender spot after the smokes and flash of a site take.</p>'''
 
 
 def molotov_article(r):
@@ -222,7 +249,7 @@ def molotov_article(r):
             <li>Remember that an enemy smoke can put your fire out.</li>
           </ol>
           <h2>Molotov lineups in RushB</h2>
-          <p>Molotov and incendiary lineups in RushB are filtered by map and side, with the position, aim point, throw type and a video guide for each throw.</p>'''
+          <p>Molotov and incendiary lineups in RushB are filtered by map and side, with the position, aim point, throw type and a video guide for each throw. Use them one by one in <strong>Single</strong> mode, or as part of a <strong>Combo</strong> with the smokes and flashes of the same play.</p>'''
 
 
 GRENADES = {
@@ -271,7 +298,7 @@ TACTICS_FAQ = [
 def setups_body(r):
     return "\n".join([
         section(head("Three ways to play a round") + "\n" + tiles([
-            {"kicker": "Solo", "title": "Solo play", "text": "Anchor positions and setups for one player: where to stand, which utility to keep and when to fall back."},
+            {"kicker": "Solo", "title": "Solo play", "text": "Smart positions, off-angles and clutch moves for one player: where to stand, which utility to keep and when to fall back."},
             {"kicker": "Duo", "title": "Duo setups", "text": "Crossfires and coordinated utility for two players. Made for the most common FACEIT and Premier situation: you and a friend."},
             {"kicker": "Trio", "title": "Triple executes", "text": "Site defenses and executes for three players, with the role of each player and the grenades they throw."},
         ])),
@@ -284,7 +311,7 @@ def setups_body(r):
             <li>Use the utility of the setup to slow the enemy and force them into the crossfire.</li>
             <li>Trade: if your partner dies, the setup tells you where to swing.</li>
           </ol>
-          <p>Setups use the same grenades as the <a href="{r}lineups/">lineups</a> section, and for full-team plans see <a href="{r}tactics/">tactics</a>.</p>''')),
+          <p>In the app, solo, duo and triple setups are sorted by A site, mid and B site, and each one has a description and a video. Setups use the same grenades as the <a href="{r}lineups/">lineups</a> section, and for full-team plans see <a href="{r}tactics/">tactics</a>.</p>''')),
     ])
 
 
@@ -386,7 +413,7 @@ BINDS_FAQ = [
 # ---------------------------------------------------------------- FAQ
 FAQ = [
     ("What is RushB?",
-     "<p>RushB is a CS2 companion app: 2000+ grenade lineups, 100+ tactics, 200+ solo and duo setups, binds and console commands, and an AI coach — in one app for iPhone and Android.</p>"),
+     "<p>RushB is a CS2 companion app: 2000+ single and combo grenade lineups, 100+ tactics, 200+ solo and duo setups, binds and console commands, and an AI coach — in one app for iPhone and Android.</p>"),
     ("Is RushB free?",
      "<p>Yes, RushB is free to download. Some content and features are part of the RushB Pro subscription, which you can buy in the app.</p>"),
     ("Which devices does RushB work on?",
@@ -423,7 +450,7 @@ def about_body(r):
           <h2>Contact</h2>
           <p>Questions, partnerships or feedback: <a href="mailto:support@therushb.com">support@therushb.com</a> or the <a href="{r}#contact">contact form</a>. Follow us on <a href="https://www.tiktok.com/@rushb.guide">TikTok</a>, <a href="https://www.youtube.com/@rushb_guide">YouTube</a> and <a href="https://www.instagram.com/rushb.guide/">Instagram</a>.</p>''')),
         section(head("What’s inside the app") + "\n" + tiles([
-            {"title": "Nades", "text": "2000+ smoke, flash, HE and molotov lineups.", "href": f"{r}lineups/", "more": "Lineups"},
+            {"title": "Nades", "text": "2000+ single and combo lineups: smokes, flashes, HE and molotovs.", "href": f"{r}lineups/", "more": "Lineups"},
             {"title": "Tactics", "text": "100+ tactics for buy, pistol, eco and force rounds.", "href": f"{r}tactics/", "more": "Tactics"},
             {"title": "Setups", "text": "200+ solo, duo and triple setups.", "href": f"{r}setups/", "more": "Setups"},
             {"title": "AI coach", "text": "Ask anything about CS2 and your game.", "href": f"{r}ai-coach/", "more": "AI coach"},
@@ -441,7 +468,7 @@ PAGES = [
         "h1": 'CS2 <span class="accent">grenade lineups</span> for every map',
         "lead": "Smokes, flashes, HE grenades and molotovs — find a throw by map, grenade type and side, see exactly where to stand and aim, and land it in your next match.",
         "stats": [('2000<span class="accent">+</span>', "lineups"), ("4", "grenade types"), ("T&nbsp;/&nbsp;CT", "both sides")],
-        "screen": ("screen-nades.webp", "RushB app: Mirage radar with grenade lineups"),
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar"), ("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown")],
         "body": lineups_body, "faq": LINEUPS_FAQ,
     },
     {
@@ -451,7 +478,7 @@ PAGES = [
         "crumb": "Smokes", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">smoke</span> lineups',
         "lead": "Execute smokes, one-ways, instant smokes and retake smokes for the competitive maps — with the exact position, aim point and throw type.",
-        "screen": ("screen-nades.webp", "RushB app: smoke lineups on the Mirage radar"),
+        "screens": [("screen-nade-filters.webp", "RushB app: nade filters for retakes, insta smokes and one-way smokes"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown")],
         "body": grenade_body("smokes"),
         "faq": [
             ("What is a one-way smoke?", "<p>A smoke placed so that you can see an enemy (often their legs or body) while they cannot see you through the cloud.</p>"),
@@ -466,7 +493,7 @@ PAGES = [
         "crumb": "Flashes", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">flash</span> lineups',
         "lead": "Pop flashes, self flashes and team flashes that blind the enemy, not your teammates — with the position, aim point and throw type for each one.",
-        "screen": ("screen-nades.webp", "RushB app: flash lineups on the Mirage radar"),
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-combo.webp", "RushB app: combo with two smokes, a flash and an HE grenade"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar")],
         "body": grenade_body("flashes"),
         "faq": [
             ("What is a pop flash?", "<p>A flash thrown over or around a wall so it explodes as soon as it appears on the enemy’s screen, leaving no time to turn away.</p>"),
@@ -480,7 +507,7 @@ PAGES = [
         "crumb": "HE grenades", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">HE grenade</span> lineups',
         "lead": "Damage stacked defenders, finish low players and open a smoke for a moment — HE lineups for the competitive maps.",
-        "screen": ("screen-nades.webp", "RushB app: HE grenade lineups on the Mirage radar"),
+        "screens": [("screen-lineup-combo.webp", "RushB app: combo with two smokes, a flash and an HE grenade"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar")],
         "body": grenade_body("he-grenades"),
         "faq": [
             ("Is an HE grenade worth buying?", "<p>Yes, when it has a target: common defender positions, low players after a trade or a narrow chokepoint during a rush.</p>"),
@@ -494,7 +521,7 @@ PAGES = [
         "crumb": "Molotovs", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">molotov</span> lineups',
         "lead": "Clear close corners, stop pushes and delay the defuse — molotov and incendiary lineups for the competitive maps.",
-        "screen": ("screen-nades.webp", "RushB app: molotov lineups on the Mirage radar"),
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar")],
         "body": grenade_body("molotovs"),
         "faq": [
             ("What is the difference between a molotov and an incendiary?", "<p>Terrorists buy the molotov and CTs buy the incendiary grenade. Both cover an area in fire for a few seconds.</p>"),
@@ -509,7 +536,7 @@ PAGES = [
         "h1": 'CS2 <span class="accent">tactics</span> for every round',
         "lead": "Site takes, fakes, executes and retakes for every competitive map — with the round type, the role of each player and the utility they throw.",
         "stats": [('100<span class="accent">+</span>', "tactics"), ("Buy · Pistol · Eco · Force", "round types")],
-        "screen": ("screen-tactics.webp", "RushB app: list of tactics for Mirage filtered by round type"),
+        "screens": [("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds"), ("screen-triple.webp", "RushB app: triple executes for A site, mid and B site"), ("screen-solo-page.webp", "RushB app: 200 IQ Pistol setup with description and video")],
         "body": tactics_body, "faq": TACTICS_FAQ,
     },
     {
@@ -520,7 +547,7 @@ PAGES = [
         "h1": 'CS2 <span class="accent">solo &amp; duo</span> setups',
         "lead": "Playing alone or with one friend? Anchor positions, crossfires and coordinated utility made for real FACEIT and Premier matches.",
         "stats": [('200<span class="accent">+</span>', "setups"), ("Solo · Duo · Trio", "for every stack")],
-        "screen": ("screen-map-menu.webp", "RushB app: Mirage menu with nades, tactics, solo play, duo setups and triple executes"),
+        "screens": [("screen-solo.webp", "RushB app: solo play setups for A site, mid and B site"), ("screen-duo.webp", "RushB app: duo setups for A site, mid and B site"), ("screen-solo-page.webp", "RushB app: 200 IQ Pistol setup with description and video")],
         "body": setups_body, "faq": SETUPS_FAQ,
     },
     {
@@ -530,7 +557,7 @@ PAGES = [
         "crumb": "AI Coach",
         "h1": 'Your <span class="accent">AI coach</span> for CS2',
         "lead": "Ask anything about CS2 and your game — tactics, decisions, settings, demos — and get advice for your level and role.",
-        "screen": ("screen-ai-coach.webp", "RushB app: AI coach chat with example questions"),
+        "screens": [("screen-ai-coach.webp", "RushB app: AI coach chat with example questions")],
         "body": ai_body, "faq": AI_FAQ,
     },
     {
@@ -540,7 +567,7 @@ PAGES = [
         "crumb": "Binds",
         "h1": 'CS2 <span class="accent">binds</span> &amp; console commands',
         "lead": "Binds that still work on Valve servers, a ready practice config for lineups and the console commands you actually need.",
-        "screen": ("screen-binds.webp", "RushB app: binds section with copyable commands"),
+        "screens": [("screen-binds.webp", "RushB app: binds section with copyable commands")],
         "body": binds_body, "faq": BINDS_FAQ,
     },
     {
@@ -550,6 +577,7 @@ PAGES = [
         "crumb": "FAQ",
         "h1": 'Questions &amp; <span class="accent">answers</span>',
         "lead": "Everything about RushB: what’s inside, subscriptions, devices and support. Can’t find your answer? Write to support@therushb.com.",
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds"), ("screen-ai-coach.webp", "RushB app: AI coach chat with example questions")],
         "body": faq_body, "faq": FAQ, "faq_title": "Frequently asked questions",
     },
     {
@@ -559,7 +587,7 @@ PAGES = [
         "crumb": "About",
         "h1": 'About <span class="accent">RushB</span>',
         "lead": "An independent CS2 companion app that puts lineups, tactics, setups, binds and an AI coach in one place.",
-        "screen": ("screen-map-menu.webp", "RushB app: map menu"),
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds"), ("screen-ai-coach.webp", "RushB app: AI coach chat with example questions")],
         "body": about_body,
     },
 ]
