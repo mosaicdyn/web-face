@@ -55,7 +55,7 @@ def mode_cards(r, items):
     for it in items:
         src, alt = it["img"]
         out.append(f'''          <article class="mode-card reveal">
-            <img class="mode-card__phone" src="{r}assets/img/{src}" alt="{alt}" width="460" height="996" loading="lazy" />
+            <div class="phone mode-card__phone"><img src="{r}assets/img/{src}" alt="{alt}" width="600" height="1299" loading="lazy" /></div>
             <div class="mode-card__body">
               <span class="tile__kicker">{it["kicker"]}</span>
               <h3 class="tile__title">{it["title"]}</h3>
@@ -493,7 +493,7 @@ PAGES = [
         "crumb": "Flashes", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">flash</span> lineups',
         "lead": "Pop flashes, self flashes and team flashes that blind the enemy, not your teammates — with the position, aim point and throw type for each one.",
-        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-combo.webp", "RushB app: combo with two smokes, a flash and an HE grenade"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar")],
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-combo.webp", "RushB app: combo page with the smokes and flash of a B site play"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar")],
         "body": grenade_body("flashes"),
         "faq": [
             ("What is a pop flash?", "<p>A flash thrown over or around a wall so it explodes as soon as it appears on the enemy’s screen, leaving no time to turn away.</p>"),
@@ -507,7 +507,7 @@ PAGES = [
         "crumb": "HE grenades", "crumbs": [("Nades", "lineups/")],
         "h1": 'CS2 <span class="accent">HE grenade</span> lineups',
         "lead": "Damage stacked defenders, finish low players and open a smoke for a moment — HE lineups for the competitive maps.",
-        "screens": [("screen-lineup-combo.webp", "RushB app: combo with two smokes, a flash and an HE grenade"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar")],
+        "screens": [("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-combo.webp", "RushB app: combo page with the smokes and flash of a B site play")],
         "body": grenade_body("he-grenades"),
         "faq": [
             ("Is an HE grenade worth buying?", "<p>Yes, when it has a target: common defender positions, low players after a trade or a narrow chokepoint during a rush.</p>"),
