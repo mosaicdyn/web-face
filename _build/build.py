@@ -121,8 +121,8 @@ def phones(screens, r):
     items = [(roles[i], f, alt) for i, (f, alt) in enumerate(screens[:3])]
     items = items[1:] + items[:1]          # back phones first, front last (paint order)
     imgs = "\n".join(
-        f'          <img class="phones__item phones__item--{role}" src="{r}assets/img/{f}" alt="{e(alt)}" '
-        f'width="460" height="996" />' for role, f, alt in items)
+        f'          <div class="phone phones__item phones__item--{role}"><img src="{r}assets/img/{f}" alt="{e(alt)}" '
+        f'width="600" height="1299" /></div>' for role, f, alt in items)
     mod = " phones--single" if len(screens) == 1 else ""
     return f'''<div class="phones{mod}">
 {imgs}
