@@ -21,7 +21,7 @@
     // Phones go straight to their store. Desktop visitors see the QR code and both buttons.
     (function () {
       var APP_STORE = "https://apps.apple.com/app/id6738445061";
-      var GOOGLE_PLAY = "https://play.google.com/store/search?q=RushB%20CS2&c=apps"; // TODO: replace with the app's Google Play URL
+      var GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=guide.pro.rush.b";
       var ua = navigator.userAgent || "";
       var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
       var isAndroid = /Android/i.test(ua);
@@ -61,7 +61,7 @@
           <img src="../assets/img/icon-apple.svg" alt="" width="32" height="32" />
           <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
         </a>
-        <a class="store-btn" href="https://play.google.com/store/search?q=RushB%20CS2&amp;c=apps" rel="noopener">
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=guide.pro.rush.b" rel="noopener">
           <img src="../assets/img/icon-google-play.svg" alt="" width="32" height="32" />
           <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
         </a>
