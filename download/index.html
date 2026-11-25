@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download RushB for iPhone and Android</title>
+  <meta name="description" content="Get RushB, the CS2 companion app with grenade lineups, tactics, setups, binds and an AI coach. Download on the App Store or Google Play." />
+  <link rel="canonical" href="https://therushb.com/download/" />
+  <meta name="theme-color" content="#0e0f13" />
+  <meta name="apple-itunes-app" content="app-id=6738445061" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://therushb.com/download/" />
+  <meta property="og:title" content="Download RushB — your CS2 companion" />
+  <meta property="og:description" content="Grenade lineups, tactics, setups, binds and an AI coach for CS2." />
+  <meta property="og:image" content="https://therushb.com/assets/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+
+  <script>
+    // Phones go straight to their store. Desktop visitors see the QR code and both buttons.
+    (function () {
+      var APP_STORE = "https://apps.apple.com/app/id6738445061";
+      var GOOGLE_PLAY = "https://play.google.com/store/search?q=RushB%20CS2&c=apps"; // TODO: replace with the app's Google Play URL
+      var ua = navigator.userAgent || "";
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var isAndroid = /Android/i.test(ua);
+      var params = new URLSearchParams(location.search);
+      if (params.get("stay") === "1") return;
+      if (isIOS) location.replace(APP_STORE);
+      else if (isAndroid) location.replace(GOOGLE_PLAY);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <style>
+    .download { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 140px 20px 80px; text-align: center; position: relative; overflow: hidden; }
+    .download .hero__bg img { opacity: .9; }
+    .download__inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+    .download__qr { width: 220px; height: 220px; padding: 14px; background: #fff; border-radius: 20px; box-shadow: 0 0 80px rgba(0, 255, 196, .25); }
+    .download__hint { font-size: 14px; color: rgba(255,255,255,.6); }
+    @media (max-width: 768px) { .download__qr, .download__hint--qr { display: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-header__logo" href="../" aria-label="RushB home"><img src="../assets/img/logo.webp" alt="RushB" width="139" height="60" /></a>
+  </header>
+  <main class="download">
+    <div class="hero__bg" aria-hidden="true"><img src="../assets/img/hero-bg.webp" alt="" width="1440" height="1682" /></div>
+    <div class="download__inner">
+      <h1 class="section-title">Get <span class="accent">RushB</span></h1>
+      <p class="section-lead">Grenade lineups, tactics, solo and duo setups, binds and an AI coach — your CS2 companion for every round.</p>
+      <img class="download__qr" src="../assets/img/qr-download.svg" alt="QR code to download RushB" width="220" height="220" />
+      <p class="download__hint download__hint--qr">Scan with your phone camera</p>
+      <div class="store-buttons">
+        <a class="store-btn" href="https://apps.apple.com/app/id6738445061" rel="noopener">
+          <img src="../assets/img/icon-apple.svg" alt="" width="32" height="32" />
+          <span class="store-btn__text"><span class="store-btn__small">Download on the</span><span class="store-btn__big">App Store</span></span>
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/search?q=RushB%20CS2&amp;c=apps" rel="noopener">
+          <img src="../assets/img/icon-google-play.svg" alt="" width="32" height="32" />
+          <span class="store-btn__text"><span class="store-btn__small">Get it on</span><span class="store-btn__big">Google Play</span></span>
+        </a>
+      </div>
+      <p class="download__hint"><a href="../">← Back to therushb.com</a></p>
+    </div>
+  </main>
+</body>
+</html>
