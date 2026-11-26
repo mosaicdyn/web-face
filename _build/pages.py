@@ -11,6 +11,8 @@ Each page:
   screens      optional [(image in assets/img, alt text)] - front phone first, up to 3
   body(r)      HTML sections; r is the relative path to the site root
   faq          [(question, answer_html)] -> also output as FAQPage schema
+  updated      optional ISO date, shown under the lead
+  article      optional True -> Article schema (guides)
 """
 
 ACTIVE_DUTY = ["Ancient", "Anubis", "Cache", "Dust II", "Inferno", "Mirage", "Nuke"]
@@ -96,11 +98,21 @@ sv_infinite_ammo 1
 ammo_grenade_limit_total 5
 sv_grenade_trajectory_prac_pipreview 1
 sv_grenade_trajectory_prac_trailtime 8
-cl_grenadepreview 1
 mp_buy_anywhere 1
 mp_buytime 9999
+mp_freezetime 0
+mp_roundtime_defuse 60
 mp_warmup_end
 bind n sv_rethrow_last_grenade"""
+
+PRACTICE_BINDS = '''bind n "sv_rethrow_last_grenade"
+bind m "ent_fire smokegrenade_projectile kill; stopsound"
+bind k "noclip"'''
+
+GRENADE_BINDS = '''bind z "slot7"
+bind x "slot8"
+bind c "slot6"
+bind v "slot10"'''
 
 JUMP_THROW_NOTE = (
     '<p class="note"><strong>About jump-throw binds.</strong> Since the August 2024 update, binds that combine '
@@ -134,10 +146,10 @@ def lineups_body(r):
         section(prose(f'''          <h2>Lineups for the competitive map pool</h2>
           <p>Valve’s Active Duty pool is the set of maps used in Premier and at Majors. Since July 2026 it is:</p>
 ''') + "\n" + chips(ACTIVE_DUTY) + "\n" + prose(f'''          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single nades, combos and several throws from the same spot are all filtered by map and situation.</p>
-          <h2>How to practise lineups faster</h2>
-          <p>Learn a lineup in a private match before you use it in Premier or on FACEIT. Start an offline game with bots, open the console and paste this practice config:</p>
+          <h2>How to practise nades faster</h2>
+          <p>Learn a lineup in a private match before you use it in Premier or on FACEIT. Start an offline game, open the console and paste this practice config:</p>
           {code(PRACTICE_CONFIG)}
-          <p>Now you can rebuy grenades anywhere, see where each throw will land and press <code>N</code> to repeat your last grenade without walking back to the spot. More commands are on the <a href="{r}binds/">binds and console commands</a> page.</p>
+          <p>Now you have unlimited grenades, a camera that shows where each throw will land, and <code>N</code> repeats your last grenade without walking back to the spot. Every command, the binds and a practice routine are in our guide <a href="{r}guides/cs2-practice-commands/">how to practice nades in CS2</a>.</p>
           {JUMP_THROW_NOTE}''')),
     ])
 
@@ -358,21 +370,13 @@ AI_FAQ = [
 
 # ---------------------------------------------------------------- binds
 def binds_body(r):
-    rows = "".join(
+    slots = "".join(
         f"<tr><td><code>{c}</code></td><td>{d}</td></tr>" for c, d in [
-            ("sv_cheats 1", "Allows practice commands on your own server. Needed for most commands below."),
-            ("sv_infinite_ammo 1", "Infinite ammo and grenades."),
-            ("ammo_grenade_limit_total 5", "Carry all grenade types at once."),
-            ("sv_grenade_trajectory_prac_pipreview 1", "Shows a preview of where the grenade will land."),
-            ("sv_grenade_trajectory_prac_trailtime 8", "Keeps the grenade’s flight path on screen for 8 seconds."),
-            ("cl_grenadepreview 1", "Shows the arc while you hold the throw."),
-            ("sv_rethrow_last_grenade", "Throws your last grenade again from the same spot (needs sv_cheats 1)."),
-            ("noclip", "Fly through the map to look at a smoke from the enemy side."),
-            ("mp_buy_anywhere 1", "Buy anywhere on the map."),
-            ("mp_buytime 9999", "Buy time never runs out."),
-            ("mp_warmup_end", "Ends the warmup."),
-            ("bot_kick", "Removes all bots."),
-            ("mp_restartgame 1", "Restarts the match after 1 second."),
+            ("slot6", "HE grenade"),
+            ("slot7", "Flashbang"),
+            ("slot8", "Smoke grenade"),
+            ("slot9", "Decoy grenade"),
+            ("slot10", "Molotov (T) or incendiary grenade (CT)"),
         ])
     return "\n".join([
         section(prose(f'''          <h2>What a bind is</h2>
@@ -387,12 +391,20 @@ def binds_body(r):
           <p>A bind is allowed on Valve servers when one key does one action. The most popular one is jumping on the mouse wheel:</p>
           {code('bind mwheelup +jump\nbind mwheeldown +jump')}
           {JUMP_THROW_NOTE}
-          <h2>Practice config for lineups</h2>
-          <p>Paste this into the console in an offline match with bots to practise grenades:</p>
-          {code(PRACTICE_CONFIG)}
-          <h2>Useful practice commands</h2>
-          <p>These commands only work on your own server or in an offline match, not in Premier or on FACEIT.</p>
-          <table class="cmd-table"><thead><tr><th>Command</th><th>What it does</th></tr></thead><tbody>{rows}</tbody></table>
+          <h2>Grenade binds: one key for each nade</h2>
+          <p>By default <code>4</code> cycles through your grenades, so in a fight you can pull a flash when you wanted a smoke. Give each grenade its own key instead. One key selects one grenade, so these binds are allowed everywhere. Paste these lines into the console or your autoexec:</p>
+          {code(GRENADE_BINDS)}
+          <p>That puts the flash on <code>Z</code>, the smoke on <code>X</code>, the HE on <code>C</code> and the molotov on <code>V</code>. Use any keys you like — these are the slot commands behind them:</p>
+          <table class="cmd-table"><thead><tr><th>Command</th><th>Selects</th></tr></thead><tbody>{slots}</tbody></table>
+          <h2>How to throw nades faster</h2>
+          <ul>
+            <li><strong>Select the nade with its own key</strong> instead of cycling with <code>4</code>.</li>
+            <li><strong>Pick the throw on the way:</strong> left click for a long throw, right click for a short underhand throw, both buttons for a medium one.</li>
+            <li><strong>Jump-throws need no bind:</strong> jump and release the grenade at the same moment.</li>
+            <li><strong>Know the lineup before the round:</strong> the position and aim point are what take time, not the throw itself.</li>
+          </ul>
+          <h2>Practice commands for nades</h2>
+          <p>Infinite grenades, the grenade camera, rethrow and clearing smokes are commands for your own server. We put them all, with a ready config and practice binds, in a separate guide: <a href="{r}guides/cs2-practice-commands/">how to practice nades in CS2</a>.</p>
           <h2>Binds and commands in RushB</h2>
           <p>The Binds section of the app has ready-made binds and a Console tab with commands you can copy in one tap — no searching through forums and old CS:GO guides.</p>''')),
     ])
@@ -405,9 +417,105 @@ BINDS_FAQ = [
      "<p>Settings → Game → Enable Developer Console (~). Then press <code>~</code> in the game.</p>"),
     ("Can I use practice commands in matchmaking?",
      "<p>No. Commands that need <code>sv_cheats 1</code>, such as <code>sv_rethrow_last_grenade</code> or <code>noclip</code>, only work on your own server or in an offline match.</p>"),
+    ("How do I bind grenades to separate keys in CS2?",
+     "<p>Use the slot commands: <code>slot6</code> is the HE grenade, <code>slot7</code> the flashbang, <code>slot8</code> the smoke, <code>slot9</code> the decoy and <code>slot10</code> the molotov or incendiary. For example, <code>bind x \"slot8\"</code> puts the smoke on X.</p>"),
     ("Where do I save binds so I don’t type them every time?",
      "<p>Put them in an autoexec config file in your CS2 cfg folder and add <code>+exec autoexec</code> to the game’s launch options in Steam.</p>"),
 ]
+
+
+# ---------------------------------------------------------------- guides
+def practice_body(r):
+    rows = "".join(
+        f"<tr><td><code>{c}</code></td><td>{d}</td></tr>" for c, d in [
+            ("sv_cheats 1", "Turns on cheat commands on your own server. Most commands below need it."),
+            ("sv_infinite_ammo 1", "Infinite grenades and ammo: a grenade stays in your hand after you throw it."),
+            ("sv_infinite_ammo 2", "Infinite ammo that still needs reloading."),
+            ("ammo_grenade_limit_total 5", "Carry all grenade types at once."),
+            ("sv_grenade_trajectory_prac_pipreview 1", "The grenade camera: a small window shows where the nade will land while you aim."),
+            ("sv_grenade_trajectory_prac_trailtime 8", "Keeps the flight path of a thrown grenade on screen for 8 seconds."),
+            ("sv_rethrow_last_grenade", "Throws your last grenade again from the same spot, with the same angle and power."),
+            ("ent_fire smokegrenade_projectile kill", "Removes every smoke on the map at once."),
+            ("ent_remove_all inferno", "Removes the fire of molotovs and incendiaries on the ground."),
+            ("noclip", "Fly through walls to see your smoke or flash from the enemy side."),
+            ("give weapon_smokegrenade", "Gives you a smoke. Also works with weapon_flashbang, weapon_hegrenade, weapon_molotov, weapon_incgrenade and weapon_decoy."),
+            ("mp_buy_anywhere 1", "Buy grenades anywhere on the map."),
+            ("mp_buytime 9999", "Buy time never runs out."),
+            ("mp_freezetime 0", "No freeze time at the start of a round."),
+            ("mp_roundtime_defuse 60", "A 60-minute round on bomb maps."),
+            ("bot_kick", "Removes all bots."),
+            ("mp_restartgame 1", "Restarts the match after 1 second."),
+        ])
+    return "\n".join([
+        section(head("Option 1: Practice mode, no console",
+                     "CS2 has a practice server built in. It covers the basics in four clicks.") + "\n" + tiles([
+            {"title": "Open Play → Practice", "text": "In the main menu go to Play and open the Practice tab."},
+            {"title": "Turn on three options", "text": "Grenade Camera, Infinite Ammo and Infinite Warmup — the switches in the list on the left."},
+            {"title": "Pick a map", "text": "Choose the map you want to learn, for example Mirage or Inferno."},
+            {"title": "Press Go", "text": "You land on an empty server with unlimited nades and a camera that shows where each one lands."},
+        ], cols=4, numbered=True), " page-section--tight"),
+        section(prose(f'''          <h2>Option 2: the practice config</h2>
+          <p>Practice mode covers the basics. For a rethrow key, clearing smokes and full control, start an offline game, open the console with <code>~</code> and paste this config. If the console does not open, turn it on in <strong>Settings → Game → Enable Developer Console</strong>.</p>
+          {code(PRACTICE_CONFIG)}
+          <p>To load it with one command, save the lines as <code>practice.cfg</code> in the <code>game/csgo/cfg</code> folder of your CS2 install. Then type <code>exec practice</code> in the console.</p>
+          <h2>Every nade practice command</h2>
+          <p>All of these work only on your own server or in an offline match. They do nothing in Premier, Competitive or on FACEIT.</p>
+          <table class="cmd-table"><thead><tr><th>Command</th><th>What it does</th></tr></thead><tbody>{rows}</tbody></table>
+          <h2>Binds for nade practice</h2>
+          <p>Three keys save the most time: repeat the last grenade, clear the smokes and fly to the other side to check the result.</p>
+          {code(PRACTICE_BINDS)}
+          <p>These binds need <code>sv_cheats 1</code>, so they only work offline. Binds that pick a grenade with one key are on our <a href="{r}binds/">CS2 binds</a> page.</p>
+          <h2>Commands from old guides that no longer work</h2>
+          <p>Many configs online were written for CS:GO. In CS2, <code>sv_grenade_trajectory</code> and <code>sv_grenade_trajectory_time</code> are gone: the grenade camera and <code>sv_grenade_trajectory_prac_trailtime</code> replace them. Some guides also list <code>cl_grenadepreview</code> — you don’t need it, the grenade camera already shows where the nade lands.</p>
+          {JUMP_THROW_NOTE}
+          <h2>A practice routine that works</h2>
+          <ol>
+            <li><strong>Learn the lineup first.</strong> Find the position, the aim point and the throw type — in RushB each lineup has a screenshot breakdown and a video.</li>
+            <li><strong>Throw it with the grenade camera on.</strong> Watch where it lands before you even release.</li>
+            <li><strong>Repeat it with the rethrow key</strong> and check it from the enemy side with noclip.</li>
+            <li><strong>Clear the smoke and throw it again by hand</strong> until it lands ten times in a row.</li>
+            <li><strong>Use it in deathmatch or a casual match</strong> before you count on it in Premier or on FACEIT.</li>
+          </ol>
+          <h2>Workshop maps for nade practice</h2>
+          <p>The Steam Workshop has practice maps made for utility. <strong>Yprac Hub</strong> combines a nade trainer with aim and prefire drills. In <strong>Play → Practice</strong> you can also open the Workshop with the Map Guide filter and download a guide for the map you play; then turn on <em>Use Map Guide</em> before you start.</p>
+          <h2>Practise with friends</h2>
+          <p>On a private server the host — or anyone with RCON access — runs the config, and everyone on the server gets unlimited nades and the grenade camera. Agree on who throws and who watches from the other side: it is the fastest way to learn smokes for a full execute.</p>''')),
+        section(head("Learn the lineups in RushB",
+                     "The commands make practice fast. RushB tells you what to practise: 2000+ lineups for the competitive maps with position, aim point, throw type and video.") +
+                "\n" + grenade_types(r), " page-section--tight"),
+    ])
+
+
+PRACTICE_FAQ = [
+    ("What is the command for infinite nades in CS2?",
+     "<p>Type <code>sv_cheats 1</code>, then <code>sv_infinite_ammo 1</code>. Add <code>ammo_grenade_limit_total 5</code> to carry every grenade type at once. It works on your own server or in an offline match.</p>"),
+    ("How do I rethrow my last grenade?",
+     "<p>Use <code>sv_rethrow_last_grenade</code>. Bind it to a key — <code>bind n \"sv_rethrow_last_grenade\"</code> — and the game throws the same grenade again from the same spot, even while you watch from somewhere else.</p>"),
+    ("How do I clear smokes instantly?",
+     "<p>With <code>sv_cheats 1</code> on, <code>ent_fire smokegrenade_projectile kill</code> removes every smoke on the map. <code>ent_remove_all inferno</code> removes molotov fire.</p>"),
+    ("How do I see where my grenade will land?",
+     "<p>Turn on the grenade camera: <code>sv_grenade_trajectory_prac_pipreview 1</code>, or the Grenade Camera switch in Play → Practice. A small window shows the landing spot while you aim.</p>"),
+    ("Can I use practice commands in Premier or on FACEIT?",
+     "<p>No. They need <code>sv_cheats 1</code>, which only works on your own server or in an offline match.</p>"),
+    ("Do I need a jump-throw bind to practise lineups?",
+     "<p>No. Since August 2024 binds that combine several movement or attack actions don’t work on Valve servers, and the jump-throw is reliable without one: jump and release the grenade at the same moment.</p>"),
+]
+
+
+def guides_body(r):
+    return "\n".join([
+        section(tiles([
+            {"kicker": "Practice", "title": "How to practice nades in CS2",
+             "text": "Practice mode, a ready config, every command for infinite nades, rethrow and clearing smokes, and a routine that makes lineups stick.",
+             "href": f"{r}guides/cs2-practice-commands/", "more": "Read"},
+            {"kicker": "Binds", "title": "CS2 binds and grenade binds",
+             "text": "Binds that still work on Valve servers, one key for each grenade and how to throw nades faster.",
+             "href": f"{r}binds/", "more": "Read"},
+            {"kicker": "Smokes", "title": "CS2 smoke lineups",
+             "text": "Execute smokes, one-ways, instant and retake smokes for the competitive maps.",
+             "href": f"{r}lineups/smokes/", "more": "Read"},
+        ]), " page-section--tight"),
+    ])
 
 
 # ---------------------------------------------------------------- FAQ
@@ -462,10 +570,10 @@ def about_body(r):
 PAGES = [
     {
         "slug": "lineups/", "nav": "Nades",
-        "title": "CS2 Lineups: Smokes, Flashes, HE & Molotovs | RushB",
-        "description": "2000+ CS2 grenade lineups in one app: smokes, flashes, HE grenades and molotovs for every competitive map, with position, aim point and video.",
+        "title": "CS2 Nades: Smoke, Flash, HE & Molotov Lineups | RushB",
+        "description": "2000+ CS2 nades in one app: smoke, flash, HE and molotov lineups for every competitive map, with position, aim point, throw type and video.",
         "crumb": "Nades",
-        "h1": 'CS2 <span class="accent">grenade lineups</span> for every map',
+        "h1": 'CS2 <span class="accent">nades</span> &amp; lineups for every map',
         "lead": "Smokes, flashes, HE grenades and molotovs — find a throw by map, grenade type and side, see exactly where to stand and aim, and land it in your next match.",
         "stats": [('2000<span class="accent">+</span>', "lineups"), ("4", "grenade types"), ("T&nbsp;/&nbsp;CT", "both sides")],
         "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-nades-combo.webp", "RushB app: combo grenades on the Mirage radar"), ("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown")],
@@ -562,13 +670,34 @@ PAGES = [
     },
     {
         "slug": "binds/", "nav": "Binds",
-        "title": "CS2 Binds & Console Commands | RushB",
-        "description": "CS2 binds and console commands that still work in 2026: mouse-wheel jump, practice config for lineups, rethrow and grenade trajectory commands.",
+        "title": "CS2 Binds: Grenade Binds & Console Commands | RushB",
+        "description": "CS2 binds that still work in 2026: one key for each grenade, mouse-wheel jump, how to throw nades faster and why the jump-throw bind no longer works.",
         "crumb": "Binds",
-        "h1": 'CS2 <span class="accent">binds</span> &amp; console commands',
-        "lead": "Binds that still work on Valve servers, a ready practice config for lineups and the console commands you actually need.",
+        "h1": 'CS2 <span class="accent">binds</span> &amp; grenade binds',
+        "lead": "Binds that still work on Valve servers, one key for each grenade and the console basics — plus why you no longer need a jump-throw bind.",
         "screens": [("screen-binds.webp", "RushB app: binds section with copyable commands")],
         "body": binds_body, "faq": BINDS_FAQ,
+    },
+    {
+        "slug": "guides/", "nav": "",
+        "title": "CS2 Guides: Nades, Binds & Practice | RushB",
+        "description": "Free CS2 guides from the RushB team: how to practice nades, practice commands, grenade binds and smoke lineups for the competitive map pool.",
+        "crumb": "Guides",
+        "h1": 'CS2 <span class="accent">guides</span>',
+        "lead": "Practical guides from the RushB team: how to practise nades, the commands and binds you need, and the lineups worth learning first.",
+        "screens": [("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds")],
+        "body": guides_body,
+    },
+    {
+        "slug": "guides/cs2-practice-commands/", "nav": "",
+        "title": "How to Practice Nades in CS2: Commands & Config | RushB",
+        "description": "How to practice nades in CS2: Practice mode, a copy-paste config, commands for infinite nades, rethrow and clearing smokes, and binds that save time.",
+        "crumb": "Practice nades", "crumbs": [("Guides", "guides/")],
+        "h1": 'How to <span class="accent">practice nades</span> in CS2',
+        "lead": "Unlimited grenades, a camera that shows where each nade lands and a key that repeats your last throw — set up in two minutes, offline or with friends.",
+        "updated": "2026-11-26", "article": True,
+        "screens": [("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown"), ("screen-nade-filters.webp", "RushB app: nade filters for retakes, insta smokes and one-way smokes"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar")],
+        "body": practice_body, "faq": PRACTICE_FAQ,
     },
     {
         "slug": "faq/", "nav": "",

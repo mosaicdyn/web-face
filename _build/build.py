@@ -32,7 +32,7 @@ NAV = [("Home", ""), ("Nades", "lineups/"), ("Tactics", "tactics/"), ("Setups", 
 FOOTER_NAV = [("Nades", "lineups/"), ("Smokes", "lineups/smokes/"), ("Flashes", "lineups/flashes/"),
               ("HE grenades", "lineups/he-grenades/"), ("Molotovs", "lineups/molotovs/"),
               ("Tactics", "tactics/"), ("Setups", "setups/"), ("AI Coach", "ai-coach/"),
-              ("Binds", "binds/"), ("FAQ", "faq/"), ("About", "about/"), ("Download", "download/")]
+              ("Binds", "binds/"), ("Guides", "guides/"), ("FAQ", "faq/"), ("About", "about/"), ("Download", "download/")]
 
 e = html.escape
 
@@ -139,6 +139,11 @@ def hero(p, r):
     if p.get("stats"):
         stats = '<div class="stat-line">' + "".join(
             f'<div><strong>{v}</strong>{e(l)}</div>' for v, l in p["stats"]) + "</div>"
+    updated = ""
+    if p.get("updated"):
+        import datetime
+        d = datetime.date.fromisoformat(p["updated"])
+        updated = f'<p class="page-meta">Updated <time datetime="{d.isoformat()}">{d.strftime("%B")} {d.day}, {d.year}</time> · by the RushB team</p>'
     device = ""
     if p.get("screens"):
         device = phones(p["screens"], r)
@@ -149,6 +154,7 @@ def hero(p, r):
           <nav class="breadcrumbs" aria-label="Breadcrumb">{"".join(crumbs)}</nav>
           <h1 class="page-title" id="page-title">{p["h1"]}</h1>
           <p class="page-lead">{p["lead"]}</p>
+          {updated}
           <div class="page-cta">
             {store_buttons(r)}
             <div class="qr-mini"><img src="{r}assets/img/qr-download.svg" alt="QR code to download RushB" width="72" height="72" /><span>Scan to get<br />RushB on your phone</span></div>
@@ -213,6 +219,11 @@ def schema(p):
          "isPartOf": {"@id": f"{SITE}/#website"}},
         {"@type": "BreadcrumbList", "itemListElement": crumbs},
     ]
+    if p.get("article"):
+        org = {"@type": "Organization", "name": "RushB", "url": f"{SITE}/"}
+        graph.append({"@type": "Article", "headline": strip_tags(p["h1"]), "description": p["description"],
+                      "mainEntityOfPage": {"@id": url}, "datePublished": p["updated"], "dateModified": p["updated"],
+                      "author": org, "publisher": org, "image": f"{SITE}/assets/img/og-image.jpg"})
     if p.get("faq"):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}}
