@@ -1,5 +1,5 @@
 {
- "cdn": "https://cdn.cssensei.com/web/lineups/",
+ "cdn": "https://cdn.cssensei.com/AllNewGrenades/",
  "maps": {
   "ancient": {
    "label": "Ancient",
@@ -13,7 +13,7 @@
      "to": "Back Halls",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "f58191bc6129.mp4"
+     "video": "ancient_t_s_backhalls3.mp4"
     },
     {
      "side": "T",
@@ -22,7 +22,7 @@
      "to": "Cave",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "86144dc89588.mp4"
+     "video": "ancient_t_s_cave.mp4"
     },
     {
      "side": "T",
@@ -31,7 +31,7 @@
      "to": "Cheetah",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d27a9a02bf3e.mp4"
+     "video": "ancient_t_s_cheetah.mp4"
     },
     {
      "side": "T",
@@ -40,7 +40,7 @@
      "to": "Cheetah",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d27a9a02bf3e.mp4"
+     "video": "ancient_t_s_cheetah.mp4"
     },
     {
      "side": "T",
@@ -49,7 +49,7 @@
      "to": "City",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "9ae03a99e3d9.mp4"
+     "video": "ancient_t_s_city3.mp4"
     },
     {
      "side": "T",
@@ -58,7 +58,7 @@
      "to": "City",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "f644a89d109c.mp4"
+     "video": "ancient_t_s_ct1.mp4"
     },
     {
      "side": "T",
@@ -67,7 +67,7 @@
      "to": "Deep Back Halls",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "56043d592e4e.mp4"
+     "video": "ancient_t_s_deephalls.mp4"
     },
     {
      "side": "T",
@@ -76,7 +76,7 @@
      "to": "Heaven",
      "throw": "Standing · jump + left click",
      "tag": "Insta smoke",
-     "video": "971bbb2f6339.mp4"
+     "video": "abcient_t_s_hev4.mp4"
     },
     {
      "side": "T",
@@ -85,7 +85,7 @@
      "to": "House",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "c1babd6fc4e1.mp4"
+     "video": "ancient_t_s_house.mp4"
     },
     {
      "side": "T",
@@ -94,7 +94,7 @@
      "to": "Stairs",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "3a57dd9a6c6f.mp4"
+     "video": "ancient_t_s_stairs2.mp4"
     },
     {
      "side": "T",
@@ -103,7 +103,7 @@
      "to": "Temple",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "0f5c04d79028.mp4"
+     "video": "ancient_t_s_temple.mp4"
     },
     {
      "side": "T",
@@ -112,7 +112,7 @@
      "to": "Tunnels",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "36e4080954e9.mp4"
+     "video": "ancient_t_s_tunnels1.mp4"
     },
     {
      "side": "T",
@@ -121,7 +121,7 @@
      "to": "Tunnels",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "3ad2db85038b.mp4"
+     "video": "ancient_t_s_donut1.mp4"
     },
     {
      "side": "T",
@@ -130,7 +130,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3d68ff98c0d6.mp4"
+     "video": "ancient_t_f_asite2.mp4"
     },
     {
      "side": "T",
@@ -139,7 +139,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "96d3d3fc71bc.mp4"
+     "video": "ancient_t_f_bsite2.mp4"
     },
     {
      "side": "T",
@@ -148,7 +148,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "99061bd35d3e.mp4"
+     "video": "ancient_t_f_bpillar1.mp4"
     },
     {
      "side": "T",
@@ -157,7 +157,7 @@
      "to": "Cheetah",
      "throw": "Standing · left click",
      "tag": "Pop flash",
-     "video": "ab4feb124864.mp4"
+     "video": "ancient_t_f_cheetah2.mp4"
     },
     {
      "side": "T",
@@ -166,7 +166,7 @@
      "to": "Cheetah",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "cb2d5c3f535e.mp4"
+     "video": "ancient_t_f_cheetah1.mp4"
     },
     {
      "side": "T",
@@ -175,7 +175,7 @@
      "to": "Mid",
      "throw": "Crouching · jump + left click",
      "tag": "Pop flash",
-     "video": "199406f8145e.mp4"
+     "video": "ancient_t_f_tmid2.mp4"
     },
     {
      "side": "T",
@@ -184,7 +184,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "5711a96324cc.mp4"
+     "video": "ancient_t_f_mid1.mp4"
     },
     {
      "side": "T",
@@ -193,7 +193,7 @@
      "to": "Out Main",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "a54e99058efa.mp4"
+     "video": "ancient_t_f_outmain.mp4"
     },
     {
      "side": "T",
@@ -202,7 +202,7 @@
      "to": "B Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "97ee839440c7.mp4"
+     "video": "ancient_t_m_pillar3.mp4"
     },
     {
      "side": "T",
@@ -211,7 +211,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "06b19d1c009b.mp4"
+     "video": "ancient_t_m_pillar1.mp4"
     },
     {
      "side": "T",
@@ -220,7 +220,7 @@
      "to": "Back Halls",
      "throw": "One step · jump + left click",
      "tag": "Retake",
-     "video": "f09085e6f9e3.mp4"
+     "video": "ancient_t_m_backhalls.mp4"
     },
     {
      "side": "T",
@@ -229,7 +229,7 @@
      "to": "Cubby",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "dfcdf63a3473.mp4"
+     "video": "ancient_t_m_cubby1.mp4"
     },
     {
      "side": "T",
@@ -238,7 +238,7 @@
      "to": "Stairs",
      "throw": "Crouching · jump + left click",
      "tag": null,
-     "video": "44c495d30a27.mp4"
+     "video": "ancient_t_m_bstairs1.mp4"
     },
     {
      "side": "T",
@@ -247,7 +247,7 @@
      "to": "Temple",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "02a17b73df06.mp4"
+     "video": "ancient_t_m_temple1.mp4"
     },
     {
      "side": "T",
@@ -256,7 +256,7 @@
      "to": "Triple",
      "throw": "Running · left click",
      "tag": null,
-     "video": "88c62eb277a4.mp4"
+     "video": "ancient_t_m_triple1.mp4"
     },
     {
      "side": "T",
@@ -265,7 +265,7 @@
      "to": "Wood",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "af99d445020b.mp4"
+     "video": "ancient_t_m_wood1.mp4"
     },
     {
      "side": "T",
@@ -274,7 +274,7 @@
      "to": "X Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d1308d3eac17.mp4"
+     "video": "ancient_t_m_xbox1.mp4"
     },
     {
      "side": "CT",
@@ -283,7 +283,7 @@
      "to": "A Main",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "aeff90951ec6.mp4"
+     "video": "ancient_ct_s_amain1.mp4"
     },
     {
      "side": "CT",
@@ -292,7 +292,7 @@
      "to": "Connector",
      "throw": "One step · jump + left click",
      "tag": "Insta smoke",
-     "video": "3dfa6bdbbc5a.mp4"
+     "video": "ancient_mid_elbow_smoke_CT5.mp4"
     },
     {
      "side": "CT",
@@ -301,7 +301,7 @@
      "to": "Connector",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "9b72e19afcb1.mp4"
+     "video": "ancient_ct_s_connector2.mp4"
     },
     {
      "side": "CT",
@@ -310,7 +310,7 @@
      "to": "Doors",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "10360801b542.mp4"
+     "video": "ancient_ct_s_door1.mp4"
     },
     {
      "side": "CT",
@@ -319,7 +319,7 @@
      "to": "Ramp",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ab52897cc8f6.mp4"
+     "video": "ancient_ct_s_bramp3.mp4"
     },
     {
      "side": "CT",
@@ -328,7 +328,7 @@
      "to": "Ramp",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "4d4a192f704b.mp4"
+     "video": "ancient_ct_s_bramp2.mp4"
     },
     {
      "side": "CT",
@@ -337,7 +337,7 @@
      "to": "A Main",
      "throw": "Standing · jump + left click",
      "tag": "Pop flash",
-     "video": "356fa56c78b5.mp4"
+     "video": "ancient_ct_f_amain1.mp4"
     },
     {
      "side": "CT",
@@ -346,7 +346,7 @@
      "to": "Cave",
      "throw": "Standing · jump + left click",
      "tag": "Pop flash",
-     "video": "e5413995862c.mp4"
+     "video": "ancient_ct_f_sunroom1.mp4"
     },
     {
      "side": "CT",
@@ -355,7 +355,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3959d3d1a5de.mp4"
+     "video": "ancient_ct_f_tmid1.mp4"
     },
     {
      "side": "CT",
@@ -364,7 +364,7 @@
      "to": "Mid Box",
      "throw": "Running · left click",
      "tag": null,
-     "video": "f167b77cf6ad.mp4"
+     "video": "ancient_ct_f_house.mp4"
     },
     {
      "side": "CT",
@@ -373,7 +373,7 @@
      "to": "Ramp",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d1231c65f547.mp4"
+     "video": "ancient_ct_f_highway1.mp4"
     },
     {
      "side": "CT",
@@ -382,7 +382,7 @@
      "to": "Triple",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "868b6410a3ba.mp4"
+     "video": "ancient_retake1_a.mp4"
     },
     {
      "side": "CT",
@@ -391,7 +391,7 @@
      "to": "Lane",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "1816c5fe212d.mp4"
+     "video": "ancient_ct_m_highway1.mp4"
     },
     {
      "side": "CT",
@@ -400,7 +400,7 @@
      "to": "Lane",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "33033c0a1cee.mp4"
+     "video": "ancient_ct_m_construction1.mp4"
     },
     {
      "side": "CT",
@@ -409,7 +409,7 @@
      "to": "Ramp",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "9440b6170a0f.mp4"
+     "video": "ancient_ct_m_bramp2.mp4"
     },
     {
      "side": "CT",
@@ -418,7 +418,7 @@
      "to": "X Box",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "695435072b80.mp4"
+     "video": "ancient_ct_m_window.mp4"
     },
     {
      "side": "CT",
@@ -427,7 +427,7 @@
      "to": "Lane",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "3dadc8bbe7eb.mp4"
+     "video": "ancient_ct_n_lane.mp4"
     }
    ]
   },
@@ -443,7 +443,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "79ca6d355136.mp4"
+     "video": "anubis_t_s_bsite2.mp4"
     },
     {
      "side": "T",
@@ -452,7 +452,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ea6074b45bfd.mp4"
+     "video": "anubis_t_s_bsite1.mp4"
     },
     {
      "side": "T",
@@ -461,7 +461,7 @@
      "to": "Bridge",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ac829194c29b.mp4"
+     "video": "anubis_t_s_bridge.mp4"
     },
     {
      "side": "T",
@@ -470,7 +470,7 @@
      "to": "Dark",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "c38172e8a10f.mp4"
+     "video": "anubis_t_s_dark2.mp4"
     },
     {
      "side": "T",
@@ -479,7 +479,7 @@
      "to": "Dark",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "0432a2b90ab5.mp4"
+     "video": "anubis_t_s_dark.mp4"
     },
     {
      "side": "T",
@@ -488,7 +488,7 @@
      "to": "Heaven",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "7141789d04ff.mp4"
+     "video": "anubis_t_s_heaven.mp4"
     },
     {
      "side": "T",
@@ -497,7 +497,7 @@
      "to": "Plat",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "d6a7be9da8ab.mp4"
+     "video": "anubis_t_s_plateau.mp4"
     },
     {
      "side": "T",
@@ -506,7 +506,7 @@
      "to": "Plat",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "2361b4bbfd28.mp4"
+     "video": "anubis_t_s_plat2.mp4"
     },
     {
      "side": "T",
@@ -515,7 +515,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "a3b6a1b32faa.mp4"
+     "video": "anubis_t_f_bsite.mp4"
     },
     {
      "side": "T",
@@ -524,7 +524,7 @@
      "to": "Mid",
      "throw": "One step · left click",
      "tag": null,
-     "video": "ea56750d9ee6.mp4"
+     "video": "anubis_t_f_mid.mp4"
     },
     {
      "side": "T",
@@ -533,7 +533,7 @@
      "to": "Plat",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "bb1560aad1fc.mp4"
+     "video": "anubis_t_f_asite.mp4"
     },
     {
      "side": "T",
@@ -542,7 +542,7 @@
      "to": "Plat",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "a0cec9564d5c.mp4"
+     "video": "anubis_t_f_plat.mp4"
     },
     {
      "side": "T",
@@ -551,7 +551,7 @@
      "to": "Ruins",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "7055c931b0b4.mp4"
+     "video": "anubis_t_f_ruins.mp4"
     },
     {
      "side": "T",
@@ -560,7 +560,7 @@
      "to": "Water",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "0a3dd301e92c.mp4"
+     "video": "anubis_t_f_water.mp4"
     },
     {
      "side": "T",
@@ -569,7 +569,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "495d94127185.mp4"
+     "video": "anubis_t_m_asite2.mp4"
     },
     {
      "side": "T",
@@ -578,7 +578,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "47e4fbaa4fad.mp4"
+     "video": "anubis_t_m_asite1.mp4"
     },
     {
      "side": "T",
@@ -587,7 +587,7 @@
      "to": "Con",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "12335da9c12e.mp4"
+     "video": "anubis_t_m_connector.mp4"
     },
     {
      "side": "T",
@@ -596,7 +596,7 @@
      "to": "Default",
      "throw": "One step · jump + left click",
      "tag": "Retake",
-     "video": "347dc4e848b6.mp4"
+     "video": "anubis_t_m_bsite.mp4"
     },
     {
      "side": "T",
@@ -605,7 +605,7 @@
      "to": "House",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c704eed85719.mp4"
+     "video": "anubis_t_m_house.mp4"
     },
     {
      "side": "T",
@@ -614,7 +614,7 @@
      "to": "Pillar",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "65218341e99d.mp4"
+     "video": "anubis_t_m_pillar1.mp4"
     },
     {
      "side": "T",
@@ -623,7 +623,7 @@
      "to": "Pillar",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "0278282970d5.mp4"
+     "video": "anubis_t_m_pillar2.mp4"
     },
     {
      "side": "T",
@@ -632,7 +632,7 @@
      "to": "Connector",
      "throw": "One step · left click",
      "tag": "Retake",
-     "video": "05088c9440f5.mp4"
+     "video": "anubis_t_n_connector.mp4"
     },
     {
      "side": "CT",
@@ -641,7 +641,7 @@
      "to": "Headshot",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "1a12f98d88e7.mp4"
+     "video": "anubis_ct_s_headshot.mp4"
     },
     {
      "side": "CT",
@@ -650,7 +650,7 @@
      "to": "Stairs",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ad0466050e5c.mp4"
+     "video": "anubis_ct_s_stairs.mp4"
     },
     {
      "side": "CT",
@@ -659,7 +659,7 @@
      "to": "Top Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "78632bd2c78c.mp4"
+     "video": "anubis_ct_s_topmid.mp4"
     },
     {
      "side": "CT",
@@ -668,7 +668,7 @@
      "to": "A Main",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "4f75ee9dd8f3.mp4"
+     "video": "anubis_ct_f_Amain.mp4"
     },
     {
      "side": "CT",
@@ -677,7 +677,7 @@
      "to": "Dark",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "74ba069c3941.mp4"
+     "video": "anubis_ct_f_dark.mp4"
     },
     {
      "side": "CT",
@@ -686,7 +686,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "3e94b7f3a401.mp4"
+     "video": "anubis_ct_f_mid.mp4"
     },
     {
      "side": "CT",
@@ -695,7 +695,7 @@
      "to": "Water",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2b4769a35daa.mp4"
+     "video": "anubis_ct_f_water.mp4"
     },
     {
      "side": "CT",
@@ -704,7 +704,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "4bf7a7c19aef.mp4"
+     "video": "anubis_ct_m_asite1.mp4"
     },
     {
      "side": "CT",
@@ -713,7 +713,7 @@
      "to": "B Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "0b8e4160fc73.mp4"
+     "video": "anubis_ct_m_bsite.mp4"
     }
    ]
   },
@@ -729,7 +729,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "259d4a6a2302.mp4"
+     "video": "cache_t_sm_a3.mp4"
     },
     {
      "side": "T",
@@ -738,7 +738,7 @@
      "to": "CT",
      "throw": "Standing · jump + both buttons",
      "tag": null,
-     "video": "273e33cac366.mp4"
+     "video": "cache_t_sm_ct.mp4"
     },
     {
      "side": "T",
@@ -747,7 +747,7 @@
      "to": "Catwalk",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "420056cb35ed.mp4"
+     "video": "cache_t_sm_catwalk.mp4"
     },
     {
      "side": "T",
@@ -756,7 +756,7 @@
      "to": "Con",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "fcc75d4950b3.mp4"
+     "video": "cache_t_sm_connector.mp4"
     },
     {
      "side": "T",
@@ -765,7 +765,7 @@
      "to": "Con",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "f68a63741dcf.mp4"
+     "video": "cache_t_sm_connector5.mp4"
     },
     {
      "side": "T",
@@ -774,7 +774,7 @@
      "to": "Heaven",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b06f4d1c67d7.mp4"
+     "video": "cache_t_sm_heven.mp4"
     },
     {
      "side": "T",
@@ -783,7 +783,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "6bb5cdb8cc38.mp4"
+     "video": "cache_t_fl_a1.mp4"
     },
     {
      "side": "T",
@@ -792,7 +792,7 @@
      "to": "A Site",
      "throw": "One step · left click",
      "tag": null,
-     "video": "a2906f3cef73.mp4"
+     "video": "cache_t_fl_a.mp4"
     },
     {
      "side": "T",
@@ -801,7 +801,7 @@
      "to": "B Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3995529403bf.mp4"
+     "video": "cache_fl_t_b2.mp4"
     },
     {
      "side": "T",
@@ -810,7 +810,7 @@
      "to": "Middle",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "d0a426c0f201.mp4"
+     "video": "cache_t_fl_middle1.mp4"
     },
     {
      "side": "T",
@@ -819,7 +819,7 @@
      "to": "Middle",
      "throw": "Walk step · jump + left click",
      "tag": null,
-     "video": "7ccf9c1ea81b.mp4"
+     "video": "cache_t_fl_middle.mp4"
     },
     {
      "side": "T",
@@ -828,7 +828,7 @@
      "to": "Corner",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "933dcaee4b3e.mp4"
+     "video": "cache_t_ml_default4.mp4"
     },
     {
      "side": "T",
@@ -837,7 +837,7 @@
      "to": "Forklift",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "0c4e04bad55f.mp4"
+     "video": "cache_t_ml_forklift.mp4"
     },
     {
      "side": "T",
@@ -846,7 +846,7 @@
      "to": "Headshot",
      "throw": "Walk step · jump + left click",
      "tag": null,
-     "video": "cdba8cc68971.mp4"
+     "video": "cache_t_ml_headshot2.mp4"
     },
     {
      "side": "T",
@@ -855,7 +855,7 @@
      "to": "Vent",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "c219495339ea.mp4"
+     "video": "cache_t_ml_vents.mp4"
     },
     {
      "side": "T",
@@ -864,7 +864,7 @@
      "to": "White Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "cf3d5d372013.mp4"
+     "video": "cache_t_ml_white box.mp4"
     },
     {
      "side": "CT",
@@ -873,7 +873,7 @@
      "to": "Garage",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "2d0f9d4508db.mp4"
+     "video": "cache_ct_sm_garage.mp4"
     },
     {
      "side": "CT",
@@ -882,7 +882,7 @@
      "to": "Main",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "577c8e093ddd.mp4"
+     "video": "cache_ct_sm_main.mp4"
     },
     {
      "side": "CT",
@@ -891,7 +891,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "bb06afa3619e.mp4"
+     "video": "cache_ct_fl_b.mp4"
     }
    ]
   },
@@ -907,7 +907,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a283caffe67e.mp4"
+     "video": "dust2_t_s_asite2.mp4"
     },
     {
      "side": "T",
@@ -916,7 +916,7 @@
      "to": "B Doors",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "bf3120b9054f.mp4"
+     "video": "dust2_t_s_bdoor3.mp4"
     },
     {
      "side": "T",
@@ -925,7 +925,7 @@
      "to": "B Doors",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "41dc08cd6c68.mp4"
+     "video": "dust2_t_b_smoke.mp4"
     },
     {
      "side": "T",
@@ -934,7 +934,7 @@
      "to": "B Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "5cc6decdd5d5.mp4"
+     "video": "dust2_t_s_bdoor1.mp4"
     },
     {
      "side": "T",
@@ -943,7 +943,7 @@
      "to": "CT Base",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "bea6484a43f6.mp4"
+     "video": "dust2_t_s_ctbasebox3.mp4"
     },
     {
      "side": "T",
@@ -952,7 +952,7 @@
      "to": "CT Base",
      "throw": "Running · jump + left click",
      "tag": "Fake",
-     "video": "4ea70db8c032.mp4"
+     "video": "dust2_t_s_ctbase4.mp4"
     },
     {
      "side": "T",
@@ -961,7 +961,7 @@
      "to": "CT Base",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "0211ed04c9ae.mp4"
+     "video": "dust2_t_s_ct3.mp4"
     },
     {
      "side": "T",
@@ -970,7 +970,7 @@
      "to": "CT Boost",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "6ebf2322cebd.mp4"
+     "video": "dust2_t_s_ctrampboxes5.mp4"
     },
     {
      "side": "T",
@@ -979,7 +979,7 @@
      "to": "CT Boost",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "d2312d92c35f.mp4"
+     "video": "dust2_t_s_ctrampboxes4.mp4"
     },
     {
      "side": "T",
@@ -988,7 +988,7 @@
      "to": "CT Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "fd606e8a28e2.mp4"
+     "video": "dust2_t_s_a_cross6.mp4"
     },
     {
      "side": "T",
@@ -997,7 +997,7 @@
      "to": "CT Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "6d9eb37872cc.mp4"
+     "video": "dust2_t_s_a_cross3.mp4"
     },
     {
      "side": "T",
@@ -1006,7 +1006,7 @@
      "to": "CT Ramp",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "a9cf043dfc80.mp4"
+     "video": "dust2_t_s_ctramp4.mp4"
     },
     {
      "side": "T",
@@ -1015,7 +1015,7 @@
      "to": "CT Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "91d61eb959f5.mp4"
+     "video": "dust2_t_s_ctramp3.mp4"
     },
     {
      "side": "T",
@@ -1024,7 +1024,7 @@
      "to": "CT Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "4ce62c8cf81b.mp4"
+     "video": "dust2_t_s_ctramp2.mp4"
     },
     {
      "side": "T",
@@ -1033,7 +1033,7 @@
      "to": "Long",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d4754f0c656f.mp4"
+     "video": "dust2_t_s_long.mp4"
     },
     {
      "side": "T",
@@ -1042,7 +1042,7 @@
      "to": "Long",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "eb23575805d5.mp4"
+     "video": "dust2_t_s_a_long2.mp4"
     },
     {
      "side": "T",
@@ -1051,7 +1051,7 @@
      "to": "Long Doors",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "6c6eb0f46ea8.mp4"
+     "video": "dust2_t_s_longantimolo1.mp4"
     },
     {
      "side": "T",
@@ -1060,7 +1060,7 @@
      "to": "Lower Tunnel",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "3c3b93446b4d.mp4"
+     "video": "dust2_t_s_lowertunnels1.mp4"
     },
     {
      "side": "T",
@@ -1069,7 +1069,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "5713720b7201.mp4"
+     "video": "dust2_t_s_middoors6.mp4"
     },
     {
      "side": "T",
@@ -1078,7 +1078,7 @@
      "to": "Mid Doors",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "75ceec1658b0.mp4"
+     "video": "dust2_t_s_middoors7.mp4"
     },
     {
      "side": "T",
@@ -1087,7 +1087,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "513f3ccfbe1c.mp4"
+     "video": "dust2_t_s_middoors3.mp4"
     },
     {
      "side": "T",
@@ -1096,7 +1096,7 @@
      "to": "Mid to B",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b4509f741b63.mp4"
+     "video": "dust2_t_s_mid2b2.mp4"
     },
     {
      "side": "T",
@@ -1105,7 +1105,7 @@
      "to": "Window",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "cba67435585c.mp4"
+     "video": "dust2_t_s_window2.mp4"
     },
     {
      "side": "T",
@@ -1114,7 +1114,7 @@
      "to": "Window",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "3e41047bb586.mp4"
+     "video": "dust2_t_s_window1.mp4"
     },
     {
      "side": "T",
@@ -1123,7 +1123,7 @@
      "to": "X Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "141d8424e9e0.mp4"
+     "video": "dust2_t_s_xbox8.mp4"
     },
     {
      "side": "T",
@@ -1132,7 +1132,7 @@
      "to": "X Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a834014dc4af.mp4"
+     "video": "dust2_t_s_xbox7.mp4"
     },
     {
      "side": "T",
@@ -1141,7 +1141,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "eb0de66dbff8.mp4"
+     "video": "dust2_t_f_asitefollowup1.mp4"
     },
     {
      "side": "T",
@@ -1150,7 +1150,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "edf26cda42c7.mp4"
+     "video": "dust2_t_f_asiteentryshort3.mp4"
     },
     {
      "side": "T",
@@ -1159,7 +1159,7 @@
      "to": "B Fence",
      "throw": "One step · left click",
      "tag": null,
-     "video": "4e7252fea78a.mp4"
+     "video": "dust2_t_f_bsiterush1.mp4"
     },
     {
      "side": "T",
@@ -1168,7 +1168,7 @@
      "to": "Long",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "dada9aaf0d2e.mp4"
+     "video": "dust2_t_f_asiteentrylong2.mp4"
     },
     {
      "side": "T",
@@ -1177,7 +1177,7 @@
      "to": "Long",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "07bd8b7c3cc4.mp4"
+     "video": "dust2_t_f_alongcorner2.mp4"
     },
     {
      "side": "T",
@@ -1186,7 +1186,7 @@
      "to": "Long Doors",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "103dad023ad0.mp4"
+     "video": "dust2_t_f_longleft1.mp4"
     },
     {
      "side": "T",
@@ -1195,7 +1195,7 @@
      "to": "Long Doors",
      "throw": "Crouching · left click",
      "tag": "Pop flash",
-     "video": "ee7b1853e1cf.mp4"
+     "video": "dust2_t_f_longdoors2.mp4"
     },
     {
      "side": "T",
@@ -1204,7 +1204,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1d6d8b074690.mp4"
+     "video": "dust2_t_f_mid2b1.mp4"
     },
     {
      "side": "T",
@@ -1213,7 +1213,7 @@
      "to": "Mid",
      "throw": "Running · left click",
      "tag": null,
-     "video": "ddcbdc4fb0d6.mp4"
+     "video": "dust2_t_f_antimid1.mp4"
     },
     {
      "side": "T",
@@ -1222,7 +1222,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "aacf52d62603.mp4"
+     "video": "dust2_t_f_middoors4.mp4"
     },
     {
      "side": "T",
@@ -1231,7 +1231,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "56013de4d5f9.mp4"
+     "video": "dust2_t_f_middoors2.mp4"
     },
     {
      "side": "T",
@@ -1240,7 +1240,7 @@
      "to": "Pit",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a8bac1e69be2.mp4"
+     "video": "dust2_t_f_longright3.mp4"
     },
     {
      "side": "T",
@@ -1249,7 +1249,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": "Pop flash",
-     "video": "b86cd815dd5e.mp4"
+     "video": "dust2_t_f_ashort3.mp4"
     },
     {
      "side": "T",
@@ -1258,7 +1258,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c758fdf48bbc.mp4"
+     "video": "dust2_t_f_ashort2.mp4"
     },
     {
      "side": "T",
@@ -1267,7 +1267,7 @@
      "to": "Short",
      "throw": "Standing · jump + left click",
      "tag": "Pop flash",
-     "video": "97b018943578.mp4"
+     "video": "dust2_t_f_ashortstairs1.mp4"
     },
     {
      "side": "T",
@@ -1276,7 +1276,7 @@
      "to": "Side Pit",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "7ceee9fda6ea.mp4"
+     "video": "dust2_t_f_sidepit.mp4"
     },
     {
      "side": "T",
@@ -1285,7 +1285,7 @@
      "to": "Side Pit",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "b062ac7f4b64.mp4"
+     "video": "dust2_t_f_longfollowup1.mp4"
     },
     {
      "side": "T",
@@ -1294,7 +1294,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "45bffeea434a.mp4"
+     "video": "dust2_t_m_asitequad1.mp4"
     },
     {
      "side": "T",
@@ -1303,7 +1303,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "abb1b8b8e180.mp4"
+     "video": "dust2_t_m_asite1.mp4"
     },
     {
      "side": "T",
@@ -1312,7 +1312,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "948ed4a0b917.mp4"
+     "video": "dust2_t_m_topramplong1.mp4"
     },
     {
      "side": "T",
@@ -1321,7 +1321,7 @@
      "to": "CT Boost",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "02afe9089212.mp4"
+     "video": "dust2_t_m_ctrampboxes3.mp4"
     },
     {
      "side": "T",
@@ -1330,7 +1330,7 @@
      "to": "Car",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "b8072cb84954.mp4"
+     "video": "dust2_t_m_car.mp4"
     },
     {
      "side": "T",
@@ -1339,7 +1339,7 @@
      "to": "Goose",
      "throw": "Running · left click",
      "tag": null,
-     "video": "9828125a0b2a.mp4"
+     "video": "dust2_t_m_goose1.mp4"
     },
     {
      "side": "T",
@@ -1348,7 +1348,7 @@
      "to": "Headshot",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "d528f6afce4e.mp4"
+     "video": "dust2_t_m_bheadshot1.mp4"
     },
     {
      "side": "T",
@@ -1357,7 +1357,7 @@
      "to": "Long Doors",
      "throw": "Running · left click",
      "tag": null,
-     "video": "65287d7741d3.mp4"
+     "video": "dust2_t_m_longdoors1.mp4"
     },
     {
      "side": "T",
@@ -1366,7 +1366,7 @@
      "to": "Lower Tunnel",
      "throw": "Running · left click",
      "tag": null,
-     "video": "f14f177cac8f.mp4"
+     "video": "dust2_t_m_lowertunnels1.mp4"
     },
     {
      "side": "T",
@@ -1375,7 +1375,7 @@
      "to": "Mid Doors",
      "throw": "Running · left click",
      "tag": null,
-     "video": "3bbcb9d355c5.mp4"
+     "video": "dust2_t_m_mid1.mp4"
     },
     {
      "side": "T",
@@ -1384,7 +1384,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "8f4804bea767.mp4"
+     "video": "dust2_t_m_closemid3.mp4"
     },
     {
      "side": "T",
@@ -1393,7 +1393,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "4c762b98762d.mp4"
+     "video": "dust2_t_m_ashortstairs3.mp4"
     },
     {
      "side": "T",
@@ -1402,7 +1402,7 @@
      "to": "Short",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "29125101c06f.mp4"
+     "video": "dust2_t_m_ashortstairs1.mp4"
     },
     {
      "side": "T",
@@ -1411,7 +1411,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "af5ab5f94ea0.mp4"
+     "video": "dust2_t_m_ashort3.mp4"
     },
     {
      "side": "T",
@@ -1420,7 +1420,7 @@
      "to": "Short",
      "throw": "Running · left click",
      "tag": null,
-     "video": "5de00f243896.mp4"
+     "video": "dust2_t_m_catwalk1.mp4"
     },
     {
      "side": "T",
@@ -1429,7 +1429,7 @@
      "to": "Window",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ed7c1c40cef8.mp4"
+     "video": "dust2_t_m_bwindow1.mp4"
     },
     {
      "side": "T",
@@ -1438,7 +1438,7 @@
      "to": "A Site",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "9b2cacb3513c.mp4"
+     "video": "dust2_t_h_backasite2.mp4"
     },
     {
      "side": "T",
@@ -1447,7 +1447,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "06e780d0ee32.mp4"
+     "video": "dust2_t_h_asitesafe1.mp4"
     },
     {
      "side": "T",
@@ -1456,7 +1456,7 @@
      "to": "A Site",
      "throw": "Running · left click",
      "tag": null,
-     "video": "764c6e05dc2f.mp4"
+     "video": "dust2_t_h_asite1.mp4"
     },
     {
      "side": "T",
@@ -1465,7 +1465,7 @@
      "to": "B Fence",
      "throw": "Running · left click",
      "tag": null,
-     "video": "b248322c7e31.mp4"
+     "video": "dust2_t_h_bfence1.mp4"
     },
     {
      "side": "T",
@@ -1474,7 +1474,7 @@
      "to": "B Platform",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "cc65d2e34505.mp4"
+     "video": "dust2_t_h_bbarrels1.mp4"
     },
     {
      "side": "T",
@@ -1483,7 +1483,7 @@
      "to": "Elevator",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1c1a9e17c1c0.mp4"
+     "video": "dust2_t_h_elevator1.mp4"
     },
     {
      "side": "T",
@@ -1492,7 +1492,7 @@
      "to": "Headshot",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "999db7867cf8.mp4"
+     "video": "dust2_t_h_bheadshot1.mp4"
     },
     {
      "side": "T",
@@ -1501,7 +1501,7 @@
      "to": "Long Doors",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "302a17b0a334.mp4"
+     "video": "dust2_t_h_longdoors1.mp4"
     },
     {
      "side": "T",
@@ -1510,7 +1510,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "cd5492a9f926.mp4"
+     "video": "dust2_t_h_ashort2.mp4"
     },
     {
      "side": "T",
@@ -1519,7 +1519,7 @@
      "to": "Short Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b23bb75920b8.mp4"
+     "video": "dust2_t_h_ashortstairs2.mp4"
     },
     {
      "side": "CT",
@@ -1528,7 +1528,7 @@
      "to": "Long",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "84a2be10e3a8.mp4"
+     "video": "dust2_ct_s_a_long1.mp4"
     },
     {
      "side": "CT",
@@ -1537,7 +1537,7 @@
      "to": "Long Doors",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "c16b622a51a9.mp4"
+     "video": "dust2_ct_s_longdoors10.mp4"
     },
     {
      "side": "CT",
@@ -1546,7 +1546,7 @@
      "to": "Long Doors",
      "throw": "Running · left click",
      "tag": null,
-     "video": "a2a2b567a205.mp4"
+     "video": "dust2_ct_s_longdoors11.mp4"
     },
     {
      "side": "CT",
@@ -1555,7 +1555,7 @@
      "to": "Mid Cross",
      "throw": "One step · left click",
      "tag": null,
-     "video": "19f77b592303.mp4"
+     "video": "dust2_ct_s_midcross1.mp4"
     },
     {
      "side": "CT",
@@ -1564,7 +1564,7 @@
      "to": "Mid Doors",
      "throw": "Running · left click",
      "tag": null,
-     "video": "cda985f896aa.mp4"
+     "video": "dust2_ct_s_midxbox1.mp4"
     },
     {
      "side": "CT",
@@ -1573,7 +1573,7 @@
      "to": "Top Mid",
      "throw": "Crouching · jump + left click",
      "tag": null,
-     "video": "bfb65eaa3bb2.mp4"
+     "video": "dust2_ct_s_topmid1.mp4"
     },
     {
      "side": "CT",
@@ -1582,7 +1582,7 @@
      "to": "Tunnel",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "5b5dbcf1d6cb.mp4"
+     "video": "dust2_ct_s_b_entracne5.mp4"
     },
     {
      "side": "CT",
@@ -1591,7 +1591,7 @@
      "to": "A Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b8e2079b43fd.mp4"
+     "video": "dust2_ct_f_aramp2.mp4"
     },
     {
      "side": "CT",
@@ -1600,7 +1600,7 @@
      "to": "B Doors",
      "throw": "Standing · left click",
      "tag": "Pop flash",
-     "video": "37199b70dfa5.mp4"
+     "video": "dust_ct_b_flash.mp4"
     },
     {
      "side": "CT",
@@ -1609,7 +1609,7 @@
      "to": "B Side",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "1401ea9c8930.mp4"
+     "video": "dust2_ct_f_bsiteretake1.mp4"
     },
     {
      "side": "CT",
@@ -1618,7 +1618,7 @@
      "to": "B Side",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "15a2f91aa183.mp4"
+     "video": "dust2_ct_f_bsiteretake2.mp4"
     },
     {
      "side": "CT",
@@ -1627,7 +1627,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "8bbf6f9b0435.mp4"
+     "video": "dust2_ct_f_bsite2.mp4"
     },
     {
      "side": "CT",
@@ -1636,7 +1636,7 @@
      "to": "Big Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "6b00d234cafb.mp4"
+     "video": "dust2_ct_f_bsitedoors1.mp4"
     },
     {
      "side": "CT",
@@ -1645,7 +1645,7 @@
      "to": "Box",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "d8fc2b5b9837.mp4"
+     "video": "dust2_ct_f_longdoorroom1.mp4"
     },
     {
      "side": "CT",
@@ -1654,7 +1654,7 @@
      "to": "Long",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2874cd347883.mp4"
+     "video": "dust2_ct_f_across1.mp4"
     },
     {
      "side": "CT",
@@ -1663,7 +1663,7 @@
      "to": "Long",
      "throw": "Standing · both buttons",
      "tag": null,
-     "video": "6124f1c723ea.mp4"
+     "video": "dust2_ct_f_across2.mp4"
     },
     {
      "side": "CT",
@@ -1672,7 +1672,7 @@
      "to": "Long",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "501c059a239d.mp4"
+     "video": "dust2_ct_f_across3.mp4"
     },
     {
      "side": "CT",
@@ -1681,7 +1681,7 @@
      "to": "Long Corner",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "b313b13a5927.mp4"
+     "video": "dust2_ct_f_alongsupport_1st3.mp4"
     },
     {
      "side": "CT",
@@ -1690,7 +1690,7 @@
      "to": "Long Corner",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "11c5a0709cef.mp4"
+     "video": "dust2_ct_f_alongsupport_1st1.mp4"
     },
     {
      "side": "CT",
@@ -1699,7 +1699,7 @@
      "to": "Long Corner",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "9967f5e1f7c3.mp4"
+     "video": "dust2_ct_f_alongretake3.mp4"
     },
     {
      "side": "CT",
@@ -1708,7 +1708,7 @@
      "to": "Long Corner",
      "throw": "One step · left click",
      "tag": null,
-     "video": "5749ef16130e.mp4"
+     "video": "dust2_ct_f_alongretake1.mp4"
     },
     {
      "side": "CT",
@@ -1717,7 +1717,7 @@
      "to": "Mid",
      "throw": "One step · left click",
      "tag": null,
-     "video": "3e9fb7116622.mp4"
+     "video": "dust2_ct_f_mid3.mp4"
     },
     {
      "side": "CT",
@@ -1726,7 +1726,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "139e4b1f2418.mp4"
+     "video": "dust2_ct_f_mid4.mp4"
     },
     {
      "side": "CT",
@@ -1735,7 +1735,7 @@
      "to": "Mid",
      "throw": "One step · left click",
      "tag": null,
-     "video": "3a2c4bc59b0f.mp4"
+     "video": "dust2_ct_f_mid5.mp4"
     },
     {
      "side": "CT",
@@ -1744,7 +1744,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "108f268bf47a.mp4"
+     "video": "dust2_ct_f_mid.mp4"
     },
     {
      "side": "CT",
@@ -1753,7 +1753,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1c2a440d3426.mp4"
+     "video": "dust2_ct_f_ashort2.mp4"
     },
     {
      "side": "CT",
@@ -1762,7 +1762,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "db3722f4b494.mp4"
+     "video": "dust2_ct_f_short2.mp4"
     },
     {
      "side": "CT",
@@ -1771,7 +1771,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": "Pop flash",
-     "video": "883d6991f5e4.mp4"
+     "video": "dust2_ct_f_ashortstairs3.mp4"
     },
     {
      "side": "CT",
@@ -1780,7 +1780,7 @@
      "to": "Short",
      "throw": "Crouching · left click",
      "tag": null,
-     "video": "661de3a3884c.mp4"
+     "video": "dust2_ct_f_asitesupport1.mp4"
     },
     {
      "side": "CT",
@@ -1789,7 +1789,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "e221430d1fe1.mp4"
+     "video": "dust2_ct_f_ashort3.mp4"
     },
     {
      "side": "CT",
@@ -1798,7 +1798,7 @@
      "to": "A Ramp",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "29f5a9663531.mp4"
+     "video": "dust2_ct_m_topramplong1.mp4"
     },
     {
      "side": "CT",
@@ -1807,7 +1807,7 @@
      "to": "A Site",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "478bbe1a2066.mp4"
+     "video": "dust2_ct_m_asite2.mp4"
     },
     {
      "side": "CT",
@@ -1816,7 +1816,7 @@
      "to": "B Site",
      "throw": "Standing · both buttons",
      "tag": "Retake",
-     "video": "20b9a2adc2de.mp4"
+     "video": "dust2_ct_m_bdefault1.mp4"
     },
     {
      "side": "CT",
@@ -1825,7 +1825,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "322ec3fb49df.mp4"
+     "video": "dust2_ct_m_bsite.mp4"
     },
     {
      "side": "CT",
@@ -1834,7 +1834,7 @@
      "to": "Headshot",
      "throw": "Running · jump + left click",
      "tag": "Retake",
-     "video": "9ccacc95101a.mp4"
+     "video": "dust2_ct_m_headshot.mp4"
     },
     {
      "side": "CT",
@@ -1843,7 +1843,7 @@
      "to": "Long Blue",
      "throw": "Running · left click",
      "tag": null,
-     "video": "67af270b92d1.mp4"
+     "video": "dust2_ct_m_longblue1.mp4"
     },
     {
      "side": "CT",
@@ -1852,7 +1852,7 @@
      "to": "Lower Tunnel",
      "throw": "Running · left click",
      "tag": null,
-     "video": "d789ec23ab25.mp4"
+     "video": "dust2_ct_m_lowertunnels1.mp4"
     },
     {
      "side": "CT",
@@ -1861,7 +1861,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "161ea8686cbe.mp4"
+     "video": "dust2_ct_m_ashort1.mp4"
     },
     {
      "side": "CT",
@@ -1870,7 +1870,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "9362604e12b6.mp4"
+     "video": "dust2_ct_m_cat3.mp4"
     },
     {
      "side": "CT",
@@ -1879,7 +1879,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "d710ca8e317d.mp4"
+     "video": "dust2_ct_m_ashortstairs2.mp4"
     },
     {
      "side": "CT",
@@ -1888,7 +1888,7 @@
      "to": "Short",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "0352fa28565f.mp4"
+     "video": "dust2_ct_m_catwalk3.mp4"
     },
     {
      "side": "CT",
@@ -1897,7 +1897,7 @@
      "to": "Top Mid",
      "throw": "Running · left click",
      "tag": null,
-     "video": "f14229d33307.mp4"
+     "video": "dust2_ct_m_topmid1.mp4"
     },
     {
      "side": "CT",
@@ -1906,7 +1906,7 @@
      "to": "Tunnel",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "1db916442820.mp4"
+     "video": "dust2_ct_m_bentrance1.mp4"
     },
     {
      "side": "CT",
@@ -1915,7 +1915,7 @@
      "to": "B Side Corner",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "39d48ad522ab.mp4"
+     "video": "dust2_ct_h_bdefault1.mp4"
     },
     {
      "side": "CT",
@@ -1924,7 +1924,7 @@
      "to": "Big Box",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "c5b4324a3d9e.mp4"
+     "video": "dust2_ct_h_bxbox1.mp4"
     },
     {
      "side": "CT",
@@ -1933,7 +1933,7 @@
      "to": "CT Ramp",
      "throw": "Standing · both buttons",
      "tag": "Reveal HE",
-     "video": "39d34b450344.mp4"
+     "video": "dust2_ct_h_across1.mp4"
     },
     {
      "side": "CT",
@@ -1942,7 +1942,7 @@
      "to": "Close",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "8f20ae677026.mp4"
+     "video": "dust2_ct_h_bcar1.mp4"
     },
     {
      "side": "CT",
@@ -1951,7 +1951,7 @@
      "to": "Lower Tunnel",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "95636b0cd6cd.mp4"
+     "video": "dust2_ct_h_lowertunnels1.mp4"
     },
     {
      "side": "CT",
@@ -1960,7 +1960,7 @@
      "to": "Mid Doors",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3f337796133f.mp4"
+     "video": "dust2_ct_h_middoorscross1.mp4"
     },
     {
      "side": "CT",
@@ -1969,7 +1969,7 @@
      "to": "Short",
      "throw": "Running · left click",
      "tag": null,
-     "video": "a2e051334d47.mp4"
+     "video": "dust2_ct_h_ashort2.mp4"
     },
     {
      "side": "CT",
@@ -1978,7 +1978,7 @@
      "to": "Short Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "64ffd88094c8.mp4"
+     "video": "dust2_ct_h_ashortcat2.mp4"
     },
     {
      "side": "CT",
@@ -1987,7 +1987,7 @@
      "to": "Upper Tunnel",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "8fb684bfdf0b.mp4"
+     "video": "dust2_ct_h_btunnels1.mp4"
     }
    ]
   },
@@ -2003,7 +2003,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c6410b9588c4.mp4"
+     "video": "inferno_t_s_banana.mp4"
     },
     {
      "side": "T",
@@ -2012,7 +2012,7 @@
      "to": "City",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "26bc82d1d6cf.mp4"
+     "video": "inferno_t_s_city.mp4"
     },
     {
      "side": "T",
@@ -2021,7 +2021,7 @@
      "to": "City",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ec631fa75dad.mp4"
+     "video": "inferno_t_s_city1.mp4"
     },
     {
      "side": "T",
@@ -2030,7 +2030,7 @@
      "to": "Coffin",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "b90535809f85.mp4"
+     "video": "inferno_t_s_coffin.mp4"
     },
     {
      "side": "T",
@@ -2039,7 +2039,7 @@
      "to": "Long",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "f6c27d0d2166.mp4"
+     "video": "inferno_t_s_mid4.mp4"
     },
     {
      "side": "T",
@@ -2048,7 +2048,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "2e781e4a9daa.mp4"
+     "video": "inferno_t_s_mid.mp4"
     },
     {
      "side": "T",
@@ -2057,7 +2057,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2e781e4a9daa.mp4"
+     "video": "inferno_t_s_mid.mp4"
     },
     {
      "side": "T",
@@ -2066,7 +2066,7 @@
      "to": "Moto",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "d5b955a5b6dd.mp4"
+     "video": "inferno_t_s_moto.mp4"
     },
     {
      "side": "T",
@@ -2075,7 +2075,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "0ee679493f14.mp4"
+     "video": "inferno_t_s_short.mp4"
     },
     {
      "side": "T",
@@ -2084,7 +2084,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "9d7ae28c516b.mp4"
+     "video": "inferno_t_f_asite2.mp4"
     },
     {
      "side": "T",
@@ -2093,7 +2093,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "0e8df5f2d3af.mp4"
+     "video": "inferno_t_f_asite1.mp4"
     },
     {
      "side": "T",
@@ -2102,7 +2102,7 @@
      "to": "B Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "c6960d522379.mp4"
+     "video": "inferno_t_f_bsite2.mp4"
     },
     {
      "side": "T",
@@ -2111,7 +2111,7 @@
      "to": "B Site",
      "throw": "Standing · jump + both buttons",
      "tag": null,
-     "video": "327ddc8e915f.mp4"
+     "video": "inferno_t_f_Bsite4.mp4"
     },
     {
      "side": "T",
@@ -2120,7 +2120,7 @@
      "to": "Balcony",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "62dda8037fc2.mp4"
+     "video": "inferno_t_f_balcony.mp4"
     },
     {
      "side": "T",
@@ -2129,7 +2129,7 @@
      "to": "Banana",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "dae09a4d1376.mp4"
+     "video": "inferno_t_f_banana.mp4"
     },
     {
      "side": "T",
@@ -2138,7 +2138,7 @@
      "to": "Barrels",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "28b9db86e93b.mp4"
+     "video": "inferno_t_f_banana2.mp4"
     },
     {
      "side": "T",
@@ -2147,7 +2147,7 @@
      "to": "CT Pillar",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "86fcbcee75d1.mp4"
+     "video": "inferno_t_f_city6.mp4"
     },
     {
      "side": "T",
@@ -2156,7 +2156,7 @@
      "to": "CT Pillar",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "29180eb95413.mp4"
+     "video": "inferno_t_f_city5.mp4"
     },
     {
      "side": "T",
@@ -2165,7 +2165,7 @@
      "to": "Long",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ca54a43bd1df.mp4"
+     "video": "inferno_t_f_mid6.mp4"
     },
     {
      "side": "T",
@@ -2174,7 +2174,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "82dcd7778914.mp4"
+     "video": "inferno_t_f_mid4.mp4"
     },
     {
      "side": "T",
@@ -2183,7 +2183,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c2b208895b2a.mp4"
+     "video": "inferno_t_f_short2.mp4"
     },
     {
      "side": "T",
@@ -2192,7 +2192,7 @@
      "to": "Apps",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "8416c4819209.mp4"
+     "video": "inferno_t_m_apps.mp4"
     },
     {
      "side": "T",
@@ -2201,7 +2201,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "903eda8fce54.mp4"
+     "video": "inferno_t_m_asite.mp4"
     },
     {
      "side": "T",
@@ -2210,7 +2210,7 @@
      "to": "Coffin",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "7286c5e758af.mp4"
+     "video": "inferno_t_m_coffin.mp4"
     },
     {
      "side": "T",
@@ -2219,7 +2219,7 @@
      "to": "Cubby",
      "throw": "One step · left click",
      "tag": null,
-     "video": "23701ec9978a.mp4"
+     "video": "inferno_t_m_cubby.mp4"
     },
     {
      "side": "T",
@@ -2228,7 +2228,7 @@
      "to": "Dark",
      "throw": "One step · left click",
      "tag": "Retake",
-     "video": "5c4b73131a88.mp4"
+     "video": "inferno_t_m_dark.mp4"
     },
     {
      "side": "T",
@@ -2237,7 +2237,7 @@
      "to": "New Box",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "d23930f884c7.mp4"
+     "video": "inferno_t_m_newbox.mp4"
     },
     {
      "side": "T",
@@ -2246,7 +2246,7 @@
      "to": "Quad",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "e691a32440f8.mp4"
+     "video": "inferno_t_m_quad.mp4"
     },
     {
      "side": "T",
@@ -2255,7 +2255,7 @@
      "to": "Start Banana",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "2ca9392cf4a7.mp4"
+     "video": "inferno_t_m_sandbags.mp4"
     },
     {
      "side": "T",
@@ -2264,7 +2264,7 @@
      "to": "Under Balcony",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "4a0872381b31.mp4"
+     "video": "inferno_t_m_underbalcony.mp4"
     },
     {
      "side": "T",
@@ -2273,7 +2273,7 @@
      "to": "B Side",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "8a0cefef6e57.mp4"
+     "video": "inferno_t_h_C1.mp4"
     },
     {
      "side": "T",
@@ -2282,7 +2282,7 @@
      "to": "Banana",
      "throw": "One step · left click",
      "tag": null,
-     "video": "d284695741dd.mp4"
+     "video": "inferno_t_h_sandbags2.mp4"
     },
     {
      "side": "T",
@@ -2291,7 +2291,7 @@
      "to": "City",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ba7dda726ebc.mp4"
+     "video": "inferno_t_n_city.mp4"
     },
     {
      "side": "T",
@@ -2300,7 +2300,7 @@
      "to": "Quad",
      "throw": "One step · left click",
      "tag": null,
-     "video": "2b95884991ec.mp4"
+     "video": "inferno_t_n_quad.mp4"
     },
     {
      "side": "CT",
@@ -2309,7 +2309,7 @@
      "to": "Balcony",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "6244b5935e85.mp4"
+     "video": "inferno_ct_s_balcony.mp4"
     },
     {
      "side": "CT",
@@ -2318,7 +2318,7 @@
      "to": "Balcony",
      "throw": "Standing · left click",
      "tag": "One-way",
-     "video": "4cf68f53f825.mp4"
+     "video": "inferno_ct_oneway4.mp4"
     },
     {
      "side": "CT",
@@ -2327,7 +2327,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "df53356d4998.mp4"
+     "video": "inferno_ct_s_banana4.mp4"
     },
     {
      "side": "CT",
@@ -2336,7 +2336,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "772e646015a3.mp4"
+     "video": "inferno_ct_sm_banan.mp4"
     },
     {
      "side": "CT",
@@ -2345,7 +2345,7 @@
      "to": "Banana",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "e553982a79f7.mp4"
+     "video": "inferno_ct_s_mid.mp4"
     },
     {
      "side": "CT",
@@ -2354,7 +2354,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "f771a169a44d.mp4"
+     "video": "inferno_ct_s_banana5.mp4"
     },
     {
      "side": "CT",
@@ -2363,7 +2363,7 @@
      "to": "Banana",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ac5b3fc5fc11.mp4"
+     "video": "inferno_ct_s_banana1.mp4"
     },
     {
      "side": "CT",
@@ -2372,7 +2372,7 @@
      "to": "Banana",
      "throw": "Running · left click",
      "tag": null,
-     "video": "7170df579f38.mp4"
+     "video": "inferno_ct_s_banana14.mp4"
     },
     {
      "side": "CT",
@@ -2381,7 +2381,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "e553982a79f7.mp4"
+     "video": "inferno_ct_s_mid.mp4"
     },
     {
      "side": "CT",
@@ -2390,7 +2390,7 @@
      "to": "Moto",
      "throw": "Standing · jump + both buttons",
      "tag": null,
-     "video": "f471e735d887.mp4"
+     "video": "inferno_ct_s_long.mp4"
     },
     {
      "side": "CT",
@@ -2399,7 +2399,7 @@
      "to": "Short",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "4d8471081dbb.mp4"
+     "video": "inferno_ct_s_short4.mp4"
     },
     {
      "side": "CT",
@@ -2408,7 +2408,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "526743099527.mp4"
+     "video": "inferno_ct_f_graveyard.mp4"
     },
     {
      "side": "CT",
@@ -2417,7 +2417,7 @@
      "to": "B Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "301352fda4d1.mp4"
+     "video": "inferno_ct_f_Bsite2.mp4"
     },
     {
      "side": "CT",
@@ -2426,7 +2426,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1dbba0fdbbc1.mp4"
+     "video": "inferno_ct_f_banana3.mp4"
     },
     {
      "side": "CT",
@@ -2435,7 +2435,7 @@
      "to": "Banana",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "e1bb3a8f9684.mp4"
+     "video": "inferno_ct_f_banana.mp4"
     },
     {
      "side": "CT",
@@ -2444,7 +2444,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "04e454677c0b.mp4"
+     "video": "inferno_ct_f_banana2.mp4"
     },
     {
      "side": "CT",
@@ -2453,7 +2453,7 @@
      "to": "Banana",
      "throw": "Crouching · left click",
      "tag": "Retake",
-     "video": "f1d56fb1cc45.mp4"
+     "video": "inferno_ct_f_banana1.mp4"
     },
     {
      "side": "CT",
@@ -2462,7 +2462,7 @@
      "to": "Mid",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "e4aa6b7f7590.mp4"
+     "video": "inferno_ct_f_mid2.mp4"
     },
     {
      "side": "CT",
@@ -2471,7 +2471,7 @@
      "to": "Mid",
      "throw": "Standing · jump + both buttons",
      "tag": null,
-     "video": "cd81b3012818.mp4"
+     "video": "inferno_ct_f_mid.mp4"
     },
     {
      "side": "CT",
@@ -2480,7 +2480,7 @@
      "to": "Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "22761b8b0eaa.mp4"
+     "video": "inferno_ct_f_short.mp4"
     },
     {
      "side": "CT",
@@ -2489,7 +2489,7 @@
      "to": "Second Mid",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "121cf43f94a9.mp4"
+     "video": "inferno_ct_f_secondmid.mp4"
     },
     {
      "side": "CT",
@@ -2498,7 +2498,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "9874b2db1ac0.mp4"
+     "video": "inferno_ct_f_short3.mp4"
     },
     {
      "side": "CT",
@@ -2507,7 +2507,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "982912e9f600.mp4"
+     "video": "inferno_ct_m_asite.mp4"
     },
     {
      "side": "CT",
@@ -2516,7 +2516,7 @@
      "to": "Banana",
      "throw": "Standing · both buttons",
      "tag": null,
-     "video": "de613d1445a2.mp4"
+     "video": "inferno_ct_m_banana6.mp4"
     },
     {
      "side": "CT",
@@ -2525,7 +2525,7 @@
      "to": "Banana",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "354c45c4cb69.mp4"
+     "video": "inferno_ct_m_banana3.mp4"
     },
     {
      "side": "CT",
@@ -2534,7 +2534,7 @@
      "to": "Banana",
      "throw": "Running · left click",
      "tag": null,
-     "video": "0e2cfd48eea6.mp4"
+     "video": "inferno_ct_m_banana.mp4"
     },
     {
      "side": "CT",
@@ -2543,7 +2543,7 @@
      "to": "Pit",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "c943fc1141d0.mp4"
+     "video": "inferno_ct_m_sand.mp4"
     },
     {
      "side": "CT",
@@ -2552,7 +2552,7 @@
      "to": "Pit",
      "throw": "One step · jump + left click",
      "tag": null,
-     "video": "f3d51c3a5a05.mp4"
+     "video": "inferno_ct_m_pit2.mp4"
     },
     {
      "side": "CT",
@@ -2561,7 +2561,7 @@
      "to": "Second Mid",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "c319ab3dda68.mp4"
+     "video": "inferno_ct_m_secondmid.mp4"
     },
     {
      "side": "CT",
@@ -2570,7 +2570,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "20516546cd48.mp4"
+     "video": "inferno_ct_h_Asite.mp4"
     },
     {
      "side": "CT",
@@ -2579,7 +2579,7 @@
      "to": "B Site",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "bbd8e6fd4e5e.mp4"
+     "video": "inferno_ct_h_Bsite.mp4"
     },
     {
      "side": "CT",
@@ -2588,7 +2588,7 @@
      "to": "Banana",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "0eaa3fd7f741.mp4"
+     "video": "inferno_ct_h_banana2.mp4"
     },
     {
      "side": "CT",
@@ -2597,7 +2597,7 @@
      "to": "Banana",
      "throw": "Running · left click",
      "tag": null,
-     "video": "b470a8d0befd.mp4"
+     "video": "inferno_ct_n_banana.mp4"
     },
     {
      "side": "CT",
@@ -2606,7 +2606,7 @@
      "to": "Banana",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "12a9df9f3531.mp4"
+     "video": "inferno_ct_h_banana3.mp4"
     },
     {
      "side": "CT",
@@ -2615,7 +2615,7 @@
      "to": "Car",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "1ea986349149.mp4"
+     "video": "inferno_ct_h_car.mp4"
     },
     {
      "side": "CT",
@@ -2624,7 +2624,7 @@
      "to": "New Box",
      "throw": "One step · left click",
      "tag": "Retake",
-     "video": "926a428b7242.mp4"
+     "video": "inferno_ct_h_newbox.mp4"
     },
     {
      "side": "CT",
@@ -2633,7 +2633,7 @@
      "to": "Second Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2d05e7e57eb7.mp4"
+     "video": "inferno_ct_h_second_mid.mp4"
     }
    ]
   },
@@ -2649,7 +2649,7 @@
      "to": "B Apps",
      "throw": "Standing · jump + left click",
      "tag": "One-way",
-     "video": "4d019e7579b0.mp4"
+     "video": "mirage_t_sm_baps7.mp4"
     },
     {
      "side": "T",
@@ -2658,7 +2658,7 @@
      "to": "B Door",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "18b9061360f3.mp4"
+     "video": "mirage_t_s_bdoor.mp4"
     },
     {
      "side": "T",
@@ -2667,7 +2667,7 @@
      "to": "B Window",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "3f1536131dff.mp4"
+     "video": "mirage_t_s_bwindow.mp4"
     },
     {
      "side": "T",
@@ -2676,7 +2676,7 @@
      "to": "B Window",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "bf679cc1ce41.mp4"
+     "video": "mirage_t_s_kitchenwindow_4.mp4"
     },
     {
      "side": "T",
@@ -2685,7 +2685,7 @@
      "to": "B Window",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c1ff93e4c714.mp4"
+     "video": "mirage_t_s_kitchenwindow_3.mp4"
     },
     {
      "side": "T",
@@ -2694,7 +2694,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ebffb8672c24.mp4"
+     "video": "mirage_t_s_catwalk_3.mp4"
     },
     {
      "side": "T",
@@ -2703,7 +2703,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": "Insta smoke",
-     "video": "8a5f3df008be.mp4"
+     "video": "mirage_sm_t_instatopmid1.mp4"
     },
     {
      "side": "T",
@@ -2712,7 +2712,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": "Insta smoke",
-     "video": "840188c9dad6.mp4"
+     "video": "mirage_sm_t_instatopmid2.mp4"
     },
     {
      "side": "T",
@@ -2721,7 +2721,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": "Insta smoke",
-     "video": "a8b0601d0d2b.mp4"
+     "video": "mirage_sm_t_instatopmid3.mp4"
     },
     {
      "side": "T",
@@ -2730,7 +2730,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": "Insta smoke",
-     "video": "a31de773f573.mp4"
+     "video": "mirage_sm_t_instatopmid4.mp4"
     },
     {
      "side": "T",
@@ -2739,7 +2739,7 @@
      "to": "Catwalk",
      "throw": "Standing · left click",
      "tag": "Insta smoke",
-     "video": "ec79778144d4.mp4"
+     "video": "mirage_sm_t_instatopmid5.mp4"
     },
     {
      "side": "T",
@@ -2748,7 +2748,7 @@
      "to": "City",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "6841a0783874.mp4"
+     "video": "mirage_t_s_city.mp4"
     },
     {
      "side": "T",
@@ -2757,7 +2757,7 @@
      "to": "Con",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "c1e44193756c.mp4"
+     "video": "mirage_t_s_connector.mp4"
     },
     {
      "side": "T",
@@ -2766,7 +2766,7 @@
      "to": "Corner",
      "throw": "Crouching · jump + left click",
      "tag": null,
-     "video": "96c8a4ecb110.mp4"
+     "video": "mirage_t_s_arches_3.mp4"
     },
     {
      "side": "T",
@@ -2775,7 +2775,7 @@
      "to": "Corner",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "b74df03a2004.mp4"
+     "video": "mirage_t_s_arches_1.mp4"
     },
     {
      "side": "T",
@@ -2784,7 +2784,7 @@
      "to": "Jungle",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a8f6ca6d01dc.mp4"
+     "video": "mirage_t_s_deepjungle_1.mp4"
     },
     {
      "side": "T",
@@ -2793,7 +2793,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c9e17593016f.mp4"
+     "video": "mirage_t_s_short2.mp4"
     },
     {
      "side": "T",
@@ -2802,7 +2802,7 @@
      "to": "Short",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "5efa663f097e.mp4"
+     "video": "mirage_t_s_short1.mp4"
     },
     {
      "side": "T",
@@ -2811,7 +2811,7 @@
      "to": "Top Con",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "f30f420d4b72.mp4"
+     "video": "mirage_sm_t_topconfromb.mp4"
     },
     {
      "side": "T",
@@ -2820,7 +2820,7 @@
      "to": "Top Con",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "2e573946e75a.mp4"
+     "video": "mirage_a_t_sm_topcon1.mp4"
     },
     {
      "side": "T",
@@ -2829,7 +2829,7 @@
      "to": "Top Con",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "f58da02bb415.mp4"
+     "video": "mirage_sm_t_topconfrommid.mp4"
     },
     {
      "side": "T",
@@ -2838,7 +2838,7 @@
      "to": "Window",
      "throw": "One step · left click",
      "tag": null,
-     "video": "4b02aca99790.mp4"
+     "video": "mirage_a_t_sm_wind 6.mp4"
     },
     {
      "side": "T",
@@ -2847,7 +2847,7 @@
      "to": "Window",
      "throw": "Standing · jump + D + left click",
      "tag": null,
-     "video": "6e8dcfa052c3.mp4"
+     "video": "mirage_t_s_window.mp4"
     },
     {
      "side": "T",
@@ -2856,7 +2856,7 @@
      "to": "Window",
      "throw": "Standing · jump + W + left click",
      "tag": "Insta smoke",
-     "video": "0b5b2ec290d8.mp4"
+     "video": "mirage_t_s_instawindow3.mp4"
     },
     {
      "side": "T",
@@ -2865,7 +2865,7 @@
      "to": "Window",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "ece61a88aa4a.mp4"
+     "video": "Mirage_t_smoke_window.mp4"
     },
     {
      "side": "T",
@@ -2874,7 +2874,7 @@
      "to": "B Door",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ff6795f2edd0.mp4"
+     "video": "mirage_t_f_kitchen2.mp4"
     },
     {
      "side": "T",
@@ -2883,7 +2883,7 @@
      "to": "B Door",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "61913cfb7bc8.mp4"
+     "video": "mirage_t_f_kitchen3.mp4"
     },
     {
      "side": "T",
@@ -2892,7 +2892,7 @@
      "to": "B Door",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "60ac131fb446.mp4"
+     "video": "mirage_t_f_kitchen1.mp4"
     },
     {
      "side": "T",
@@ -2901,7 +2901,7 @@
      "to": "B Side",
      "throw": "Running · jump + left click",
      "tag": "Pop flash",
-     "video": "ff7d8fbf0209.mp4"
+     "video": "mirage_t_f_bsite.mp4"
     },
     {
      "side": "T",
@@ -2910,7 +2910,7 @@
      "to": "Car",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "b10c543d0fdb.mp4"
+     "video": "mirage_t_b_retake2.mp4"
     },
     {
      "side": "T",
@@ -2919,7 +2919,7 @@
      "to": "Connector",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "48632d292a55.mp4"
+     "video": "mirage_t_f_connector1.mp4"
     },
     {
      "side": "T",
@@ -2928,7 +2928,7 @@
      "to": "Mid",
      "throw": "Walking · jump + left click",
      "tag": null,
-     "video": "6dcd16bdc9f6.mp4"
+     "video": "mirage_t_f_mid.mp4"
     },
     {
      "side": "T",
@@ -2937,7 +2937,7 @@
      "to": "Short Box",
      "throw": "Standing · jump + W + left click",
      "tag": null,
-     "video": "3e4cddfce807.mp4"
+     "video": "mirage_t_f_short3.mp4"
     },
     {
      "side": "T",
@@ -2946,7 +2946,7 @@
      "to": "Short Box",
      "throw": "Standing · left click",
      "tag": "Fake",
-     "video": "ff761df549e9.mp4"
+     "video": "mirage_t_f_short1.mp4"
     },
     {
      "side": "T",
@@ -2955,7 +2955,7 @@
      "to": "Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "4ed3a96a91fd.mp4"
+     "video": "mirage_t_f_stairs2.mp4"
     },
     {
      "side": "T",
@@ -2964,7 +2964,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ff968fe92a67.mp4"
+     "video": "mirage_t_m_asite.mp4"
     },
     {
      "side": "T",
@@ -2973,7 +2973,7 @@
      "to": "B Back Side",
      "throw": "Running · left click",
      "tag": null,
-     "video": "9fa8e5912598.mp4"
+     "video": "mirage_t_m_b_backsite.mp4"
     },
     {
      "side": "T",
@@ -2982,7 +2982,7 @@
      "to": "B Door",
      "throw": "Standing · jump + both buttons",
      "tag": "Retake",
-     "video": "445cf6c154e9.mp4"
+     "video": "mirage_t_m_door.mp4"
     },
     {
      "side": "T",
@@ -2991,7 +2991,7 @@
      "to": "B Door",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "296524eafe79.mp4"
+     "video": "mirage_t_m_b_doors1.mp4"
     },
     {
      "side": "T",
@@ -3000,7 +3000,7 @@
      "to": "B Site",
      "throw": "One step · left click",
      "tag": null,
-     "video": "8473dd5e9113.mp4"
+     "video": "mirage_t_m_bsite.mp4"
     },
     {
      "side": "T",
@@ -3009,7 +3009,7 @@
      "to": "B Window",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "8bdd127f20a1.mp4"
+     "video": "mirage_t_m_b_window.mp4"
     },
     {
      "side": "T",
@@ -3018,7 +3018,7 @@
      "to": "Bench",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "c71fb4a673b3.mp4"
+     "video": "mirage_t_m_bench.mp4"
     },
     {
      "side": "T",
@@ -3027,7 +3027,7 @@
      "to": "Car",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "e6a73203f48b.mp4"
+     "video": "mirage_t_m_car.mp4"
     },
     {
      "side": "T",
@@ -3036,7 +3036,7 @@
      "to": "Connector",
      "throw": "Running · left click",
      "tag": null,
-     "video": "130c29f6008b.mp4"
+     "video": "mirage_t_m_connector.mp4"
     },
     {
      "side": "T",
@@ -3045,7 +3045,7 @@
      "to": "Sandwich",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "20a35d8bfc31.mp4"
+     "video": "mirage_t_m_sandwich1.mp4"
     },
     {
      "side": "T",
@@ -3054,7 +3054,7 @@
      "to": "Short",
      "throw": "Standing · jump + W + left click",
      "tag": null,
-     "video": "578a35f098dd.mp4"
+     "video": "mirage_t_ml_short2.mp4"
     },
     {
      "side": "T",
@@ -3063,7 +3063,7 @@
      "to": "Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b1b13e03953f.mp4"
+     "video": "mirage_t_m_stairs.mp4"
     },
     {
      "side": "T",
@@ -3072,7 +3072,7 @@
      "to": "Ticket",
      "throw": "Crouching · jump + both buttons",
      "tag": "Retake",
-     "video": "fa1cffa9eec6.mp4"
+     "video": "mirage_t_m_ticket1.mp4"
     },
     {
      "side": "T",
@@ -3081,7 +3081,7 @@
      "to": "Vent",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "9e36f0d1815f.mp4"
+     "video": "mirage_t_m_jungledeep.mp4"
     },
     {
      "side": "T",
@@ -3090,7 +3090,7 @@
      "to": "Window",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2f3c40b88d2a.mp4"
+     "video": "mirage_t_m_window2.mp4"
     },
     {
      "side": "T",
@@ -3099,7 +3099,7 @@
      "to": "B Back Side",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "d9af78058300.mp4"
+     "video": "mirage_t_h_b_backsite_right.mp4"
     },
     {
      "side": "T",
@@ -3108,7 +3108,7 @@
      "to": "Jungle",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a0400396beb4.mp4"
+     "video": "mirage_t_n_Jungle.mp4"
     },
     {
      "side": "T",
@@ -3117,7 +3117,7 @@
      "to": "Ladder Room",
      "throw": "One step · left click",
      "tag": null,
-     "video": "256f8134e51b.mp4"
+     "video": "mirage_t_h_ladder1.mp4"
     },
     {
      "side": "T",
@@ -3126,7 +3126,7 @@
      "to": "Short Box",
      "throw": "Running · jump + left click",
      "tag": null,
-     "video": "68f5ec5e40d4.mp4"
+     "video": "mirage_t_h_short2.mp4"
     },
     {
      "side": "T",
@@ -3135,7 +3135,7 @@
      "to": "Short Box",
      "throw": "One step · left click",
      "tag": null,
-     "video": "434ac81dfd6c.mp4"
+     "video": "mirage_t_h_short1.mp4"
     },
     {
      "side": "T",
@@ -3144,7 +3144,7 @@
      "to": "Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "06f8a658c7c4.mp4"
+     "video": "mirage_t_n_stairs.mp4"
     },
     {
      "side": "T",
@@ -3153,7 +3153,7 @@
      "to": "Window",
      "throw": "Standing · jump + right click",
      "tag": null,
-     "video": "43061b2cdf98.mp4"
+     "video": "mirage_t_h_window_cancel.mp4"
     },
     {
      "side": "T",
@@ -3162,7 +3162,7 @@
      "to": "Window",
      "throw": "Running · left click",
      "tag": null,
-     "video": "e884e50d90e0.mp4"
+     "video": "mirage_t_h_window1.mp4"
     },
     {
      "side": "CT",
@@ -3171,7 +3171,7 @@
      "to": "B Apps",
      "throw": "One step · left click",
      "tag": null,
-     "video": "c3b2a7e08789.mp4"
+     "video": "mirage_ct_s_apps2.mp4"
     },
     {
      "side": "CT",
@@ -3180,7 +3180,7 @@
      "to": "B Apps",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "45b3565b6f3c.mp4"
+     "video": "mirage_ct_s_apps1.mp4"
     },
     {
      "side": "CT",
@@ -3189,7 +3189,7 @@
      "to": "B Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "2f0003086d0e.mp4"
+     "video": "mirage_ct_s_apps5.mp4"
     },
     {
      "side": "CT",
@@ -3198,7 +3198,7 @@
      "to": "B Stairs",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3729436e9e2f.mp4"
+     "video": "mirage_sm_ct_bappsfast.mp4"
     },
     {
      "side": "CT",
@@ -3207,7 +3207,7 @@
      "to": "Car",
      "throw": "Standing · right click",
      "tag": "One-way",
-     "video": "ddb175069f66.mp4"
+     "video": "mirage_ct_sm_b6.mp4"
     },
     {
      "side": "CT",
@@ -3216,7 +3216,7 @@
      "to": "Con",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1bcac0d12905.mp4"
+     "video": "mirage_ct_s_connector.mp4"
     },
     {
      "side": "CT",
@@ -3225,7 +3225,7 @@
      "to": "Palace",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "3f10b97ea6bc.mp4"
+     "video": "mirage_ct_s_palace2.mp4"
     },
     {
      "side": "CT",
@@ -3234,7 +3234,7 @@
      "to": "Palace",
      "throw": "One step · left click",
      "tag": null,
-     "video": "9d4ba759fb28.mp4"
+     "video": "mirage_ct_s_palace1.mp4"
     },
     {
      "side": "CT",
@@ -3243,7 +3243,7 @@
      "to": "Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "a8b233f290a0.mp4"
+     "video": "mirage_ct_s_ramp2.mp4"
     },
     {
      "side": "CT",
@@ -3252,7 +3252,7 @@
      "to": "Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "b28b8dd8f52b.mp4"
+     "video": "mirage_ct_s_ramp3.mp4"
     },
     {
      "side": "CT",
@@ -3261,7 +3261,7 @@
      "to": "Ramp",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "98c6abf3e0ec.mp4"
+     "video": "mirage_ct_s_ramp4.mp4"
     },
     {
      "side": "CT",
@@ -3270,7 +3270,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "99a2a96c714b.mp4"
+     "video": "mirage_ct_s_short2.mp4"
     },
     {
      "side": "CT",
@@ -3279,7 +3279,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "0b6ed1e82aa1.mp4"
+     "video": "mirage_ct_f_ramp.mp4"
     },
     {
      "side": "CT",
@@ -3288,7 +3288,7 @@
      "to": "B Apps",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "1263254e8e82.mp4"
+     "video": "mirage_ct_f_apps3.mp4"
     },
     {
      "side": "CT",
@@ -3297,7 +3297,7 @@
      "to": "B Apps",
      "throw": "Standing · jump + both buttons",
      "tag": null,
-     "video": "9d99d4319369.mp4"
+     "video": "mirage_ct_f_apps2.mp4"
     },
     {
      "side": "CT",
@@ -3306,7 +3306,7 @@
      "to": "Connector",
      "throw": "One step · left click",
      "tag": null,
-     "video": "1c548ceba3b1.mp4"
+     "video": "mirage_ct_f_con.mp4"
     },
     {
      "side": "CT",
@@ -3315,7 +3315,7 @@
      "to": "Connector",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "55e1ab1f386c.mp4"
+     "video": "mirage_ct_f_con3.mp4"
     },
     {
      "side": "CT",
@@ -3324,7 +3324,7 @@
      "to": "Ramp",
      "throw": "Running · left click",
      "tag": "Pop flash",
-     "video": "c5782b8e58e4.mp4"
+     "video": "mirage_ct_f_ramp9.mp4"
     },
     {
      "side": "CT",
@@ -3333,7 +3333,7 @@
      "to": "Short",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "9660c873db24.mp4"
+     "video": "mirage_ct_f_short9.mp4"
     },
     {
      "side": "CT",
@@ -3342,7 +3342,7 @@
      "to": "Top Mid",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "120df3c08b20.mp4"
+     "video": "mirage_ct_f_topmid.mp4"
     },
     {
      "side": "CT",
@@ -3351,7 +3351,7 @@
      "to": "Under",
      "throw": "Standing · both buttons",
      "tag": null,
-     "video": "6410cf7e9a3d.mp4"
+     "video": "mirage_ct_f_under.mp4"
     },
     {
      "side": "CT",
@@ -3360,7 +3360,7 @@
      "to": "B Apps",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "88cccccbc519.mp4"
+     "video": "mirage_ct_m_apps2.mp4"
     },
     {
      "side": "CT",
@@ -3369,7 +3369,7 @@
      "to": "Corner",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "f4ed772c484b.mp4"
+     "video": "mirage_ct_m_corner.mp4"
     },
     {
      "side": "CT",
@@ -3378,7 +3378,7 @@
      "to": "Ramp",
      "throw": "Running · left click",
      "tag": null,
-     "video": "ac3ba4136eb1.mp4"
+     "video": "mirage_ct_m_ramp.mp4"
     },
     {
      "side": "CT",
@@ -3387,7 +3387,7 @@
      "to": "Under",
      "throw": "Running · left click",
      "tag": null,
-     "video": "f9a472995bc1.mp4"
+     "video": "mirage_ct_m_under2.mp4"
     },
     {
      "side": "CT",
@@ -3396,7 +3396,7 @@
      "to": "A Default",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "ba6b50cebec5.mp4"
+     "video": "mirage_ct_h_default.mp4"
     },
     {
      "side": "CT",
@@ -3405,7 +3405,7 @@
      "to": "A Site",
      "throw": "One step · left click",
      "tag": null,
-     "video": "4bff9de28cc7.mp4"
+     "video": "mirage_ct_g_Adefolt.mp4"
     },
     {
      "side": "CT",
@@ -3414,7 +3414,7 @@
      "to": "B Default",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "9dc55f46380b.mp4"
+     "video": "mirage_ct_h_Bsite.mp4"
     },
     {
      "side": "CT",
@@ -3423,7 +3423,7 @@
      "to": "Chair",
      "throw": "Running · left click",
      "tag": null,
-     "video": "27abdea7ec92.mp4"
+     "video": "mirage_ct_h_chair.mp4"
     },
     {
      "side": "CT",
@@ -3432,7 +3432,7 @@
      "to": "Connector",
      "throw": "Standing · right click",
      "tag": "Reveal HE",
-     "video": "c9572b46030f.mp4"
+     "video": "mirage_ct_h_con.mp4"
     },
     {
      "side": "CT",
@@ -3441,7 +3441,7 @@
      "to": "Sandwich",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "f2e7c475fc9e.mp4"
+     "video": "mirage_ct_h_sandwich.mp4"
     },
     {
      "side": "CT",
@@ -3450,7 +3450,7 @@
      "to": "Tetris",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "99885c2fd5ee.mp4"
+     "video": "mirage_ct_g_tetris.mp4"
     },
     {
      "side": "CT",
@@ -3459,7 +3459,7 @@
      "to": "Window",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "6a8ec8bfc96a.mp4"
+     "video": "mirage_sm_he_windowreveal.mp4"
     }
    ]
   },
@@ -3475,7 +3475,7 @@
      "to": "B Smoke",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "cfbd8a20cdaf.mp4"
+     "video": "nuke_t_s_bsmoke.mp4"
     },
     {
      "side": "T",
@@ -3484,7 +3484,7 @@
      "to": "Garage",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "465a87d95546.mp4"
+     "video": "nuke_t_s_garage.mp4"
     },
     {
      "side": "T",
@@ -3493,7 +3493,7 @@
      "to": "Heaven",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "131325f3b3b5.mp4"
+     "video": "nuke_t_s_heaven.mp4"
     },
     {
      "side": "T",
@@ -3502,7 +3502,7 @@
      "to": "Out Main",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "7c7d21adcc86.mp4"
+     "video": "nuke_t_s_outmain2.mp4"
     },
     {
      "side": "T",
@@ -3511,7 +3511,7 @@
      "to": "Out Main",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "704cda1c8c44.mp4"
+     "video": "nuke_t_s_outmain3.mp4"
     },
     {
      "side": "T",
@@ -3520,7 +3520,7 @@
      "to": "Ramp",
      "throw": "Running · left click",
      "tag": null,
-     "video": "169c3e3f928e.mp4"
+     "video": "nuke_t_s_ramp.mp4"
     },
     {
      "side": "T",
@@ -3529,7 +3529,7 @@
      "to": "A Site",
      "throw": "One step · left click",
      "tag": "Retake",
-     "video": "d5f1cdfe43c1.mp4"
+     "video": "nuke_t_f_asite2.mp4"
     },
     {
      "side": "T",
@@ -3538,7 +3538,7 @@
      "to": "A Site",
      "throw": "Standing · jump + left click",
      "tag": "Retake",
-     "video": "b4e320d8e9de.mp4"
+     "video": "nuke_t_f_asite1.mp4"
     },
     {
      "side": "T",
@@ -3547,7 +3547,7 @@
      "to": "Main",
      "throw": "Running · left click",
      "tag": "Retake",
-     "video": "f03ba49d7be3.mp4"
+     "video": "nuke_t_f_main.mp4"
     },
     {
      "side": "T",
@@ -3556,7 +3556,7 @@
      "to": "Secret",
      "throw": "Running · left click",
      "tag": null,
-     "video": "10e49090d7e9.mp4"
+     "video": "nuke_t_m_secret.mp4"
     },
     {
      "side": "T",
@@ -3565,7 +3565,7 @@
      "to": "Garage",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "a4da8948b584.mp4"
+     "video": "nuke_t_n_garage.mp4"
     },
     {
      "side": "CT",
@@ -3574,7 +3574,7 @@
      "to": "Control",
      "throw": "Running · left click",
      "tag": null,
-     "video": "c500b202c055.mp4"
+     "video": "nuke_ct_s_control.mp4"
     },
     {
      "side": "CT",
@@ -3583,7 +3583,7 @@
      "to": "Outside",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "d83a7e4c37e2.mp4"
+     "video": "nuke_ct_s_outside.mp4"
     },
     {
      "side": "CT",
@@ -3592,7 +3592,7 @@
      "to": "Red Box",
      "throw": "Standing · jump + left click",
      "tag": null,
-     "video": "b7dd282f5722.mp4"
+     "video": "nuke_ct_s_redbox.mp4"
     },
     {
      "side": "CT",
@@ -3601,7 +3601,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "1d0c04a7fa35.mp4"
+     "video": "nuke_retake2_a.mp4"
     },
     {
      "side": "CT",
@@ -3610,7 +3610,7 @@
      "to": "A Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "22911dd371ea.mp4"
+     "video": "nuke_retake3_a.mp4"
     },
     {
      "side": "CT",
@@ -3619,7 +3619,7 @@
      "to": "B Site",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "fa038643bea3.mp4"
+     "video": "nuke_retake4_b.mp4"
     },
     {
      "side": "CT",
@@ -3628,7 +3628,7 @@
      "to": "Hut",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "aff522fa4d53.mp4"
+     "video": "nuke_ct_f_hut.mp4"
     },
     {
      "side": "CT",
@@ -3637,7 +3637,7 @@
      "to": "Dark",
      "throw": "Standing · left click",
      "tag": "Retake",
-     "video": "ab2c2d09cf56.mp4"
+     "video": "nuke_retake5_b.mp4"
     },
     {
      "side": "CT",
@@ -3646,7 +3646,7 @@
      "to": "Outside",
      "throw": "One step · left click",
      "tag": "Retake",
-     "video": "3e645ac2fdd2.mp4"
+     "video": "nuke_ct_m_outside.mp4"
     },
     {
      "side": "CT",
@@ -3655,7 +3655,7 @@
      "to": "Silo",
      "throw": "Standing · left click",
      "tag": null,
-     "video": "7ce2c0b7f54a.mp4"
+     "video": "nuke_ct_n_silo.mp4"
     }
    ]
   }

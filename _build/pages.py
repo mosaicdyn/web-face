@@ -19,6 +19,7 @@ import html as _html
 import json as _json
 import os as _os
 from collections import Counter as _Counter
+from urllib.parse import quote as _quote
 
 ACTIVE_DUTY = ["Ancient", "Anubis", "Cache", "Dust II", "Inferno", "Mirage", "Nuke"]
 
@@ -216,7 +217,7 @@ def _cards(items, cdn):
         rows = []
         for n, t in enumerate(throws, start=1):
             label = "Watch the throw" if len(throws) == 1 else f"Watch throw {n}"
-            url = cdn + t["video"]
+            url = cdn + _quote(t["video"])
             rows.append(f'<li><span>{_html.escape(t["throw"])}</span>'
                         f'<a class="lineup__play" href="{url}" data-video="{url}" data-title="{_html.escape(title)}">'
                         f'<span aria-hidden="true">▶</span> {label}</a></li>')

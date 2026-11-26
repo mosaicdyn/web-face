@@ -9,9 +9,6 @@ the `landing_start_association` rows joined with `nades`, `start_position` and `
 keeping rows where `is_free` is true. To refresh it, export the table again and rebuild this file the same way,
 then run `python3 _build/build.py`.
 
-Videos point to `web/lineups/` on the CDN: copies of the free videos under random names, so the site does not
-show how the app names its files. The table old name → new name is kept by the team, not in this repository.
-
 Fields per lineup: `side` (T/CT), `type` (smoke, flash, molotov, he), `from`, `to`, `throw`
 (movement · technique), `tag` (Retake, One-way, Insta smoke, Pop flash, Fake, Lurk, Reveal HE or null)
 and `video` (file name under `cdn`).
