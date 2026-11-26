@@ -9,6 +9,7 @@ Each page:
   h1, lead     hero heading (may contain <span class="accent">) and intro
   stats        optional [(value_html, label)]
   screens      optional [(image in assets/img, alt text)] - front phone first, up to 3
+  aside(r)     optional HTML for the right side of the hero instead of the phones (tools)
   body(r)      HTML sections; r is the relative path to the site root
   faq          [(question, answer_html)] -> also output as FAQPage schema
   updated      optional ISO date, shown under the lead
@@ -663,11 +664,196 @@ def guides_body(r):
             {"kicker": "Binds", "title": "CS2 binds and grenade binds",
              "text": "Binds that still work on Valve servers, one key for each grenade and how to throw nades faster.",
              "href": f"{r}binds/", "more": "Read"},
+            {"kicker": "FACEIT", "title": "How to get FACEIT Level 10",
+             "text": "Level 10 in numbers, what Season 10 changes and the habits that raise your win rate.",
+             "href": f"{r}guides/faceit-level-10/", "more": "Read"},
+            {"kicker": "Tool", "title": "FACEIT Elo calculator",
+             "text": "Your level, the Elo to the next one and how many matches it takes at your win rate.",
+             "href": f"{r}tools/faceit-elo-calculator/", "more": "Open"},
             {"kicker": "Smokes", "title": "CS2 smoke lineups",
              "text": "Execute smokes, one-ways, instant and retake smokes for the competitive maps.",
              "href": f"{r}lineups/smokes/", "more": "Read"},
         ]), " page-section--tight"),
     ])
+
+
+# ---------------------------------------------------------------- FACEIT
+# FACEIT CS2 skill levels: (level, minimum Elo). Source: FACEIT Support, "FACEIT CS2 Elo and skill levels".
+FACEIT_LEVELS = [(1, 100), (2, 501), (3, 751), (4, 901), (5, 1051), (6, 1201), (7, 1351), (8, 1531), (9, 1751), (10, 2001)]
+
+
+def faceit_level(elo):
+    lvl = 1
+    for n, lo in FACEIT_LEVELS:
+        if elo >= lo:
+            lvl = n
+    return lvl
+
+
+def elo_estimate(elo, target, wr, gain=25, loss=25, per_day=3):
+    """The same maths as assets/js/elo.js, used for the page's first render."""
+    import math
+    diff = max(target - elo, 0)
+    net = wr / 100 * gain - (1 - wr / 100) * loss
+    lvl = faceit_level(elo)
+    nxt = next((lo for n, lo in FACEIT_LEVELS if n == lvl + 1), None)
+    out = {"level": lvl, "next": (nxt - elo) if nxt else "—", "diff": diff,
+           "netwins": math.ceil(diff / gain) if diff else 0}
+    if diff == 0:
+        out.update(matches="0", note="You are already there.")
+    elif net == 0:
+        out.update(matches="—", note=f"At {wr:g}% your wins and losses cancel out, so you stay where you are. Raise your win rate first.")
+    elif net < 0:
+        out.update(matches="—", note=f"At {wr:g}% you lose Elo on average, so you won’t climb. Raise your win rate above 50% first.")
+    else:
+        m = math.ceil(diff / net)
+        days = math.ceil(m / per_day)
+        out.update(matches=f"{m:,}", note=f"At {wr:g}% you gain about {net:.1f} Elo per match. At {per_day} matches a day that is about {days:,} days.")
+    return out
+
+
+def levels_table():
+    rows = []
+    for i, (n, lo) in enumerate(FACEIT_LEVELS):
+        nxt = FACEIT_LEVELS[i + 1][1] if i + 1 < len(FACEIT_LEVELS) else None
+        rng = f"{lo:,}–{nxt - 1:,}" if nxt else f"{lo:,}+"
+        width = f"{nxt - lo}" if nxt else "no limit"
+        wins = f"{-(-(nxt - lo) // 25)}" if nxt else "—"
+        rows.append(f"<tr><td>Level {n}</td><td>{rng}</td><td>{width}</td><td>{wins}</td></tr>")
+    return ('<table class="cmd-table"><thead><tr><th>Level</th><th>Elo</th><th>Elo in the level</th>'
+            '<th>Net wins to pass it at 25 Elo</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table>")
+
+
+FACEIT_SOURCES = (
+    '          <p class="sources">Sources: FACEIT Support — '
+    '<a href="https://support.faceit.com/hc/en-us/articles/10525200579740-FACEIT-CS2-Elo-and-skill-level" rel="noopener">FACEIT CS2 Elo and skill levels</a>, '
+    '<a href="https://support.faceit.com/hc/en-us/articles/14211743579036-Improved-Elo-Formula-FAQ" rel="noopener">Improved Elo Formula FAQ</a>, '
+    '<a href="https://support.faceit.com/hc/en-us/articles/28898322786076" rel="noopener">Season 9 soft reset</a>; '
+    'Season 10 dates as announced by FACEIT.</p>'
+)
+
+
+def calculator_form(r):
+    d = elo_estimate(1300, 2001, 55)
+    opts = "".join(f'<option value="{lo}"{" selected" if n == 10 else ""}>Level {n} ({lo:,} Elo)</option>'
+                   for n, lo in FACEIT_LEVELS[1:])
+    calc = f'''        <form class="elo-calc" id="elo-calc" novalidate>
+          <div class="elo-calc__inputs">
+            <label class="field"><span class="field__label">Your Elo</span><input class="field__input" type="number" name="elo" value="1300" min="100" max="6000" step="1" inputmode="numeric" /></label>
+            <label class="field"><span class="field__label">Goal</span><select class="field__input" name="target">{opts}</select></label>
+            <label class="field"><span class="field__label">Win rate, %</span><input class="field__input" type="number" name="wr" value="55" min="1" max="99" step="1" inputmode="numeric" /></label>
+            <label class="field"><span class="field__label">Matches per day</span><input class="field__input" type="number" name="perday" value="3" min="1" max="30" step="1" inputmode="numeric" /></label>
+            <details class="elo-calc__more">
+              <summary>Elo per win and per loss</summary>
+              <div class="elo-calc__pair">
+                <label class="field"><span class="field__label">Per win</span><input class="field__input" type="number" name="gain" value="25" min="1" max="60" step="1" inputmode="numeric" /></label>
+                <label class="field"><span class="field__label">Per loss</span><input class="field__input" type="number" name="loss" value="25" min="1" max="60" step="1" inputmode="numeric" /></label>
+              </div>
+            </details>
+          </div>
+          <div class="elo-calc__result" aria-live="polite">
+            <div class="elo-stat"><span>Your level</span><strong data-out="level">{d["level"]}</strong></div>
+            <div class="elo-stat"><span>Elo to next level</span><strong data-out="next">{d["next"]}</strong></div>
+            <div class="elo-stat"><span>Elo to your goal</span><strong data-out="diff">{d["diff"]}</strong></div>
+            <div class="elo-stat"><span>Net wins needed</span><strong data-out="netwins">{d["netwins"]}</strong></div>
+            <div class="elo-stat elo-stat--main"><span>Matches to your goal</span><strong data-out="matches">{d["matches"]}</strong></div>
+            <p class="elo-calc__note" data-out="note">{d["note"]}</p>
+          </div>
+        </form>'''
+    return calc
+
+
+def calculator_body(r):
+    return "\n".join([
+        section(prose(f'''          <h2>FACEIT levels and Elo</h2>
+          <p>FACEIT turns your Elo into a level from 1 to 10. Level 10 has no upper limit, and the top 1,000 players at Level 10 get the Challenger rank.</p>
+          {levels_table()}
+          <h2>How the estimate works</h2>
+          <p>FACEIT has not published its exact formula. What it does say is that the Elo you win or lose depends on how likely your team was to win: beat a stronger team and you get more, lose to a weaker one and you drop more. Between evenly matched teams a match moves you about 25 Elo, which is the default here.</p>
+          <p>So the calculator works with averages: your net Elo per match is <em>win rate × Elo per win − loss rate × Elo per loss</em>, and the matches to your goal are the Elo you still need divided by that number. At 55% and 25 Elo per match that is about 2.5 Elo per match — which is why the climb feels slow, and why your win rate matters more than anything else.</p>
+          <h2>What the calculator does not count</h2>
+          <ul>
+            <li><strong>Placement matches.</strong> The first 10 matches of a season move your Elo more than usual.</li>
+            <li><strong>Your own performance.</strong> For Levels 1–9, FACEIT adds a small bonus or penalty for individual impact, on top of the result.</li>
+            <li><strong>Leavers.</strong> If a teammate leaves and you still win, you get the normal Elo and the leaver only half.</li>
+          </ul>
+          <p>Want the plan, not just the number? Read <a href="{r}guides/faceit-level-10/">how to get FACEIT Level 10</a>.</p>
+{FACEIT_SOURCES}''')),
+    ])
+
+
+CALCULATOR_FAQ = [
+    ("What Elo is FACEIT Level 10?",
+     "<p>Level 10 starts at 2,001 Elo and has no upper limit. Level 9 is 1,751–2,000 Elo.</p>"),
+    ("How much Elo do you get per win on FACEIT?",
+     "<p>About 25 in a match between evenly rated teams. You get more for beating a stronger team and less for beating a weaker one, and the same goes for losses in reverse.</p>"),
+    ("How many matches does it take to reach Level 10?",
+     "<p>It depends on your win rate. From 1,200 Elo you need 801 Elo: about 321 matches at a 55% win rate, or about 161 at 60%. Use the calculator above with your own numbers.</p>"),
+    ("Does K/D affect FACEIT Elo?",
+     "<p>Only a little. The match result decides most of it; for Levels 1–9 FACEIT adds a small amount for individual impact.</p>"),
+    ("What Elo do new FACEIT players start with?",
+     "<p>If you have Prime and enough Premier wins, FACEIT converts your latest Premier rating into Elo. Otherwise you start at 1,000 Elo.</p>"),
+]
+
+
+def level10_body(r):
+    import math
+    starts = [1000, 1200, 1350, 1530, 1750, 1900]
+    rates = [52, 55, 60]
+    head_cells = "".join(f"<th>{w}% win rate</th>" for w in rates)
+    rows = []
+    for e in starts:
+        need = 2001 - e
+        cells = "".join(f"<td>{math.ceil(need / (25 * (2 * w / 100 - 1))):,}</td>" for w in rates)
+        rows.append(f"<tr><td>{e:,} (Level {faceit_level(e)})</td><td>{need:,}</td>{cells}</tr>")
+    table = (f'<table class="cmd-table"><thead><tr><th>Your Elo</th><th>Elo to Level 10</th>{head_cells}</tr></thead>'
+             f'<tbody>{"".join(rows)}</tbody></table>')
+    return "\n".join([
+        section(prose(f'''          <h2>Level 10 in numbers</h2>
+          <p>Level 10 starts at <strong>2,001 Elo</strong>. The Elo you need is 2,001 minus your Elo, and at about 25 Elo per even match that is your gap divided by 25 in <em>net</em> wins — wins minus losses. From 1,500 Elo that is 21 more wins than losses.</p>
+          <p>How many matches that takes depends on one number: your win rate. Matches to Level 10 at 25 Elo per win and per loss:</p>
+          {table}
+          <p>Put in your own Elo and win rate in the <a href="{r}tools/faceit-elo-calculator/">FACEIT Elo calculator</a>.</p>
+          <h2>Your win rate is the whole game</h2>
+          <p>The table says it plainly: going from 52% to 55% cuts the road by more than half, and 60% halves it again. Elo follows wins, not frags — for Levels 1–9 FACEIT adds only a small amount for individual impact. So the question is not “how do I get more kills” but “what makes my team win one more round in ten”. Most of that is preparation, not aim.</p>
+          <h2>Season 10 starts on December 9</h2>
+          <p>FACEIT Season 10 starts on December 9, 2026, and Season 9 ends the day before. The new season opens with a soft Elo reset — the higher your Elo, the more it moves — and 10 placement matches, parties included. During placements your Elo moves more than usual and your level stays hidden until you finish all ten. Staying active before the end of the season keeps the adjustment smaller, and strong placements can start you higher.</p>
+          <h2>Habits that raise your win rate</h2>
+          <ol>
+            <li><strong>Pick two or three maps and learn them.</strong> Knowing the standard smokes, flashes and molotovs on your maps wins rounds before the first duel. Start with our free <a href="{r}lineups/mirage/">Mirage</a>, <a href="{r}lineups/inferno/">Inferno</a> and <a href="{r}lineups/dust2/">Dust 2</a> lineups.</li>
+            <li><strong>Throw the utility your team needs.</strong> Five people with no nades lose to two players with a plan. Learn two executes and one retake per site.</li>
+            <li><strong>Queue with a friend and set up together.</strong> A duo with fixed crossfires is the most common FACEIT situation — see our <a href="{r}setups/">solo and duo setups</a>.</li>
+            <li><strong>Have a plan for every round type.</strong> Pistol, eco, force and full buy each need a default; <a href="{r}tactics/">tactics</a> by round type help here.</li>
+            <li><strong>Review your losses, not your wins.</strong> One demo a day of a lost match shows the same few mistakes again and again. You can ask the <a href="{r}ai-coach/">AI coach</a> what to look for.</li>
+            <li><strong>Don’t leave and don’t tilt-queue.</strong> A leaver gets only half the Elo even if the team wins. After two losses in a row, take a break before the next match.</li>
+          </ol>
+          <h2>How long does it really take?</h2>
+          <p>At three matches a day, a 55% player starting from 1,200 Elo needs about 321 matches — roughly three and a half months. At 60% it is about 161 matches, under two months. Every point of win rate you add by preparing better is worth more than any number of matches played on autopilot.</p>
+{FACEIT_SOURCES}''')),
+        section(head("Tools for the climb") + "\n" + tiles([
+            {"kicker": "Tool", "title": "FACEIT Elo calculator",
+             "text": "Your level, the Elo to the next one and how many matches it takes at your win rate.",
+             "href": f"{r}tools/faceit-elo-calculator/", "more": "Open"},
+            {"kicker": "Nades", "title": "Free lineups by map",
+             "text": "Smokes, flashes, molotovs and HE grenades with video for the seven competitive maps.",
+             "href": f"{r}lineups/#maps", "more": "Open"},
+            {"kicker": "Practice", "title": "How to practice nades",
+             "text": "Unlimited grenades, the grenade camera and a rethrow key — set up in two minutes.",
+             "href": f"{r}guides/cs2-practice-commands/", "more": "Read"},
+        ]), " page-section--tight"),
+    ])
+
+
+LEVEL10_FAQ = [
+    ("How long does it take to get FACEIT Level 10?",
+     "<p>From 1,200 Elo at a 55% win rate, about 321 matches; at 60%, about 161. At 52% it takes about 801 matches. Your win rate decides it.</p>"),
+    ("Can you get Level 10 solo?",
+     "<p>Yes. Elo follows the team result, so a solo player climbs by winning more rounds with information and utility, not only by fragging. Queuing with a friend makes it easier to play set crossfires and executes.</p>"),
+    ("Will Season 10 reset my FACEIT level?",
+     "<p>Not fully. Season 10 starts on December 9, 2026 with a soft reset: higher Elo moves more, and 10 placement matches decide your starting point. Your level is hidden until you finish them.</p>"),
+    ("Is Level 10 the highest FACEIT rank?",
+     "<p>Level 10 is the highest level and starts at 2,001 Elo. The top 1,000 players at Level 10 hold the Challenger rank.</p>"),
+]
 
 
 # ---------------------------------------------------------------- FAQ
@@ -850,6 +1036,27 @@ PAGES = [
         "updated": "2026-11-26", "article": True,
         "screens": [("screen-lineup-single.webp", "RushB app: B site smoke lineup with throw type and screenshot breakdown"), ("screen-nade-filters.webp", "RushB app: nade filters for retakes, insta smokes and one-way smokes"), ("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar")],
         "body": practice_body, "faq": PRACTICE_FAQ,
+    },
+    {
+        "slug": "guides/faceit-level-10/", "nav": "",
+        "title": "How to Get FACEIT Level 10 in CS2 (2026) | RushB",
+        "description": "How to get FACEIT Level 10 in CS2: the Elo you need, how many matches it takes at your win rate, what Season 10 changes and habits that win more rounds.",
+        "crumb": "FACEIT Level 10", "crumbs": [("Guides", "guides/")],
+        "h1": 'How to get <span class="accent">FACEIT Level 10</span>',
+        "lead": "Level 10 starts at 2,001 Elo. Here is how far you are, how many matches it really takes, and the habits that raise the one number that moves Elo — your win rate.",
+        "updated": "2026-11-26", "article": True,
+        "screens": [("screen-ai-coach.webp", "RushB app: AI coach chat with example questions"), ("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds"), ("screen-duo.webp", "RushB app: duo setups for A site, mid and B site")],
+        "body": level10_body, "faq": LEVEL10_FAQ,
+    },
+    {
+        "slug": "tools/faceit-elo-calculator/", "nav": "",
+        "title": "FACEIT Elo Calculator: Matches to Level 10 | RushB",
+        "description": "Free FACEIT Elo calculator for CS2: enter your Elo and win rate to see your level, the Elo to the next level and how many matches it takes to reach Level 10.",
+        "crumb": "FACEIT Elo calculator",
+        "h1": 'FACEIT <span class="accent">Elo calculator</span>',
+        "lead": "Enter your Elo and win rate to see your level, the Elo to the next one and about how many matches it takes to reach any level — up to Level 10.",
+        "updated": "2026-11-26",
+        "aside": calculator_form, "body": calculator_body, "faq": CALCULATOR_FAQ, "scripts": ["elo.js"],
     },
     {
         "slug": "faq/", "nav": "",
