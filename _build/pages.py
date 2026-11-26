@@ -15,7 +15,16 @@ Each page:
   article      optional True -> Article schema (guides)
 """
 
+import html as _html
+import json as _json
+import os as _os
+from collections import Counter as _Counter
+
 ACTIVE_DUTY = ["Ancient", "Anubis", "Cache", "Dust II", "Inferno", "Mirage", "Nuke"]
+
+# Free lineups of the Active Duty maps, exported from the app (see _build/data/README.md).
+LINEUPS = _json.load(open(_os.path.join(_os.path.dirname(__file__), "data", "lineups_free.json"), encoding="utf-8"))
+MAP_ORDER = ["mirage", "inferno", "dust2", "ancient", "anubis", "nuke", "cache"]
 
 
 def section(inner, extra=""):
@@ -68,6 +77,14 @@ def mode_cards(r, items):
 
 def chips(items):
     return '        <ul class="chips">' + "".join(f"<li>{x}</li>" for x in items) + "</ul>"
+
+
+def map_links(r):
+    links = []
+    for slug in sorted(MAP_ORDER, key=lambda s: LINEUPS["maps"][s]["label"]):
+        m = LINEUPS["maps"][slug]
+        links.append(f'<li><a href="{r}lineups/{slug}/">{m["label"]} <span>{m["free"]}</span></a></li>')
+    return '        <ul class="chips chips--links">' + "".join(links) + "</ul>"
 
 
 def code(text):
@@ -143,9 +160,9 @@ def lineups_body(r):
             {"title": "Tap the landing spot", "text": "The radar shows where each grenade lands. Tap a spot to see every way to get there."},
             {"title": "Copy the throw", "text": "Follow the position, aim point and throw type, check the screenshot breakdown and watch the video."},
         ], cols=4, numbered=True), " page-section--tight"),
-        section(prose(f'''          <h2>Lineups for the competitive map pool</h2>
-          <p>Valve’s Active Duty pool is the set of maps used in Premier and at Majors. Since July 2026 it is:</p>
-''') + "\n" + chips(ACTIVE_DUTY) + "\n" + prose(f'''          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single nades, combos and several throws from the same spot are all filtered by map and situation.</p>
+        section(prose(f'''          <h2 id="maps">Lineups for the competitive map pool</h2>
+          <p>Valve’s Active Duty pool is the set of maps used in Premier and at Majors. Since July 2026 it is these seven maps — open one to see its free lineups with video:</p>
+''') + "\n" + map_links(r) + "\n" + prose(f'''          <p style="margin-top:20px">RushB has a database of 2000+ lineups across the competitive maps — from the standard smokes every team uses to pro-level utility. Single nades, combos and several throws from the same spot are all filtered by map and situation.</p>
           <h2>How to practise nades faster</h2>
           <p>Learn a lineup in a private match before you use it in Premier or on FACEIT. Start an offline game, open the console and paste this practice config:</p>
           {code(PRACTICE_CONFIG)}
@@ -169,6 +186,140 @@ LINEUPS_FAQ = [
 
 
 # ---------------------------------------------------------------- grenade pages
+# ---------------------------------------------------------------- map pages
+TYPE_LABEL = {"smoke": ("Smoke", "Smokes"), "flash": ("Flash", "Flashes"),
+              "molotov": ("Molotov", "Molotovs"), "he": ("HE grenade", "HE grenades")}
+TYPE_ORDER = ["smoke", "flash", "molotov", "he"]
+
+
+def _plural(t):
+    return "HE grenades" if t == "he" else TYPE_LABEL[t][1].lower()
+
+
+def _nade_word(it):
+    if it["type"] == "molotov" and it["side"] == "CT":
+        return "incendiary"
+    return {"smoke": "smoke", "flash": "flash", "molotov": "molotov", "he": "HE"}[it["type"]]
+
+
+def _cards(items, cdn):
+    """Groups throws with the same start and landing spot into one card."""
+    groups = {}
+    for it in items:
+        groups.setdefault((it["from"], it["to"]), []).append(it)
+    out = []
+    for (frm, to), throws in groups.items():
+        word = _nade_word(throws[0])
+        title = f"{to} {word} from {frm}" if frm != to else f"{to} {word}"
+        tags = sorted({t["tag"] for t in throws if t["tag"]})
+        tag_html = "".join(f'<span class="lineup__tag">{_html.escape(t)}</span>' for t in tags)
+        rows = []
+        for n, t in enumerate(throws, start=1):
+            label = "Watch the throw" if len(throws) == 1 else f"Watch throw {n}"
+            url = cdn + t["video"]
+            rows.append(f'<li><span>{_html.escape(t["throw"])}</span>'
+                        f'<a class="lineup__play" href="{url}" data-video="{url}" data-title="{_html.escape(title)}">'
+                        f'<span aria-hidden="true">▶</span> {label}</a></li>')
+        out.append(f'''          <article class="lineup">
+            <div class="lineup__head"><span class="lineup__kicker">{TYPE_LABEL[throws[0]["type"]][0]}</span>{tag_html}</div>
+            <h4 class="lineup__title">{_html.escape(title)}</h4>
+            <ul class="lineup__throws">{"".join(rows)}</ul>
+          </article>''')
+    return '        <div class="lineup-grid">\n' + "\n".join(out) + "\n        </div>"
+
+
+VIDEO_DIALOG = '''    <dialog class="video-dialog" id="lineup-video" aria-label="Lineup video">
+      <div class="video-dialog__bar">
+        <p class="video-dialog__title"></p>
+        <button class="video-dialog__close" type="button" data-close aria-label="Close video">×</button>
+      </div>
+      <video controls playsinline preload="none"></video>
+    </dialog>'''
+
+
+def map_body(slug):
+    m = LINEUPS["maps"][slug]
+    cdn = LINEUPS["cdn"]
+    label = m["label"]
+
+    def body(r):
+        items = m["lineups"]
+        top = [n for n, _ in _Counter(i["to"] for i in items).most_common(3)]
+        sides = {s: [i for i in items if i["side"] == s] for s in ("T", "CT")}
+        nav = []
+        blocks = []
+        for side in ("T", "CT"):
+            parts = []
+            for t in TYPE_ORDER:
+                group = [i for i in sides[side] if i["type"] == t]
+                if not group:
+                    continue
+                anchor = f"{side.lower()}-{t}"
+                plural = _plural(t)
+                nav.append(f'<a href="#{anchor}">{side} {plural} <span>{len(group)}</span></a>')
+                parts.append(f'        <h3 class="lineup-group__title" id="{anchor}">{side} side {plural} <span>{len(group)}</span></h3>\n' + _cards(group, cdn))
+            if parts:
+                side_name = "Terrorist" if side == "T" else "Counter-Terrorist"
+                blocks.append(section(head(f"{label} {side} side lineups",
+                                           f"{len(sides[side])} free {side_name} lineups. Press Watch to see the full throw.") +
+                                      "\n" + "\n".join(parts), " page-section--tight"))
+        intro = prose(f'''          <p>These are the free {label} lineups from RushB: {m["free"]} throws with video — {len(sides["T"])} for the T side and {len(sides["CT"])} for CT. Most of them land on {", ".join(top[:-1])} and {top[-1]}. Every card shows where to stand, where the nade lands and how to throw it.</p>''')
+        jump = '        <nav class="lineup-nav" aria-label="Jump to a group">' + "".join(nav) + "</nav>"
+        more = m["total"] - m["free"]
+        return "\n".join([
+            section(intro + "\n" + jump, " page-section--tight"),
+            *blocks,
+            section(head(f"{more} more {label} lineups in RushB",
+                         f"The app has {m['total']} {label} lineups, plus combos — sets of nades for one play — and filters for one-ways, insta smokes and retakes.") +
+                    "\n" + tiles([
+                        {"title": "Practise faster", "text": "Unlimited nades, the grenade camera and a rethrow key: set up in two minutes.",
+                         "href": f"{r}guides/cs2-practice-commands/", "more": "Practice guide"},
+                        {"title": "Other maps", "text": "Free lineups with video for the rest of the competitive map pool.",
+                         "href": f"{r}lineups/#maps", "more": "All maps"},
+                        {"title": "Get RushB", "text": f"All {m['total']} {label} lineups, combos and filters on iPhone and Android.",
+                         "href": f"{r}download/", "more": "Download"},
+                    ]), " page-section--tight"),
+            VIDEO_DIALOG,
+        ])
+    return body
+
+
+def map_faq(slug):
+    m = LINEUPS["maps"][slug]
+    label = m["label"]
+    pool = ("<p>Yes. Cache came back to the Active Duty pool on July 8, 2026, in place of Overpass. It is one of the seven maps of Premier and the pro scene.</p>"
+            if slug == "cache" else
+            f"<p>Yes. {label} is one of the seven maps of the Active Duty pool, which is used in Premier and at Majors.</p>")
+    return [
+        (f"Are these {label} lineups free?",
+         f"<p>Yes. The {m['free']} lineups on this page are free to watch. RushB has {m['total']} {label} lineups in total — the rest, and the combos, are in the app with RushB Pro.</p>"),
+        (f"How do I practise {label} smokes?",
+         f"<p>Start an offline match on {label} with unlimited nades and the grenade camera, then repeat each throw with <code>sv_rethrow_last_grenade</code>. The full setup is in our guide <a href=\"../../guides/cs2-practice-commands/\">how to practice nades in CS2</a>.</p>"),
+        (f"Is {label} in the CS2 map pool?", pool),
+    ]
+
+
+def map_pages():
+    pages = []
+    for slug in MAP_ORDER:
+        m = LINEUPS["maps"][slug]
+        label = m["label"]
+        types = [_plural(t) for t in TYPE_ORDER if any(i["type"] == t for i in m["lineups"])]
+        types_text = ", ".join(types[:-1]) + " and " + types[-1]
+        pages.append({
+            "slug": f"lineups/{slug}/", "nav": "Nades",
+            "title": f"{label} Smokes & Nades for CS2 – Free Lineups | RushB",
+            "description": f"{m['free']} free {label} lineups with video: {types_text} for T and CT, with where to stand, where the nade lands and how to throw it.",
+            "crumb": label, "crumbs": [("Nades", "lineups/")],
+            "h1": f'{label} <span class="accent">smokes &amp; nades</span>',
+            "lead": f"Free {label} lineups for T and CT: {types_text}. Pick a spot, watch the throw and land it in your next match.",
+            "stats": [(str(m["free"]), "free lineups with video"), (f'{m["total"]}', "in the app"), ("T&nbsp;/&nbsp;CT", "both sides")],
+            "screens": [("screen-nades-single.webp", f"RushB app: single grenade lineups on the radar"), ("screen-lineup-single.webp", "RushB app: smoke lineup with throw type and screenshot breakdown"), ("screen-nade-filters.webp", "RushB app: nade filters for retakes, insta smokes and one-way smokes")],
+            "body": map_body(slug), "faq": map_faq(slug), "scripts": ["lineups.js"],
+        })
+    return pages
+
+
 def grenade_body(kind):
     def body(r):
         g = GRENADES[kind]
@@ -720,3 +871,6 @@ PAGES = [
         "body": about_body,
     },
 ]
+
+_i = next(i for i, p in enumerate(PAGES) if p["slug"] == "lineups/molotovs/") + 1
+PAGES[_i:_i] = map_pages()

@@ -273,7 +273,7 @@ def render(p):
 {cta_band(r, p)}
   </main>
 {footer(r)}
-  <script src="{r}assets/js/main.js" defer></script>
+  <script src="{r}assets/js/main.js" defer></script>{"".join(f'\n  <script src="{r}assets/js/{js}" defer></script>' for js in p.get("scripts", []))}
 </body>
 </html>
 '''
