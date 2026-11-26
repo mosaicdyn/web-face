@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CS2 Binds &amp; Console Commands | RushB</title>
-  <meta name="description" content="CS2 binds and console commands that still work in 2026: mouse-wheel jump, practice config for lineups, rethrow and grenade trajectory commands." />
+  <title>CS2 Binds: Grenade Binds &amp; Console Commands | RushB</title>
+  <meta name="description" content="CS2 binds that still work in 2026: one key for each grenade, mouse-wheel jump, how to throw nades faster and why the jump-throw bind no longer works." />
   <link rel="canonical" href="https://therushb.com/binds/" />
   <meta name="theme-color" content="#0e0f13" />
   <meta name="apple-itunes-app" content="app-id=6738445061" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="RushB" />
   <meta property="og:url" content="https://therushb.com/binds/" />
-  <meta property="og:title" content="CS2 Binds &amp; Console Commands | RushB" />
-  <meta property="og:description" content="CS2 binds and console commands that still work in 2026: mouse-wheel jump, practice config for lineups, rethrow and grenade trajectory commands." />
+  <meta property="og:title" content="CS2 Binds: Grenade Binds &amp; Console Commands | RushB" />
+  <meta property="og:description" content="CS2 binds that still work in 2026: one key for each grenade, mouse-wheel jump, how to throw nades faster and why the jump-throw bind no longer works." />
   <meta property="og:image" content="https://therushb.com/assets/img/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
@@ -30,8 +30,8 @@
       "@type": "WebPage",
       "@id": "https://therushb.com/binds/",
       "url": "https://therushb.com/binds/",
-      "name": "CS2 Binds & Console Commands | RushB",
-      "description": "CS2 binds and console commands that still work in 2026: mouse-wheel jump, practice config for lineups, rethrow and grenade trajectory commands.",
+      "name": "CS2 Binds: Grenade Binds & Console Commands | RushB",
+      "description": "CS2 binds that still work in 2026: one key for each grenade, mouse-wheel jump, how to throw nades faster and why the jump-throw bind no longer works.",
       "isPartOf": {
         "@id": "https://therushb.com/#website"
       }
@@ -82,6 +82,14 @@
         },
         {
           "@type": "Question",
+          "name": "How do I bind grenades to separate keys in CS2?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the slot commands: slot6 is the HE grenade, slot7 the flashbang, slot8 the smoke, slot9 the decoy and slot10 the molotov or incendiary. For example, bind x \"slot8\" puts the smoke on X."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Where do I save binds so I don’t type them every time?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -120,8 +128,9 @@
       <div class="container page-hero__grid">
         <div>
           <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Binds</span></nav>
-          <h1 class="page-title" id="page-title">CS2 <span class="accent">binds</span> &amp; console commands</h1>
-          <p class="page-lead">Binds that still work on Valve servers, a ready practice config for lineups and the console commands you actually need.</p>
+          <h1 class="page-title" id="page-title">CS2 <span class="accent">binds</span> &amp; grenade binds</h1>
+          <p class="page-lead">Binds that still work on Valve servers, one key for each grenade and the console basics — plus why you no longer need a jump-throw bind.</p>
+          
           <div class="page-cta">
             <div class="store-buttons">
         <a class="store-btn" href="https://apps.apple.com/app/id6738445061" rel="noopener">
@@ -158,21 +167,23 @@
           <div class="code-block"><button class="code-block__copy" type="button">Copy</button><pre>bind mwheelup +jump
 bind mwheeldown +jump</pre></div>
           <p class="note"><strong>About jump-throw binds.</strong> Since the August 2024 update, binds that combine more than one movement or attack action (for example a jump-throw or null bind) no longer work on Valve servers. Valve made the jump-throw reliable without a bind: jump and release the grenade at the same time. A single-action bind such as <code>bind mwheelup +jump</code> is still fine.</p>
-          <h2>Practice config for lineups</h2>
-          <p>Paste this into the console in an offline match with bots to practise grenades:</p>
-          <div class="code-block"><button class="code-block__copy" type="button">Copy</button><pre>sv_cheats 1
-sv_infinite_ammo 1
-ammo_grenade_limit_total 5
-sv_grenade_trajectory_prac_pipreview 1
-sv_grenade_trajectory_prac_trailtime 8
-cl_grenadepreview 1
-mp_buy_anywhere 1
-mp_buytime 9999
-mp_warmup_end
-bind n sv_rethrow_last_grenade</pre></div>
-          <h2>Useful practice commands</h2>
-          <p>These commands only work on your own server or in an offline match, not in Premier or on FACEIT.</p>
-          <table class="cmd-table"><thead><tr><th>Command</th><th>What it does</th></tr></thead><tbody><tr><td><code>sv_cheats 1</code></td><td>Allows practice commands on your own server. Needed for most commands below.</td></tr><tr><td><code>sv_infinite_ammo 1</code></td><td>Infinite ammo and grenades.</td></tr><tr><td><code>ammo_grenade_limit_total 5</code></td><td>Carry all grenade types at once.</td></tr><tr><td><code>sv_grenade_trajectory_prac_pipreview 1</code></td><td>Shows a preview of where the grenade will land.</td></tr><tr><td><code>sv_grenade_trajectory_prac_trailtime 8</code></td><td>Keeps the grenade’s flight path on screen for 8 seconds.</td></tr><tr><td><code>cl_grenadepreview 1</code></td><td>Shows the arc while you hold the throw.</td></tr><tr><td><code>sv_rethrow_last_grenade</code></td><td>Throws your last grenade again from the same spot (needs sv_cheats 1).</td></tr><tr><td><code>noclip</code></td><td>Fly through the map to look at a smoke from the enemy side.</td></tr><tr><td><code>mp_buy_anywhere 1</code></td><td>Buy anywhere on the map.</td></tr><tr><td><code>mp_buytime 9999</code></td><td>Buy time never runs out.</td></tr><tr><td><code>mp_warmup_end</code></td><td>Ends the warmup.</td></tr><tr><td><code>bot_kick</code></td><td>Removes all bots.</td></tr><tr><td><code>mp_restartgame 1</code></td><td>Restarts the match after 1 second.</td></tr></tbody></table>
+          <h2>Grenade binds: one key for each nade</h2>
+          <p>By default <code>4</code> cycles through your grenades, so in a fight you can pull a flash when you wanted a smoke. Give each grenade its own key instead. One key selects one grenade, so these binds are allowed everywhere. Paste these lines into the console or your autoexec:</p>
+          <div class="code-block"><button class="code-block__copy" type="button">Copy</button><pre>bind z "slot7"
+bind x "slot8"
+bind c "slot6"
+bind v "slot10"</pre></div>
+          <p>That puts the flash on <code>Z</code>, the smoke on <code>X</code>, the HE on <code>C</code> and the molotov on <code>V</code>. Use any keys you like — these are the slot commands behind them:</p>
+          <table class="cmd-table"><thead><tr><th>Command</th><th>Selects</th></tr></thead><tbody><tr><td><code>slot6</code></td><td>HE grenade</td></tr><tr><td><code>slot7</code></td><td>Flashbang</td></tr><tr><td><code>slot8</code></td><td>Smoke grenade</td></tr><tr><td><code>slot9</code></td><td>Decoy grenade</td></tr><tr><td><code>slot10</code></td><td>Molotov (T) or incendiary grenade (CT)</td></tr></tbody></table>
+          <h2>How to throw nades faster</h2>
+          <ul>
+            <li><strong>Select the nade with its own key</strong> instead of cycling with <code>4</code>.</li>
+            <li><strong>Pick the throw on the way:</strong> left click for a long throw, right click for a short underhand throw, both buttons for a medium one.</li>
+            <li><strong>Jump-throws need no bind:</strong> jump and release the grenade at the same moment.</li>
+            <li><strong>Know the lineup before the round:</strong> the position and aim point are what take time, not the throw itself.</li>
+          </ul>
+          <h2>Practice commands for nades</h2>
+          <p>Infinite grenades, the grenade camera, rethrow and clearing smokes are commands for your own server. We put them all, with a ready config and practice binds, in a separate guide: <a href="../guides/cs2-practice-commands/">how to practice nades in CS2</a>.</p>
           <h2>Binds and commands in RushB</h2>
           <p>The Binds section of the app has ready-made binds and a Console tab with commands you can copy in one tap — no searching through forums and old CS:GO guides.</p>
         </div>
@@ -195,6 +206,10 @@ bind n sv_rethrow_last_grenade</pre></div>
         <details class="faq-item">
           <summary>Can I use practice commands in matchmaking?</summary>
           <div class="faq-item__body"><p>No. Commands that need <code>sv_cheats 1</code>, such as <code>sv_rethrow_last_grenade</code> or <code>noclip</code>, only work on your own server or in an offline match.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I bind grenades to separate keys in CS2?</summary>
+          <div class="faq-item__body"><p>Use the slot commands: <code>slot6</code> is the HE grenade, <code>slot7</code> the flashbang, <code>slot8</code> the smoke, <code>slot9</code> the decoy and <code>slot10</code> the molotov or incendiary. For example, <code>bind x "slot8"</code> puts the smoke on X.</p></div>
         </details>
         <details class="faq-item">
           <summary>Where do I save binds so I don’t type them every time?</summary>
@@ -266,6 +281,7 @@ bind n sv_rethrow_last_grenade</pre></div>
       <a href="../setups/">Setups</a>
       <a href="../ai-coach/">AI Coach</a>
       <a href="../binds/">Binds</a>
+      <a href="../guides/">Guides</a>
       <a href="../faq/">FAQ</a>
       <a href="../about/">About</a>
       <a href="../download/">Download</a>
