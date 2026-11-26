@@ -1,0 +1,3663 @@
+{
+ "cdn": "https://cdn.cssensei.com/AllNewGrenades/",
+ "maps": {
+  "ancient": {
+   "label": "Ancient",
+   "total": 131,
+   "free": 47,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "Back Halls",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_backhalls3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "Cave",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_cave.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Cheetah",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_cheetah.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Cheetah",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_cheetah.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Yard",
+     "to": "City",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_city3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Yard",
+     "to": "City",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_ct1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "Deep Back Halls",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_deephalls.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Heaven",
+     "throw": "Standing · jump + left click",
+     "tag": "Insta smoke",
+     "video": "abcient_t_s_hev4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "House",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_house.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "Stairs",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_stairs2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Yard",
+     "to": "Temple",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_temple.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Tunnels",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_tunnels1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Yard",
+     "to": "Tunnels",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_s_donut1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "A Main",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_f_asite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Doors",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_f_bsite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Doors",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_f_bpillar1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Doors",
+     "to": "Cheetah",
+     "throw": "Standing · left click",
+     "tag": "Pop flash",
+     "video": "ancient_t_f_cheetah2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Lane",
+     "to": "Cheetah",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_f_cheetah1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "T Spawn",
+     "to": "Mid",
+     "throw": "Crouching · jump + left click",
+     "tag": "Pop flash",
+     "video": "ancient_t_f_tmid2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Yard",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_f_mid1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "A Main",
+     "to": "Out Main",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_f_outmain.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Doors",
+     "to": "B Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_m_pillar3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Lane",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_m_pillar1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Ramp",
+     "to": "Back Halls",
+     "throw": "One step · jump + left click",
+     "tag": "Retake",
+     "video": "ancient_t_m_backhalls.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Yard",
+     "to": "Cubby",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_m_cubby1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Doors",
+     "to": "Stairs",
+     "throw": "Crouching · jump + left click",
+     "tag": null,
+     "video": "ancient_t_m_bstairs1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "A Main",
+     "to": "Temple",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_t_m_temple1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "A Main",
+     "to": "Triple",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "ancient_t_m_triple1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Ruins",
+     "to": "Wood",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_m_wood1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Doors",
+     "to": "X Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_t_m_xbox1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "A Site",
+     "to": "A Main",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_ct_s_amain1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Connector",
+     "throw": "One step · jump + left click",
+     "tag": "Insta smoke",
+     "video": "ancient_mid_elbow_smoke_CT5.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Mid",
+     "to": "Connector",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_ct_s_connector2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Doors",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_s_door1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Back Halls",
+     "to": "Ramp",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_s_bramp3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Back Halls",
+     "to": "Ramp",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_s_bramp2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "A Site",
+     "to": "A Main",
+     "throw": "Standing · jump + left click",
+     "tag": "Pop flash",
+     "video": "ancient_ct_f_amain1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Square",
+     "to": "Cave",
+     "throw": "Standing · jump + left click",
+     "tag": "Pop flash",
+     "video": "ancient_ct_f_sunroom1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_ct_f_tmid1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "House",
+     "to": "Mid Box",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "ancient_ct_f_house.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Square",
+     "to": "Ramp",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_f_highway1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT",
+     "to": "Triple",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "ancient_retake1_a.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Back Halls",
+     "to": "Lane",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_m_highway1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Cave",
+     "to": "Lane",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_ct_m_construction1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Back Halls",
+     "to": "Ramp",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_m_bramp2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Tunnels",
+     "to": "X Box",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "ancient_ct_m_window.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Back Halls",
+     "to": "Lane",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "ancient_ct_n_lane.mp4"
+    }
+   ]
+  },
+  "anubis": {
+   "label": "Anubis",
+   "total": 70,
+   "free": 31,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Main",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_bsite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_bsite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Bridge",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_bridge.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ruins",
+     "to": "Dark",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_dark2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Dark",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_dark.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Boat",
+     "to": "Heaven",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_heaven.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Boat",
+     "to": "Plat",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "anubis_t_s_plateau.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Zero",
+     "to": "Plat",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_s_plat2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "B Main",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_f_bsite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Ruins",
+     "to": "Mid",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "anubis_t_f_mid.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Boat",
+     "to": "Plat",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_t_f_asite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Headshot",
+     "to": "Plat",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "anubis_t_f_plat.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Top Mid",
+     "to": "Ruins",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "anubis_t_f_ruins.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Stairs",
+     "to": "Water",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "anubis_t_f_water.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Headshot",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_asite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Upper",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_asite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Headshot",
+     "to": "Con",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_connector.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Ruins",
+     "to": "Default",
+     "throw": "One step · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_bsite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Dark",
+     "to": "House",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "anubis_t_m_house.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Main",
+     "to": "Pillar",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_pillar1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Ruins",
+     "to": "Pillar",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "anubis_t_m_pillar2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Upper",
+     "to": "Connector",
+     "throw": "One step · left click",
+     "tag": "Retake",
+     "video": "anubis_t_n_connector.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Con",
+     "to": "Headshot",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_ct_s_headshot.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Stairs",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_ct_s_stairs.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Top Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_ct_s_topmid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Fountain",
+     "to": "A Main",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "anubis_ct_f_Amain.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Dark",
+     "to": "Dark",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "anubis_ct_f_dark.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "anubis_ct_f_mid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid Doors",
+     "to": "Water",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "anubis_ct_f_water.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "CT",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "anubis_ct_m_asite1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Sniper",
+     "to": "B Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "anubis_ct_m_bsite.mp4"
+    }
+   ]
+  },
+  "cache": {
+   "label": "Cache",
+   "total": 39,
+   "free": 19,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_t_sm_a3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Toxic Room",
+     "to": "CT",
+     "throw": "Standing · jump + both buttons",
+     "tag": null,
+     "video": "cache_t_sm_ct.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T",
+     "to": "Catwalk",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_t_sm_catwalk.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T",
+     "to": "Con",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "cache_t_sm_connector.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T",
+     "to": "Con",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "cache_t_sm_connector5.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Toxic Room",
+     "to": "Heaven",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_t_sm_heven.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_t_fl_a1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Squeaky",
+     "to": "A Site",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "cache_t_fl_a.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Sunroom",
+     "to": "B Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_fl_t_b2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Garage",
+     "to": "Middle",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_t_fl_middle1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Long",
+     "to": "Middle",
+     "throw": "Walk step · jump + left click",
+     "tag": null,
+     "video": "cache_t_fl_middle.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Sunroom",
+     "to": "Corner",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_t_ml_default4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Main",
+     "to": "Forklift",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_t_ml_forklift.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Sunroom",
+     "to": "Headshot",
+     "throw": "Walk step · jump + left click",
+     "tag": null,
+     "video": "cache_t_ml_headshot2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Vent",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_t_ml_vents.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "T",
+     "to": "White Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_t_ml_white box.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Garage",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_ct_sm_garage.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Car",
+     "to": "Main",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "cache_ct_sm_main.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "cache_ct_fl_b.mp4"
+    }
+   ]
+  },
+  "dust2": {
+   "label": "Dust 2",
+   "total": 243,
+   "free": 121,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_asite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Outside Tunnel",
+     "to": "B Doors",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_bdoor3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Platform",
+     "to": "B Doors",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_t_b_smoke.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Upper Tunnel",
+     "to": "B Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_bdoor1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Mid Doors",
+     "to": "CT Base",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctbasebox3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "CT Base",
+     "throw": "Running · jump + left click",
+     "tag": "Fake",
+     "video": "dust2_t_s_ctbase4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "X Box",
+     "to": "CT Base",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_ct3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "CT Boost",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctrampboxes5.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "CT Boost",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctrampboxes4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Long",
+     "to": "CT Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_a_cross6.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Long Blue Box",
+     "to": "CT Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_a_cross3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "CT Ramp",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctramp4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "CT Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctramp3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Short",
+     "to": "CT Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_ctramp2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Long",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_long.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Long",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_a_long2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Long Doors",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_longantimolo1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Top Mid",
+     "to": "Lower Tunnel",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "dust2_t_s_lowertunnels1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Suicide",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_middoors6.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Mid Doors",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_middoors7.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "X Box",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_middoors3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Lower Tunnel",
+     "to": "Mid to B",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_s_mid2b2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Out Tunnel",
+     "to": "Window",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_window2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Upper Tunnel",
+     "to": "Window",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_window1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "X Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_xbox8.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "X Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_s_xbox7.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_asitefollowup1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_asiteentryshort3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Upper Tunnel",
+     "to": "B Fence",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "dust2_t_f_bsiterush1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Long",
+     "to": "Long",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_asiteentrylong2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Long Doors",
+     "to": "Long",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_alongcorner2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Outside Long",
+     "to": "Long Doors",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_longleft1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Outside Long",
+     "to": "Long Doors",
+     "throw": "Crouching · left click",
+     "tag": "Pop flash",
+     "video": "dust2_t_f_longdoors2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Short",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_f_mid2b1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Top Mid",
+     "to": "Mid",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_f_antimid1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_f_middoors4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "X Box",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_f_middoors2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Outside Long",
+     "to": "Pit",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_longright3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Lower Tunnel",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": "Pop flash",
+     "video": "dust2_t_f_ashort3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_f_ashort2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Top Mid",
+     "to": "Short",
+     "throw": "Standing · jump + left click",
+     "tag": "Pop flash",
+     "video": "dust2_t_f_ashortstairs1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Outside Long",
+     "to": "Side Pit",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "dust2_t_f_sidepit.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Outside Long",
+     "to": "Side Pit",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_f_longfollowup1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_asitequad1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_asite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_m_topramplong1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Short",
+     "to": "CT Boost",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_m_ctrampboxes3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Out Box",
+     "to": "Car",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_car.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Goose",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_m_goose1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Upper Tunnel",
+     "to": "Headshot",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_bheadshot1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long Doors",
+     "to": "Long Doors",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_m_longdoors1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Top Mid",
+     "to": "Lower Tunnel",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_m_lowertunnels1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Suicide",
+     "to": "Mid Doors",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_m_mid1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "X Box",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_m_closemid3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Mid",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_m_ashortstairs3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Short",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_ashortstairs1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_m_ashort3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Suicide",
+     "to": "Short",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_m_catwalk1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Tunnel",
+     "to": "Window",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_m_bwindow1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "dust2_t_h_backasite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_h_asitesafe1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_h_asite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Upper Tunnel",
+     "to": "B Fence",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_t_h_bfence1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Upper Tunnel",
+     "to": "B Platform",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "dust2_t_h_bbarrels1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Long Car",
+     "to": "Elevator",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_h_elevator1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Upper Tunnel",
+     "to": "Headshot",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "dust2_t_h_bheadshot1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Outside Long",
+     "to": "Long Doors",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_t_h_longdoors1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Short",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_h_ashort2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Mid",
+     "to": "Short Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_t_h_ashortstairs2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Elevator",
+     "to": "Long",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_s_a_long1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Long",
+     "to": "Long Doors",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_s_longdoors10.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Pit",
+     "to": "Long Doors",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_s_longdoors11.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Mid Cross",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "dust2_ct_s_midcross1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Mid Doors",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_s_midxbox1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Short",
+     "to": "Top Mid",
+     "throw": "Crouching · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_s_topmid1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "B Site",
+     "to": "Tunnel",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_s_b_entracne5.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Short",
+     "to": "A Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_aramp2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid to B",
+     "to": "B Doors",
+     "throw": "Standing · left click",
+     "tag": "Pop flash",
+     "video": "dust_ct_b_flash.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "B Side",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_f_bsiteretake1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "B Side",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_f_bsiteretake2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Window",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "dust2_ct_f_bsite2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid Car",
+     "to": "Big Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_f_bsitedoors1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Box Door",
+     "to": "Box",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_longdoorroom1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Ramp",
+     "to": "Long",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_across1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Ramp",
+     "to": "Long",
+     "throw": "Standing · both buttons",
+     "tag": null,
+     "video": "dust2_ct_f_across2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Spawn",
+     "to": "Long",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "dust2_ct_f_across3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "A Ramp",
+     "to": "Long Corner",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_f_alongsupport_1st3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Corner",
+     "to": "Long Corner",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_alongsupport_1st1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Car",
+     "to": "Long Corner",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "dust2_ct_f_alongretake3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Long",
+     "to": "Long Corner",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "dust2_ct_f_alongretake1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Spawn",
+     "to": "Mid",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "dust2_ct_f_mid3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_f_mid4.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid to B",
+     "to": "Mid",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "dust2_ct_f_mid5.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Short",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "dust2_ct_f_mid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "A Side",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_ashort2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "A Site",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_f_short2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Boost",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": "Pop flash",
+     "video": "dust2_ct_f_ashortstairs3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Corner",
+     "to": "Short",
+     "throw": "Crouching · left click",
+     "tag": null,
+     "video": "dust2_ct_f_asitesupport1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Ramp",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_f_ashort3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Short",
+     "to": "A Ramp",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_m_topramplong1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Short",
+     "to": "A Site",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_asite2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "B Window",
+     "to": "B Site",
+     "throw": "Standing · both buttons",
+     "tag": "Retake",
+     "video": "dust2_ct_m_bdefault1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Window",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_bsite.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Upper Tunnel",
+     "to": "Headshot",
+     "throw": "Running · jump + left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_headshot.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Long Blue",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_m_longblue1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Lower Tunnel",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_m_lowertunnels1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "A Site",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_m_ashort1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Boost",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_cat3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Boost",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_ashortstairs2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Mid to B",
+     "to": "Short",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "dust2_ct_m_catwalk3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Mid Doors",
+     "to": "Top Mid",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_m_topmid1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "B Site",
+     "to": "Tunnel",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_m_bentrance1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "B Window",
+     "to": "B Side Corner",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_h_bdefault1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "B Window",
+     "to": "Big Box",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_h_bxbox1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Short",
+     "to": "CT Ramp",
+     "throw": "Standing · both buttons",
+     "tag": "Reveal HE",
+     "video": "dust2_ct_h_across1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Mid to B",
+     "to": "Close",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_h_bcar1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Short",
+     "to": "Lower Tunnel",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_h_lowertunnels1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "CT Box",
+     "to": "Mid Doors",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_h_middoorscross1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Ramp",
+     "to": "Short",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "dust2_ct_h_ashort2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Boost",
+     "to": "Short Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "dust2_ct_h_ashortcat2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "B Big Box",
+     "to": "Upper Tunnel",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "dust2_ct_h_btunnels1.mp4"
+    }
+   ]
+  },
+  "inferno": {
+   "label": "Inferno",
+   "total": 170,
+   "free": 71,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_banana.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Banana",
+     "to": "City",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_city.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Sandbags",
+     "to": "City",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_city1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Banana",
+     "to": "Coffin",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_t_s_coffin.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Second Mid",
+     "to": "Long",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_mid4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ramp",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_s_mid.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ramp",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_mid.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Mid",
+     "to": "Moto",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_moto.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Second Mid",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_s_short.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Apps",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_t_f_asite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Mid",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_t_f_asite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Banana",
+     "to": "B Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_t_f_bsite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Banana",
+     "to": "B Site",
+     "throw": "Standing · jump + both buttons",
+     "tag": null,
+     "video": "inferno_t_f_Bsite4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Apps",
+     "to": "Balcony",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_f_balcony.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Ramp",
+     "to": "Banana",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_f_banana.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Barrels",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_f_banana2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Banana",
+     "to": "CT Pillar",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_f_city6.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Banana",
+     "to": "CT Pillar",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_f_city5.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Second Mid",
+     "to": "Long",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_f_mid6.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Apps",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_f_mid4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_f_short2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Second Mid",
+     "to": "Apps",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "inferno_t_m_apps.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_asite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Banana",
+     "to": "Coffin",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_coffin.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Mid",
+     "to": "Cubby",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "inferno_t_m_cubby.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Sandbags",
+     "to": "Dark",
+     "throw": "One step · left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_dark.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Barrels",
+     "to": "New Box",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_newbox.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Mid",
+     "to": "Quad",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_t_m_quad.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Banana",
+     "to": "Start Banana",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_sandbags.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Under Balcony",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_t_m_underbalcony.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Banana",
+     "to": "B Side",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_h_C1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "inferno_t_h_sandbags2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Banana",
+     "to": "City",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_t_n_city.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Boiler",
+     "to": "Quad",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "inferno_t_n_quad.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Long",
+     "to": "Balcony",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "inferno_ct_s_balcony.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Pit",
+     "to": "Balcony",
+     "throw": "Standing · left click",
+     "tag": "One-way",
+     "video": "inferno_ct_oneway4.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "B Site",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_s_banana4.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_sm_banan.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Banana",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_s_mid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_s_banana5.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Coffin",
+     "to": "Banana",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_s_banana1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Sandbags",
+     "to": "Banana",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "inferno_ct_s_banana14.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Short",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_s_mid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Short",
+     "to": "Moto",
+     "throw": "Standing · jump + both buttons",
+     "tag": null,
+     "video": "inferno_ct_s_long.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "A Site",
+     "to": "Short",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_s_short4.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_f_graveyard.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "CT Spawn",
+     "to": "B Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_f_Bsite2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_f_banana3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_f_banana.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "C1",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_f_banana2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "City",
+     "to": "Banana",
+     "throw": "Crouching · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_f_banana1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Balcony",
+     "to": "Mid",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_f_mid2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Long",
+     "to": "Mid",
+     "throw": "Standing · jump + both buttons",
+     "tag": null,
+     "video": "inferno_ct_f_mid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Pit",
+     "to": "Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_f_short.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Mid",
+     "to": "Second Mid",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_f_secondmid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Small Pit",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_f_short3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_m_asite.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "B Site",
+     "to": "Banana",
+     "throw": "Standing · both buttons",
+     "tag": null,
+     "video": "inferno_ct_m_banana6.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Sandbags",
+     "to": "Banana",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_m_banana3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Sandbags",
+     "to": "Banana",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "inferno_ct_m_banana.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Pit",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_m_sand.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Long",
+     "to": "Pit",
+     "throw": "One step · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_m_pit2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Mid",
+     "to": "Second Mid",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_m_secondmid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Long",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_h_Asite.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "CT Pillar",
+     "to": "B Site",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_h_Bsite.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Banana",
+     "to": "Banana",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_h_banana2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "City",
+     "to": "Banana",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "inferno_ct_n_banana.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Coffin",
+     "to": "Banana",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_h_banana3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "B Site",
+     "to": "Car",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "inferno_ct_h_car.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Garden",
+     "to": "New Box",
+     "throw": "One step · left click",
+     "tag": "Retake",
+     "video": "inferno_ct_h_newbox.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Mid",
+     "to": "Second Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "inferno_ct_h_second_mid.mp4"
+    }
+   ]
+  },
+  "mirage": {
+   "label": "Mirage",
+   "total": 160,
+   "free": 91,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "TV",
+     "to": "B Apps",
+     "throw": "Standing · jump + left click",
+     "tag": "One-way",
+     "video": "mirage_t_sm_baps7.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Apps",
+     "to": "B Door",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_bdoor.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Apps",
+     "to": "B Window",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_bwindow.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Bench",
+     "to": "B Window",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_s_kitchenwindow_4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Car",
+     "to": "B Window",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_s_kitchenwindow_3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_s_catwalk_3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": "Insta smoke",
+     "video": "mirage_sm_t_instatopmid1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": "Insta smoke",
+     "video": "mirage_sm_t_instatopmid2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": "Insta smoke",
+     "video": "mirage_sm_t_instatopmid3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": "Insta smoke",
+     "video": "mirage_sm_t_instatopmid4.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Catwalk",
+     "throw": "Standing · left click",
+     "tag": "Insta smoke",
+     "video": "mirage_sm_t_instatopmid5.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "City",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_city.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Con",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_connector.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Stairs TV",
+     "to": "Corner",
+     "throw": "Crouching · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_arches_3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Top Mid",
+     "to": "Corner",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_arches_1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Tetris",
+     "to": "Jungle",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_deepjungle_1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Apps",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_s_short2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Short",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_s_short1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "B Stairs",
+     "to": "Top Con",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_sm_t_topconfromb.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T",
+     "to": "Top Con",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_a_t_sm_topcon1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "White Box",
+     "to": "Top Con",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_sm_t_topconfrommid.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Mid Box",
+     "to": "Window",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_a_t_sm_wind 6.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Window",
+     "throw": "Standing · jump + D + left click",
+     "tag": null,
+     "video": "mirage_t_s_window.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Window",
+     "throw": "Standing · jump + W + left click",
+     "tag": "Insta smoke",
+     "video": "mirage_t_s_instawindow3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Window",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "Mirage_t_smoke_window.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "B Back Side",
+     "to": "B Door",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_f_kitchen2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "B Side",
+     "to": "B Door",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_f_kitchen3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Edward",
+     "to": "B Door",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_f_kitchen1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "B Stairs",
+     "to": "B Side",
+     "throw": "Running · jump + left click",
+     "tag": "Pop flash",
+     "video": "mirage_t_f_bsite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "B Apps",
+     "to": "Car",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "mirage_t_b_retake2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Top Mid",
+     "to": "Connector",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_f_connector1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "TV Room",
+     "to": "Mid",
+     "throw": "Walking · jump + left click",
+     "tag": null,
+     "video": "mirage_t_f_mid.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Chair",
+     "to": "Short Box",
+     "throw": "Standing · jump + W + left click",
+     "tag": null,
+     "video": "mirage_t_f_short3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Long Doors",
+     "to": "Short Box",
+     "throw": "Standing · left click",
+     "tag": "Fake",
+     "video": "mirage_t_f_short1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "T Ramp",
+     "to": "Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_f_stairs2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Palace",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_asite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Apps",
+     "to": "B Back Side",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_t_m_b_backsite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Plant",
+     "to": "B Door",
+     "throw": "Standing · jump + both buttons",
+     "tag": "Retake",
+     "video": "mirage_t_m_door.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Car",
+     "to": "B Door",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_b_doors1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Apps",
+     "to": "B Site",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_t_m_bsite.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Car",
+     "to": "B Window",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_b_window.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Apps",
+     "to": "Bench",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_bench.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "B Apps",
+     "to": "Car",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_car.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Top Mid",
+     "to": "Connector",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_t_m_connector.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "T Ramp",
+     "to": "Sandwich",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_m_sandwich1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Top Mid",
+     "to": "Short",
+     "throw": "Standing · jump + W + left click",
+     "tag": null,
+     "video": "mirage_t_ml_short2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "T Ramp",
+     "to": "Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_stairs.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Triple Box",
+     "to": "Ticket",
+     "throw": "Crouching · jump + both buttons",
+     "tag": "Retake",
+     "video": "mirage_t_m_ticket1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Under",
+     "to": "Vent",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_jungledeep.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Under",
+     "to": "Window",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_m_window2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "B Apps",
+     "to": "B Back Side",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_h_b_backsite_right.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Underground",
+     "to": "Jungle",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_t_n_Jungle.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Near Connector",
+     "to": "Ladder Room",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_t_h_ladder1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Boost",
+     "to": "Short Box",
+     "throw": "Running · jump + left click",
+     "tag": null,
+     "video": "mirage_t_h_short2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Near Connector",
+     "to": "Short Box",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_t_h_short1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "T Ramp",
+     "to": "Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_t_n_stairs.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Boost",
+     "to": "Window",
+     "throw": "Standing · jump + right click",
+     "tag": null,
+     "video": "mirage_t_h_window_cancel.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Top Mid",
+     "to": "Window",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_t_h_window1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Bench",
+     "to": "B Apps",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_ct_s_apps2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Trash",
+     "to": "B Apps",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_apps1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Car",
+     "to": "B Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_apps5.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Car",
+     "to": "B Stairs",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_sm_ct_bappsfast.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Car",
+     "to": "Car",
+     "throw": "Standing · right click",
+     "tag": "One-way",
+     "video": "mirage_ct_sm_b6.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Window",
+     "to": "Con",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_connector.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Connector",
+     "to": "Palace",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_palace2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Under Palace",
+     "to": "Palace",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_ct_s_palace1.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT",
+     "to": "Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_ramp2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Jungle",
+     "to": "Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_ramp3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Ninja A",
+     "to": "Ramp",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_ramp4.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Short",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_s_short2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Under Palace",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_ct_f_ramp.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Bench",
+     "to": "B Apps",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_f_apps3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Edward",
+     "to": "B Apps",
+     "throw": "Standing · jump + both buttons",
+     "tag": null,
+     "video": "mirage_ct_f_apps2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Fire Box",
+     "to": "Connector",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_ct_f_con.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Ninja A",
+     "to": "Connector",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_f_con3.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Jungle",
+     "to": "Ramp",
+     "throw": "Running · left click",
+     "tag": "Pop flash",
+     "video": "mirage_ct_f_ramp9.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Edward",
+     "to": "Short",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_f_short9.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Con",
+     "to": "Top Mid",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_f_topmid.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Con",
+     "to": "Under",
+     "throw": "Standing · both buttons",
+     "tag": null,
+     "video": "mirage_ct_f_under.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Bench",
+     "to": "B Apps",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_ct_m_apps2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Corner",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_m_corner.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "City",
+     "to": "Ramp",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_ct_m_ramp.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Short",
+     "to": "Under",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_ct_m_under2.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Jungle",
+     "to": "A Default",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_h_default.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Jungle",
+     "to": "A Site",
+     "throw": "One step · left click",
+     "tag": null,
+     "video": "mirage_ct_g_Adefolt.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Market",
+     "to": "B Default",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "mirage_ct_h_Bsite.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Short",
+     "to": "Chair",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "mirage_ct_h_chair.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Connector",
+     "to": "Connector",
+     "throw": "Standing · right click",
+     "tag": "Reveal HE",
+     "video": "mirage_ct_h_con.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Jungle",
+     "to": "Sandwich",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_h_sandwich.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Jungle",
+     "to": "Tetris",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_ct_g_tetris.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Window",
+     "to": "Window",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "mirage_sm_he_windowreveal.mp4"
+    }
+   ]
+  },
+  "nuke": {
+   "label": "Nuke",
+   "total": 39,
+   "free": 21,
+   "lineups": [
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Ramp",
+     "to": "B Smoke",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "nuke_t_s_bsmoke.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn",
+     "to": "Garage",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_t_s_garage.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Roof",
+     "to": "Heaven",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_t_s_heaven.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn Car",
+     "to": "Out Main",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_t_s_outmain2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "T Spawn Car",
+     "to": "Out Main",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_t_s_outmain3.mp4"
+    },
+    {
+     "side": "T",
+     "type": "smoke",
+     "from": "Trophy",
+     "to": "Ramp",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "nuke_t_s_ramp.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Main Roof",
+     "to": "A Site",
+     "throw": "One step · left click",
+     "tag": "Retake",
+     "video": "nuke_t_f_asite2.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Roof",
+     "to": "A Site",
+     "throw": "Standing · jump + left click",
+     "tag": "Retake",
+     "video": "nuke_t_f_asite1.mp4"
+    },
+    {
+     "side": "T",
+     "type": "flash",
+     "from": "Lobby",
+     "to": "Main",
+     "throw": "Running · left click",
+     "tag": "Retake",
+     "video": "nuke_t_f_main.mp4"
+    },
+    {
+     "side": "T",
+     "type": "molotov",
+     "from": "Outside",
+     "to": "Secret",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "nuke_t_m_secret.mp4"
+    },
+    {
+     "side": "T",
+     "type": "he",
+     "from": "Red Box",
+     "to": "Garage",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_t_n_garage.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "Ramp",
+     "to": "Control",
+     "throw": "Running · left click",
+     "tag": null,
+     "video": "nuke_ct_s_control.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Outside",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_ct_s_outside.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "smoke",
+     "from": "CT Spawn",
+     "to": "Red Box",
+     "throw": "Standing · jump + left click",
+     "tag": null,
+     "video": "nuke_ct_s_redbox.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Hut",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "nuke_retake2_a.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Vent",
+     "to": "A Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "nuke_retake3_a.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Window",
+     "to": "B Site",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "nuke_retake4_b.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "flash",
+     "from": "Heaven",
+     "to": "Hut",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "nuke_ct_f_hut.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "Ramp",
+     "to": "Dark",
+     "throw": "Standing · left click",
+     "tag": "Retake",
+     "video": "nuke_retake5_b.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "molotov",
+     "from": "CT Box",
+     "to": "Outside",
+     "throw": "One step · left click",
+     "tag": "Retake",
+     "video": "nuke_ct_m_outside.mp4"
+    },
+    {
+     "side": "CT",
+     "type": "he",
+     "from": "Heaven",
+     "to": "Silo",
+     "throw": "Standing · left click",
+     "tag": null,
+     "video": "nuke_ct_n_silo.mp4"
+    }
+   ]
+  }
+ }
+}
