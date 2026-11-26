@@ -670,6 +670,9 @@ def guides_body(r):
             {"kicker": "Tool", "title": "FACEIT Elo calculator",
              "text": "Your level, the Elo to the next one and how many matches it takes at your win rate.",
              "href": f"{r}tools/faceit-elo-calculator/", "more": "Open"},
+            {"kicker": "Updates", "title": "CS2 updates & patch notes",
+             "text": "The last 50 Counter-Strike 2 updates in plain words, with what each one means for your game.",
+             "href": f"{r}updates/", "more": "Read"},
             {"kicker": "Smokes", "title": "CS2 smoke lineups",
              "text": "Execute smokes, one-ways, instant and retake smokes for the competitive maps.",
              "href": f"{r}lineups/smokes/", "more": "Read"},
@@ -854,6 +857,85 @@ LEVEL10_FAQ = [
     ("Is Level 10 the highest FACEIT rank?",
      "<p>Level 10 is the highest level and starts at 2,001 Elo. The top 1,000 players at Level 10 hold the Challenger rank.</p>"),
 ]
+
+
+# ---------------------------------------------------------------- CS2 updates
+# Our own summaries of Valve's CS2 update posts (see _build/data/updates.json). Newest first.
+UPDATES = _json.load(open(_os.path.join(_os.path.dirname(__file__), "data", "updates.json"), encoding="utf-8"))["updates"]
+STEAM_NEWS = "https://store.steampowered.com/news/app/730/view/"
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+          "November", "December"]
+
+
+def _update_ids():
+    seen, ids = {}, []
+    for u in UPDATES:
+        n = seen.get(u["date"], 0) + 1
+        seen[u["date"]] = n
+        ids.append(f"update-{u['date']}" + (f"-{n}" if n > 1 else ""))
+    return ids
+
+
+def _nice_date(iso):
+    y, m, d = iso.split("-")
+    return f"{MONTHS[int(m) - 1]} {int(d)}, {y}"
+
+
+def updates_body(r):
+    ids = _update_ids()
+    months = {}
+    for u, uid in zip(UPDATES, ids):
+        months.setdefault(u["date"][:7], []).append((u, uid))
+    nav = "".join(f'<a href="#month-{k}">{MONTHS[int(k[5:]) - 1]} {k[:4]} <span>{len(v)}</span></a>' for k, v in months.items())
+    blocks = []
+    for k, items in months.items():
+        cards = []
+        for u, uid in items:
+            tags = "".join(f'<span class="lineup__tag">{_html.escape(t)}</span>' for t in u["tags"])
+            points = "".join(f"<li>{_html.escape(p)}</li>" for p in u["points"])
+            matters = (f'<p class="update__matters"><strong>What it means for you:</strong> {_html.escape(u["matters"])}</p>'
+                       if u.get("matters") else "")
+            cards.append(f'''          <article class="update" id="{uid}">
+            <div class="update__meta"><time datetime="{u["date"]}">{_nice_date(u["date"])}</time>{tags}</div>
+            <h3 class="update__title">{_html.escape(u["title"])}</h3>
+            <ul class="update__points">{points}</ul>
+            {matters}
+            <a class="update__source" href="{STEAM_NEWS}{u["gid"]}" rel="noopener">Official patch notes on Steam →</a>
+          </article>''')
+        blocks.append(f'''        <h2 class="update-month" id="month-{k}">{MONTHS[int(k[5:]) - 1]} {k[:4]}</h2>
+        <div class="update-list">
+{chr(10).join(cards)}
+        </div>''')
+    intro = prose('''          <p>Valve ships a Counter-Strike 2 update every week or two. Below are the last 50, newest first, in plain words: what changed, and for the updates that touch maps, grenades or gameplay, what it means for your game. Each one links to Valve’s official notes on Steam.</p>''')
+    return "\n".join([
+        section(intro + '\n        <nav class="lineup-nav" aria-label="Jump to a month">' + nav + "</nav>", " page-section--tight"),
+        section("\n".join(blocks), " page-section--tight"),
+        section(head("Keep your lineups up to date") + "\n" + tiles([
+            {"kicker": "Nades", "title": "Free lineups by map",
+             "text": "Smokes, flashes, molotovs and HE grenades with video for the seven competitive maps.",
+             "href": f"{r}lineups/#maps", "more": "Open"},
+            {"kicker": "Practice", "title": "How to practice nades",
+             "text": "Re-test a lineup after an update in two minutes: unlimited nades, grenade camera, rethrow.",
+             "href": f"{r}guides/cs2-practice-commands/", "more": "Read"},
+            {"kicker": "Binds", "title": "CS2 binds that still work",
+             "text": "Grenade binds, the mouse-wheel jump and why the jump-throw bind is gone.",
+             "href": f"{r}binds/", "more": "Read"},
+        ]), " page-section--tight"),
+    ])
+
+
+def updates_faq():
+    last = UPDATES[0]
+    return [
+        ("When was the last CS2 update?",
+         f"<p>The latest update on this page is from {_nice_date(last['date'])}: {_html.escape(last['title'][0].lower() + last['title'][1:])}. We add new updates at the top of this page.</p>"),
+        ("Which maps are in the CS2 Active Duty pool?",
+         "<p>Since Premier Season Five began on July 8, 2026: Ancient, Anubis, Cache, Dust II, Inferno, Mirage and Nuke. Cache came in and Overpass went out with that update.</p>"),
+        ("Can a CS2 update break my grenade lineups?",
+         "<p>Yes. Clipping changes, new geometry or a change in player height can move where a grenade lands. In 2026 Valve warned that lineups thrown from slopes may have changed with the new animation system, and Cache’s grenade clipping changed several times. Re-test a lineup in practice after a big map update.</p>"),
+        ("Where can I read the official CS2 patch notes?",
+         "<p>Valve posts every update on the Counter-Strike 2 news page on Steam. Each entry on this page links to its official post.</p>"),
+    ]
 
 
 # ---------------------------------------------------------------- FAQ
@@ -1057,6 +1139,18 @@ PAGES = [
         "lead": "Enter your Elo and win rate to see your level, the Elo to the next one and about how many matches it takes to reach any level — up to Level 10.",
         "updated": "2026-11-26",
         "aside": calculator_form, "body": calculator_body, "faq": CALCULATOR_FAQ, "scripts": ["elo.js"],
+    },
+    {
+        "slug": "updates/", "nav": "Updates",
+        "title": "CS2 Updates & Patch Notes: The Last 50 Updates | RushB",
+        "description": "Every recent Counter-Strike 2 update in plain words: map, grenade and gameplay changes, what they mean for your game, and links to Valve’s official patch notes.",
+        "crumb": "CS2 updates",
+        "h1": 'CS2 <span class="accent">updates</span> &amp; patch notes',
+        "lead": "The last 50 Counter-Strike 2 updates from Valve in plain words — what changed and what it means for your game. Newest first, each with a link to the official notes.",
+        "updated": "2026-11-26",
+        "stats": [("50", "latest updates"), (str(sum(1 for u in UPDATES if "Grenades" in u["tags"])), "touch grenades"), (str(sum(1 for u in UPDATES if "Maps" in u["tags"])), "change maps")],
+        "screens": [("screen-nades-single.webp", "RushB app: single grenade lineups on the Mirage radar"), ("screen-lineup-single.webp", "RushB app: smoke lineup with throw type and screenshot breakdown"), ("screen-tactics-list.webp", "RushB app: tactics for Mirage filtered by buy, pistol, eco and force rounds")],
+        "body": updates_body, "faq": updates_faq(),
     },
     {
         "slug": "faq/", "nav": "",

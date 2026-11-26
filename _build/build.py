@@ -28,11 +28,12 @@ SOCIAL = [
      '<path d="M21.75 10.5h-7.5a3.75 3.75 0 00-3.75 3.75v7.5a3.75 3.75 0 003.75 3.75h7.5a3.75 3.75 0 003.75-3.75v-7.5a3.75 3.75 0 00-3.75-3.75zM18 21.75a3.75 3.75 0 110-7.5 3.75 3.75 0 010 7.5zm4.01-7.04a.75.75 0 110-1.5.75.75 0 010 1.5z"/><circle cx="18" cy="18" r="2.25"/>'),
 ]
 NAV = [("Home", ""), ("Nades", "lineups/"), ("Tactics", "tactics/"), ("Setups", "setups/"),
-       ("AI Coach", "ai-coach/"), ("Binds", "binds/"), ("Contact", "#contact")]
+       ("AI Coach", "ai-coach/"), ("Binds", "binds/"), ("Updates", "updates/"),
+       ("Contact", "#contact")]
 FOOTER_NAV = [("Nades", "lineups/"), ("Smokes", "lineups/smokes/"), ("Flashes", "lineups/flashes/"),
               ("HE grenades", "lineups/he-grenades/"), ("Molotovs", "lineups/molotovs/"),
               ("Tactics", "tactics/"), ("Setups", "setups/"), ("AI Coach", "ai-coach/"),
-              ("Binds", "binds/"), ("Guides", "guides/"), ("FAQ", "faq/"), ("About", "about/"), ("Download", "download/")]
+              ("Binds", "binds/"), ("Guides", "guides/"), ("CS2 updates", "updates/"), ("FAQ", "faq/"), ("About", "about/"), ("Download", "download/")]
 
 e = html.escape
 
