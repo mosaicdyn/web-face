@@ -145,7 +145,9 @@ def hero(p, r):
         d = datetime.date.fromisoformat(p["updated"])
         updated = f'<p class="page-meta">Updated <time datetime="{d.isoformat()}">{d.strftime("%B")} {d.day}, {d.year}</time> · by the RushB team</p>'
     device = ""
-    if p.get("screens"):
+    if p.get("aside"):
+        device = p["aside"](r)
+    elif p.get("screens"):
         device = phones(p["screens"], r)
     return f'''    <section class="page-hero" aria-labelledby="page-title">
       <div class="hero__bg" aria-hidden="true"><img src="{r}assets/img/hero-wall.webp" alt="" width="1440" height="1682" /></div>

@@ -818,3 +818,24 @@ a.tile:hover { border-color: var(--accent); transform: translateY(-4px); box-sha
   .lineup-grid { grid-template-columns: 1fr; }
   .lineup-group__title { font-size: 20px; margin-top: 36px; }
 }
+
+/* ---------- FACEIT Elo calculator ---------- */
+.elo-calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; padding: 28px; border-radius: 24px; background: rgba(255,255,255,.03); border: 1px solid rgba(5,224,178,.25); }
+.elo-calc__inputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-content: start; }
+.elo-calc .field__input { height: 52px; padding: 0 16px; }
+.elo-calc select.field__input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--accent) 50%), linear-gradient(135deg, var(--accent) 50%, transparent 50%); background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 36px; }
+.elo-calc select.field__input option { background: #0e0f13; color: #fff; }
+.elo-calc__more { grid-column: 1 / -1; }
+.elo-calc__more summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--accent); }
+.elo-calc__pair { margin-top: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.elo-calc__result { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start; }
+.elo-stat { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border-radius: 16px; background: rgba(5,224,178,.05); }
+.elo-stat span { font-size: 13px; color: rgba(255,255,255,.6); }
+.elo-stat strong { font-family: var(--font-display); font-weight: 400; font-size: 28px; line-height: 1.1; }
+.elo-stat--main { grid-column: 1 / -1; border: 1px solid var(--accent-2); }
+.elo-stat--main strong { font-size: 40px; color: var(--accent); }
+.elo-calc__note { grid-column: 1 / -1; font-size: 15px; line-height: 1.55; color: rgba(255,255,255,.75); }
+.prose .sources { margin-top: 28px; font-size: 13px; color: rgba(255,255,255,.5); }
+.page-hero__grid .elo-calc { grid-template-columns: 1fr; align-self: start; padding: 24px; }
+@media (max-width: 900px) { .elo-calc { grid-template-columns: 1fr; padding: 20px; } }
+@media (max-width: 420px) { .elo-calc__inputs { grid-template-columns: 1fr; } .elo-stat strong { font-size: 24px; } }
