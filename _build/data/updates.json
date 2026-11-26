@@ -1,0 +1,714 @@
+{
+ "source": "Valve, Counter-Strike 2 update posts on Steam (steam_community_announcements)",
+ "updates": [
+  {
+   "date": "2026-11-23",
+   "gid": "1849827110444052",
+   "title": "Cobblestone clean-up after its return",
+   "tags": [
+    "Maps"
+   ],
+   "points": [
+    "Cobblestone: closed a spot in the Princess tower where the bomb could be thrown out of reach.",
+    "Cobblestone: fixed bad wallbangs, boosts, walkable ledges and gaps, plus smoother movement across the map.",
+    "Cobblestone: grenades no longer fall through the world at one spot on B.",
+    "Third-person silent reload animations now play at the right speed."
+   ],
+   "matters": "Cobblestone is new in matchmaking again, so expect more fixes like these for a while."
+  },
+  {
+   "date": "2026-11-19",
+   "gid": "1849827110426557",
+   "title": "Inferno B grenade exploit closed, more Cobblestone fixes",
+   "tags": [
+    "Maps",
+    "Grenades"
+   ],
+   "points": [
+    "Inferno: closed a grenade and molotov exploit spot from Church to Dark on B site.",
+    "Cobblestone: fixed walkable ledges in Long A, an empty skybox, an audio blocker near mid/A, and added a grenade clip to the van bumper.",
+    "New slow (silent) reload animation for the AWP.",
+    "Players in Switzerland now open containers through an X-Ray Scanner in the inventory."
+   ],
+   "matters": "If you used a throw from Church into Dark on Inferno B, test it again in practice before you rely on it."
+  },
+  {
+   "date": "2026-11-17",
+   "gid": "1849827110421976",
+   "title": "Singapore Major hub, Cobblestone back in matchmaking",
+   "tags": [
+    "Major",
+    "Maps"
+   ],
+   "points": [
+    "The PGL Singapore 2026 Major hub is live: tournament items, Pick’Em and a Viewer Pass with an upgradable coin and a leaderboard.",
+    "Cobblestone joins Casual, Competitive, Wingman, Retakes and Deathmatch; Boulder, Fachwerk and Shelter leave official matchmaking.",
+    "Eight new Monstercat music kits.",
+    "Fixes: head dipping at extreme aim angles, the T-side lowered aim pose, defuse kits in Retakes, and T bots now attack CTs who defuse."
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "gid": "1849192144180746",
+   "title": "Animation and stability fixes",
+   "tags": [
+    "Performance"
+   ],
+   "points": [
+    "Less popping when you switch weapons or reload at extreme angles.",
+    "Fixed bot pathing in Retakes and a rendering hang on DirectX 11.",
+    "Better detection of AVX and AVX-512 processors, plus stability and performance work."
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "gid": "1848557880481353",
+   "title": "Faster Retakes, pet chicken tricks",
+   "tags": [
+    "Gameplay",
+    "Workshop"
+   ],
+   "points": [
+    "Retakes: the defuse now finishes instantly when there is enough time and no utility left that could stop it; freeze time and the restart delay are shorter.",
+    "Ping your pet chicken during freeze time and it does a trick; its name is hidden when custom item text is set to hidden.",
+    "Map scripting for Workshop creators was reorganised around a new Entities export, with hooks for bot control."
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "gid": "1847920302232686",
+   "title": "Silent reload: hold or toggle",
+   "tags": [
+    "Gameplay"
+   ],
+   "points": [
+    "New setting: silent reload can work as Hold or Toggle. With Toggle you can let go of the key once it starts; tap reload again to switch back to a fast reload.",
+    "The first sound of a reload no longer leaks when you asked for a silent one.",
+    "Fixed liquid rendering black on AMD cards and some demo-rewind bugs."
+   ],
+   "matters": "If holding reload in a clutch feels awkward, switch silent reload to Toggle."
+  },
+  {
+   "date": "2026-10-22",
+   "gid": "1847286114034398",
+   "title": "Big map scripting update for Workshop creators",
+   "tags": [
+    "Workshop"
+   ],
+   "points": [
+    "New scripting tools for custom maps: asset precaching, hostage events, reading and setting console variables, and game rules such as warmup, team score and ending a round.",
+    "Radar elements can now appear in every game mode, not only Rush.",
+    "Script warnings are more detailed and show the call stack."
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "gid": "1846651706675829",
+   "title": "A better demo viewer",
+   "tags": [
+    "Demos"
+   ],
+   "points": [
+    "Demo and replay downloads show a progress bar.",
+    "The camera uses click-and-drag, and the free and chase cameras work while a demo is paused.",
+    "Seeking in a demo is more reliable.",
+    "AUG reload animations now match the shorter reload, and the list of allowed radio commands is explicit."
+   ],
+   "matters": "Reviewing your own demos got easier: pause and fly the camera to check where everyone stood."
+  },
+  {
+   "date": "2026-10-08",
+   "gid": "1846018067931597",
+   "title": "AUG reloads half a second faster",
+   "tags": [
+    "Gameplay"
+   ],
+   "points": [
+    "The AUG reload is half a second shorter.",
+    "Dropped defuse kits get a ping icon.",
+    "Fixed the Desert Eagle sound during a silent reload and buzzing ambient sounds in demos."
+   ],
+   "matters": "A faster reload makes the AUG a little better in long CT fights."
+  },
+  {
+   "date": "2026-10-05",
+   "gid": "1845383656394875",
+   "title": "Manage Workshop maps from the Play menu",
+   "tags": [
+    "Misc"
+   ],
+   "points": [
+    "New Play menu buttons to manage the Workshop maps you downloaded.",
+    "Pet photobook pages have localized text.",
+    "A shader cache tweak for the Vulkan renderer."
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "gid": "1845383656387875",
+   "title": "Grenade crosshair fix, better Warehouse lighting",
+   "tags": [
+    "Crosshair"
+   ],
+   "points": [
+    "The grenade crosshair now draws correctly with a thickness of 3 pixels.",
+    "Agents wear their equipped gloves in the photo booth and the buy menu.",
+    "Better lighting on Warehouse, and Workshop maps accept the new crosshair settings."
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "gid": "1845383656379136",
+   "title": "Grenade crosshair in freeze time for insta-smokes",
+   "tags": [
+    "Crosshair",
+    "Grenades"
+   ],
+   "points": [
+    "Hold any grenade attack button during freeze time to see the grenade crosshair — made for lining up insta-smokes.",
+    "New crosshair options: outline colour, a Static Quadrant style and negative gaps for the classic dynamic style.",
+    "The crosshair share code changed format and now includes your scope dot settings.",
+    "The display of weapon inaccuracy and spread was fixed."
+   ],
+   "matters": "Insta-smokes are easier to aim before the round starts: hold the throw button and line up with the grenade crosshair."
+  },
+  {
+   "date": "2026-09-28",
+   "gid": "1844751498232642",
+   "title": "Rush map fixes",
+   "tags": [
+    "Rush"
+   ],
+   "points": [
+    "Closed pixel gaps in several Rush rooms.",
+    "Clipping changes in the T and CT Castle rooms."
+   ]
+  },
+  {
+   "date": "2026-09-25",
+   "gid": "1844751498226015",
+   "title": "Rush fixes and a clan tag switch for servers",
+   "tags": [
+    "Rush",
+    "Gameplay"
+   ],
+   "points": [
+    "More gap and clipping fixes in Rush.",
+    "Loud reload sounds no longer carry over when you try to reload silently.",
+    "Community servers can turn clan tags off with a new setting."
+   ]
+  },
+  {
+   "date": "2026-09-24",
+   "gid": "1844751498222773",
+   "title": "Silent reload tricks removed",
+   "tags": [
+    "Gameplay",
+    "Rush"
+   ],
+   "points": [
+    "Closed a trick that gave a slightly faster silent reload by tapping before holding the key.",
+    "Silent reload can no longer make shotguns fire faster.",
+    "Rush shows its rules on the loading screen and changes when players are kicked for team damage."
+   ]
+  },
+  {
+   "date": "2026-09-23",
+   "gid": "1844751498219795",
+   "title": "Rush timing changes and crosshairs in pixels",
+   "tags": [
+    "Rush",
+    "Crosshair"
+   ],
+   "points": [
+    "Rush: the countdown after an elimination grows from 7 to 14 seconds in end rooms and on Convoy, and does not start when a team dies to suicides, team kills or disconnects; warmup, freeze time and timeouts are shorter.",
+    "Crosshair thickness, length and gap are now set in pixels and scale with your resolution automatically.",
+    "New half-outline option and a static square style; dynamic styles use a 64-pixel baseline for spread.",
+    "Clan tags show in the kill feed."
+   ],
+   "matters": "Your crosshair numbers now mean pixels — check your crosshair again after changing resolution or loading an old setup."
+  },
+  {
+   "date": "2026-09-22",
+   "gid": "1844751498216924",
+   "title": "New Premier map pick, Rush mode, silent reload and new crosshairs",
+   "tags": [
+    "Premier",
+    "Gameplay",
+    "Crosshair",
+    "Maps",
+    "Grenades"
+   ],
+   "points": [
+    "Premier map choice changed: Team 1 picks a map, Team 2 picks two, Team 1 picks one more, and one of the four is drawn at random.",
+    "New 3v3 mode, Rush: fight through random arenas to the enemy castle and hold the tower to win the round.",
+    "Hold reload to reload silently but slowly; un-scoping a sniper is silent; bullet impact decals are clearer.",
+    "ammo_grenade_limit_total now also limits how many grenades you can buy in a round.",
+    "Crosshairs no longer depend on resolution, live in a new Crosshair/Scopes tab and default to the Dynamic Quad style.",
+    "Map fixes on Ancient (grenade clipping in Jaguar), Cache, Mirage and Train; clan tags for Steam groups and stickers on the C4."
+   ],
+   "matters": "You will play the maps your team picked more often in Premier, so a small map pool you know well pays off even more."
+  },
+  {
+   "date": "2026-09-09",
+   "gid": "1843481262690556",
+   "title": "Cache fixes, chat hidden in demos",
+   "tags": [
+    "Maps",
+    "Demos"
+   ],
+   "points": [
+    "Cache: fixed gaps and a wallbang spot on B, added a missing competitive CT spawn and more T spawns.",
+    "Chat is encrypted in demos again: team chat cannot be read, and all chat only shows when you watch through the in-game viewer.",
+    "Custom camera and HUD scripting tools were reworked for map makers."
+   ]
+  },
+  {
+   "date": "2026-08-24",
+   "gid": "1841579228676851",
+   "title": "Custom HUD and camera tools for Workshop maps",
+   "tags": [
+    "Workshop"
+   ],
+   "points": [
+    "Scripted maps can show their own interface with a new custom HUD entity styled with CSS.",
+    "A new player camera entity can control a player’s view without moving them.",
+    "New script events around planting and defusing the bomb, plus better error logging."
+   ]
+  },
+  {
+   "date": "2026-08-19",
+   "gid": "1841579228663932",
+   "title": "Community map updates, wall speed fix",
+   "tags": [
+    "Maps",
+    "Gameplay"
+   ],
+   "points": [
+    "Boulder and Poseidon updated to their latest Workshop versions.",
+    "Fixed a case where players moved too fast while running against walls."
+   ]
+  },
+  {
+   "date": "2026-08-12",
+   "gid": "1840944183775194",
+   "title": "Fachwerk and Shelter updated",
+   "tags": [
+    "Maps"
+   ],
+   "points": [
+    "Fachwerk and Shelter updated to their latest Workshop versions."
+   ]
+  },
+  {
+   "date": "2026-08-03",
+   "gid": "1839676055895877",
+   "title": "Grenades no longer pass through walls, Cache fixes",
+   "tags": [
+    "Grenades",
+    "Maps"
+   ],
+   "points": [
+    "Fixed a case where grenades could be thrown through level geometry.",
+    "Cache: fixed gaps, collision and flickering assets, and removed a boost spot in Outside A.",
+    "New grenade and bomb events for map scripting."
+   ],
+   "matters": "If a lineup only worked by slipping through a wall, it is gone — re-test any odd-looking throws."
+  },
+  {
+   "date": "2026-07-29",
+   "gid": "1839676055881227",
+   "title": "Cologne Major stickers, VACnet fix",
+   "tags": [
+    "Major",
+    "Maps"
+   ],
+   "points": [
+    "Cologne 2026 Ranked Series stickers on sale, with half of the royalties going to players, teams and the organiser; the Cologne shop stays open until September 29.",
+    "Closed a bug that let some players avoid VACnet.",
+    "Boulder, Fachwerk and Shelter updated to their latest Workshop versions."
+   ]
+  },
+  {
+   "date": "2026-07-20",
+   "gid": "1838407329267700",
+   "title": "C4 explosion now affects smokes and molotovs",
+   "tags": [
+    "Gameplay",
+    "Grenades"
+   ],
+   "points": [
+    "The C4 explosion now interacts with smoke clouds and molotov or incendiary fire.",
+    "The bomb damage health preview appears once the bomb becomes audible.",
+    "Fachwerk, Boulder and Debris updated to their latest Workshop versions."
+   ],
+   "matters": "A post-plant smoke or molotov right next to the bomb will be blown away when it explodes — plan the last seconds of a retake with that in mind."
+  },
+  {
+   "date": "2026-07-15",
+   "gid": "1838407329252903",
+   "title": "Community map updates",
+   "tags": [
+    "Maps"
+   ],
+   "points": [
+    "Fachwerk, Boulder, Shelter and El Dorado updated to their latest Workshop versions.",
+    "Stability and security fixes."
+   ]
+  },
+  {
+   "date": "2026-07-09",
+   "gid": "1836506165584645",
+   "title": "Follow-up fixes to the new C4 damage",
+   "tags": [
+    "Gameplay"
+   ],
+   "points": [
+    "The new C4 explosion no longer deals a minimum of one damage across the whole map.",
+    "Fixed wrong C4 damage near the borders between map areas.",
+    "The explosion pushes dropped weapons harder."
+   ]
+  },
+  {
+   "date": "2026-07-08",
+   "gid": "1836506165581827",
+   "title": "Premier Season Five: Cache in, Overpass out, new C4 damage",
+   "tags": [
+    "Premier",
+    "Maps",
+    "Gameplay"
+   ],
+   "points": [
+    "Premier Season Five starts. Cache joins the Active Duty map pool and Overpass leaves it.",
+    "C4 explosion damage was redesigned on all official defusal maps: it follows precomputed values baked into each map, and the shockwave spreads out from the centre instead of hitting everywhere at once.",
+    "Community maps: Warden, Stronghold, Alpine and Sanctum removed; Boulder, Fachwerk and Shelter added to Competitive, Casual and Deathmatch; Debris and El Dorado added to Wingman.",
+    "New weapon and sticker collections, a Source 2 engine update, and clipping fixes on Cache, Dust II and Inferno."
+   ],
+   "matters": "Cache is a competitive map again — it is worth learning its standard smokes now. Where you stand at the explosion matters more than before."
+  },
+  {
+   "date": "2026-07-01",
+   "gid": "1836506165564135",
+   "title": "Cologne Major champions stickers",
+   "tags": [
+    "Major"
+   ],
+   "points": [
+    "Champions autograph stickers for the Cologne 2026 winners, Falcons, are on sale in the Major Shop.",
+    "Highlight souvenir charms with 10 highlights from each stage of the Major."
+   ]
+  },
+  {
+   "date": "2026-06-10",
+   "gid": "1835236783558731",
+   "title": "Major Shop price history, Storage Unit multi-select",
+   "tags": [
+    "Major",
+    "Misc"
+   ],
+   "points": [
+    "The Cologne 2026 Major Shop shows the lowest and highest sticker price of the last 7 days.",
+    "Storage Units let you select several items at once.",
+    "Clearer errors when your inventory is full."
+   ]
+  },
+  {
+   "date": "2026-05-29",
+   "gid": "1833968530889736",
+   "title": "Spectator flash setting, Ancient boost fix",
+   "tags": [
+    "Maps",
+    "Misc"
+   ],
+   "points": [
+    "A new setting controls how strong flashbangs look to remote spectators, and the effect now draws under the HUD.",
+    "Ancient: clipping changed to remove some boost spots.",
+    "Sanctum updated and stickers can be bookmarked in the Cologne shop."
+   ]
+  },
+  {
+   "date": "2026-05-22",
+   "gid": "1833334318570409",
+   "title": "Cologne Major hub, souvenirs in trade-ups",
+   "tags": [
+    "Major",
+    "Misc"
+   ],
+   "points": [
+    "The IEM Cologne 2026 Major hub opened with Pick’Em and a Viewer Pass coin.",
+    "Souvenir items can now be used in a Trade Up Contract; their souvenir attributes are removed and the result is a normal item.",
+    "Spectators see a stronger in-eye flash, and overtime shows correctly on the scoreboard timeline."
+   ]
+  },
+  {
+   "date": "2026-05-20",
+   "gid": "1833334318567523",
+   "title": "Cache collision and footstep fixes",
+   "tags": [
+    "Maps",
+    "Grenades"
+   ],
+   "points": [
+    "Cache: player and grenade collision adjusted, and surface materials changed so footsteps sound right.",
+    "Cache and Ancient: gaps reported by players were closed."
+   ],
+   "matters": "Grenade collision on Cache changed — re-check Cache lineups you learned before May 20."
+  },
+  {
+   "date": "2026-05-18",
+   "gid": "1832700592799760",
+   "title": "More consistent jump-throws",
+   "tags": [
+    "Grenades",
+    "Gameplay",
+    "Maps"
+   ],
+   "points": [
+    "Grenade jump-throws are more consistent, and the jump-throw preview camera is more accurate.",
+    "A new setting applies ladder inaccuracy to players boosted on top of a stack of two or more players.",
+    "Cache: window covers now show hits, with new player and grenade clipping around windows and the vent.",
+    "Spectating fixes and new money and player script functions for map makers."
+   ],
+   "matters": "Good news for lineups: jump-throws land more consistently, and the preview camera now shows a truer landing spot."
+  },
+  {
+   "date": "2026-05-14",
+   "gid": "1832700592790456",
+   "title": "Cache windows block bullets, grenade cancel bug fixed",
+   "tags": [
+    "Maps",
+    "Grenades"
+   ],
+   "points": [
+    "Cache: grating added to some windows so they block bullets; holes, surface types and player and grenade clipping fixed.",
+    "You can no longer cancel a grenade throw that already started at the end of the pin pull.",
+    "New MVP anthem variant for the NIGHTMODE II music kits."
+   ]
+  },
+  {
+   "date": "2026-05-07",
+   "gid": "1832065502813482",
+   "title": "Cache polish, NIGHTMODE II music kits",
+   "tags": [
+    "Maps",
+    "Grenades",
+    "Misc"
+   ],
+   "points": [
+    "Cache: holes fixed, grenade clipping simplified in several areas, sounds and surface types fixed.",
+    "NIGHTMODE II music kits on sale in the store.",
+    "Your viewmodel field of view now shows correctly to other players; smoother landing and post-processing transitions.",
+    "Map guides for night-time Ancient load again; Deathmatch weapon scores and XP limits adjusted."
+   ],
+   "matters": "Simpler grenade clipping on Cache can change where a smoke bounces — test Cache lineups after this update."
+  },
+  {
+   "date": "2026-04-30",
+   "gid": "1831432155569878",
+   "title": "Cache clipping and bomb spots, aim punch capped",
+   "tags": [
+    "Maps",
+    "Gameplay"
+   ],
+   "points": [
+    "Cache: map-wide clipping and geometry fixes, and the dropped bomb can no longer land out of reach in some spots.",
+    "Aim punch is limited to 90 degrees.",
+    "No more hand popping when you counter-strafe with a grenade out.",
+    "Fixed a shader compile crash on some older GPUs."
+   ]
+  },
+  {
+   "date": "2026-04-29",
+   "gid": "1831432155566354",
+   "title": "Cache reworked in many spots, Xbox corner blocked",
+   "tags": [
+    "Maps",
+    "Grenades"
+   ],
+   "points": [
+    "Cache: bigger bomb explosion radius, a reworked e-box on A, a lower Checkers frame at B Main, the AC unit above Sandbags removed, wallbangs on A Main fixed, and grenade and player clipping adjusted across the map.",
+    "Dust II: you can no longer see through the corner of Mid Box (Xbox).",
+    "More consistent smoke lighting and a possible fix for all audio dropping out."
+   ],
+   "matters": "Grenade clipping changed all over Cache one day after it arrived — Cache lineups made before April 29 need a re-check."
+  },
+  {
+   "date": "2026-04-28",
+   "gid": "1831432155563523",
+   "title": "Cache arrives in matchmaking, Xbox jump spot is back",
+   "tags": [
+    "Maps"
+   ],
+   "points": [
+    "Cache added to Competitive, Casual, Deathmatch and Retakes.",
+    "Dust II: Mid Box (Xbox) was opened up again to bring back a hidden jump spot — on purpose this time, Valve says.",
+    "Office: the tarp on the boxes near CT spawn now has collision; Stronghold and Poseidon updated.",
+    "Talon and Karambit knives are held correctly while defusing."
+   ]
+  },
+  {
+   "date": "2026-04-24",
+   "gid": "1830797770237569",
+   "title": "Animation fixes, map guides match new ground smoothing",
+   "tags": [
+    "Animation",
+    "Grenades"
+   ],
+   "points": [
+    "Many animation fixes: Dual Berettas, foot placement, stutter steps, legs snapping and the third-person bomb plant.",
+    "Official map guides were adjusted to the new surface smoothing.",
+    "Dropped silenced weapons show the silencer correctly; fixed a startup crash with a non-default audio device."
+   ],
+   "matters": "Map guides were updated for the new ground smoothing — use the current guides, not screenshots from before April."
+  },
+  {
+   "date": "2026-04-22",
+   "gid": "1830797770231786",
+   "title": "Thin ledges smoothing, trade offers capped",
+   "tags": [
+    "Gameplay",
+    "Misc"
+   ],
+   "points": [
+    "Ground smoothing adjusted where you can stand on very thin ledges.",
+    "Trade offers with CS2 items are limited to 1,000 items."
+   ]
+  },
+  {
+   "date": "2026-04-21",
+   "gid": "1830797770229332",
+   "title": "Recoil camera feels like CS:GO again",
+   "tags": [
+    "Gameplay"
+   ],
+   "points": [
+    "Camera movement from recoil now matches CS:GO more closely, while bullets still fly as in CS2.",
+    "You now feel the full camera kick when you get shot, whatever your ping; the effect on bullets is still applied right away on the server.",
+    "Fixed instant crouch transitions in the air."
+   ]
+  },
+  {
+   "date": "2026-04-21",
+   "gid": "1830163047267453",
+   "title": "Burst fire delay restored",
+   "tags": [
+    "Gameplay"
+   ],
+   "points": [
+    "Fixed a bug that removed the delay between bullets in burst fire."
+   ]
+  },
+  {
+   "date": "2026-04-20",
+   "gid": "1830163047267301",
+   "title": "New animation system goes live for everyone",
+   "tags": [
+    "Animation",
+    "Gameplay"
+   ],
+   "points": [
+    "Every change from the Animgraph 2 beta is now in the main game.",
+    "Closed a trick that let players climb ladders silently at run speed.",
+    "Ground smoothing adjusted where slopes meet flat ground; held grenades keep the right size after being dropped and picked up.",
+    "Fixed a halftime crash when switching from CT to T."
+   ],
+   "matters": "Animgraph 2 changes player height on slopes (see April 1) — lineups thrown from a ramp may land differently now."
+  },
+  {
+   "date": "2026-04-17",
+   "gid": "1830163047261361",
+   "title": "Animgraph 2 beta: HE throw and planting fixes",
+   "tags": [
+    "Beta",
+    "Animation"
+   ],
+   "points": [
+    "Beta build only: fixed the HE grenade throw animation, idle foot placement and turn animations while planting.",
+    "Fixed fast weapon switching while holding inspect and adjusted the head dip when counter-strafing."
+   ]
+  },
+  {
+   "date": "2026-04-14",
+   "gid": "1830163047252212",
+   "title": "Animgraph 2 beta: pose and switch fixes",
+   "tags": [
+    "Beta",
+    "Animation"
+   ],
+   "points": [
+    "Beta build only: fixed wrong poses when backing into corners, stutter in third-person aim and pops when switching weapons after a grenade throw.",
+    "Fixed a way to climb down ladders faster than before."
+   ]
+  },
+  {
+   "date": "2026-04-09",
+   "gid": "1829528821308514",
+   "title": "Animgraph 2 beta: less network traffic",
+   "tags": [
+    "Beta",
+    "Performance"
+   ],
+   "points": [
+    "Beta build only: lower network bandwidth use."
+   ]
+  },
+  {
+   "date": "2026-04-01",
+   "gid": "1828894815556043",
+   "title": "Animgraph 2 beta: new animations and consistent height on slopes",
+   "tags": [
+    "Beta",
+    "Animation",
+    "Grenades"
+   ],
+   "points": [
+    "A new animation system, Animgraph 2, arrives in a beta build: all third-person animations were re-made and cost less CPU and network.",
+    "Player height on ramps is now the same whichever way you walk onto them — and Valve warns that grenade lineups thrown from slopes may have changed.",
+    "Players no longer show through thin walls when none of their body is visible, thanks to a GPU visibility check.",
+    "Sound mix changes to make jump landings easier to hear in a fight, and a new C4 equip sound."
+   ],
+   "matters": "If a lineup starts on a ramp or slope, test it again — your eye height there may have changed since April."
+  },
+  {
+   "date": "2026-03-18",
+   "gid": "1827626365751572",
+   "title": "Reloads now drop the magazine, map guides in Competitive",
+   "tags": [
+    "Gameplay",
+    "Grenades"
+   ],
+   "points": [
+    "Reloading a magazine weapon now throws away the bullets left in the magazine and takes a full new one from your reserve, which is shown as magazines, shells or bullets.",
+    "Reserve magazine counts were tuned per weapon, and the fill level of your magazine shows under the ammo count.",
+    "Map guides are allowed in Competitive and Retakes in a limited form: the first 5 rounds of each half and up to 30 nodes. Simple starter guides were added for every Active Duty map.",
+    "You can join friends playing a Practice or Workshop map from the friends menu if their party is open."
+   ],
+   "matters": "Reload less out of habit — every early reload now costs you bullets. And you can bring a small set of lineups into Competitive through map guides."
+  },
+  {
+   "date": "2026-03-16",
+   "gid": "1826992588602521",
+   "title": "X-Ray Scanner for Germany and the Netherlands",
+   "tags": [
+    "Misc"
+   ],
+   "points": [
+    "In Germany and the Netherlands containers can only be opened through an X-Ray Scanner in the inventory, which comes with a free non-tradable P250 | X-Ray.",
+    "Keyless containers such as souvenir packages open as before."
+   ]
+  },
+  {
+   "date": "2026-03-11",
+   "gid": "1826992588591189",
+   "title": "Dead Hand Collection",
+   "tags": [
+    "Misc",
+    "Maps"
+   ],
+   "points": [
+    "The Dead Hand Collection: 17 community finishes and 22 new gloves as rare special items, opened through the Dead Hand Terminal from weekly drops.",
+    "Dust II: closed a pixel gap in a door Outside Long; Alpine updated."
+   ]
+  }
+ ]
+}
